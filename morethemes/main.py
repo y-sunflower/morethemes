@@ -21,7 +21,12 @@ def set_theme(theme_name, reset_to_default=True):
     if theme_name == "default":
         plt.rcParams.update(mpl.rcParamsDefault)
     else:
-        theme_dict = ALL_THEMES[theme_name]["theme"]
+        try:
+            theme_dict = ALL_THEMES[theme_name]["theme"]
+        except KeyError:
+            raise KeyError(
+                f"Invalid theme name: {theme_name}. It must be one of:\n\n{list(ALL_THEMES.keys())}"
+            )
         if reset_to_default:
             plt.rcParams.update(mpl.rcParamsDefault)
         for key, value in theme_dict.items():
