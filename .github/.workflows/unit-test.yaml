@@ -7,7 +7,7 @@ on:
     branches:
 
 jobs:
-  uv-example:
+  test:
     name: python
     runs-on: ubuntu-latest
     strategy:
@@ -20,7 +20,8 @@ jobs:
           - "3.13"
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
       - name: Install uv and set the python version
         uses: astral-sh/setup-uv@v5
@@ -36,4 +37,4 @@ jobs:
         run: uv sync --all-extras --dev
 
       - name: Run tests
-        run: uv run pytest tests
+        run: uv run pytest
