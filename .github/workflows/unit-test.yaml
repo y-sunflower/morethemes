@@ -10,23 +10,18 @@ jobs:
   test:
     name: python
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version:
-          - "3.9"
-          - "3.10"
-          - "3.11"
-          - "3.12"
-          - "3.13"
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install uv and set the python version
+      - name: Install uv
         uses: astral-sh/setup-uv@v5
+
+      - name: "Set up Python"
+        uses: actions/setup-python@v5
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version-file: ".python-version"
 
       - name: Enable caching
         uses: astral-sh/setup-uv@v5
