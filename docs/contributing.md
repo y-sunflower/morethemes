@@ -1,5 +1,3 @@
-## Contributing to `morethemes`
-
 This document focuses on adding themes to `morethemes`, but other kind of contributions are possible. Feel free to [open an issue](https://github.com/JosephBARBIERDARNAL/morethemes/issues) to discuss it.
 
 <br>
@@ -82,3 +80,5 @@ git push
 Congrats! Once your PR is merged, it will be part of `morethemes` and accessible via `mt.set_theme("sunglasses")`.
 
 It'll be available once a new released is published on PyPI.
+
+<br>

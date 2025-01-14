@@ -1,0 +1,17 @@
+site_name: morethemes
+site_url: https://morethemes.com
+repo_url: https://github.com/JosephBARBIERDARNAL/morethemes
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Create a theme: create-a-theme.md
+  - Contributing: contributing.md
+
+extra:
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
