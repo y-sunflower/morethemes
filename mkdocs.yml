@@ -1,8 +1,10 @@
 site_name: morethemes
-site_url: https://morethemes.com
+site_url: https://josephbarbierdarnal.github.io/morethemes/
 repo_url: https://github.com/JosephBARBIERDARNAL/morethemes
 theme:
   name: material
+  features:
+    - content.code.copy
   icon:
     repo: fontawesome/brands/github
 
@@ -15,3 +17,12 @@ extra:
   analytics:
     provider: google
     property: G-XXXXXXXXXX
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences

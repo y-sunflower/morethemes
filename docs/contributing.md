@@ -1,12 +1,8 @@
 This document focuses on adding themes to `morethemes`, but other kind of contributions are possible. Feel free to [open an issue](https://github.com/JosephBARBIERDARNAL/morethemes/issues) to discuss it.
 
-<br>
-
-### Add a theme
-
 In this tutorial, I'll assume your theme is named `sunglasses`, as for the example. Remember to change it with the actual name of your theme.
 
-Here are the steps to follow to get started:
+### Setup your environment
 
 - Fork the repository to your own GitHub account.
 
@@ -30,6 +26,8 @@ uv init
 uv pip install -e .
 uv sync --all-extras --dev
 ```
+
+### Add a new theme
 
 - In `morethemes/morethemes/themes/`, create a new python file named `sunglasses.py`. It should looks like this:
 
@@ -61,11 +59,15 @@ from .sunglasses import sunglasses_theme
 "sunglasses": sunglasses_theme
 ```
 
+### Test the theme
+
 - Test that everything works correctly by running:
 
 ```bash
 uv run pytest
 ```
+
+### Push changes
 
 - Commit and push your changes:
 

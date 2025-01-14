@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import morethemes as mt
 
-plt.rcParams["savefqig.dpi"] = 200
+plt.rcParams["savefig.dpi"] = 200
 
 mt.set_theme("darker")
 
