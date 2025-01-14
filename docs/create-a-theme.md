@@ -2,7 +2,7 @@
 
 ## rcParams
 
-In matplotlib, themes are made via something called `rcParams`. It's used to change a parameter in plots. Once applied, it will be set for all charts.
+In matplotlib, themes are made via something called `rcParams`. It's similar to a global parameter configuration. Once applied, it will be set for all charts.
 
 Let's see how this works. First we import pyplot from matplotlib.
 
@@ -55,13 +55,13 @@ plt.rcParams["xtick.color"] = "#eeeeee"
 plt.rcParams["axes.spines.right"] = False
 ```
 
-But how do you visualize what it looks like in practice? You need to test it in different scenario.
+But how do you visualize what it looks like in practice? You need to preview it in different scenario.
 
 <br>
 
-## Test a theme
+## Preview a theme
 
-In my opinion, the easiest way to test a theme is to use the `mt.preview_theme()` function. It will make many different charts and you'll easily be able to view how your theme currently looks like.
+In my opinion, the easiest way to preview a theme is to use the `mt.preview_theme()` function. It will make many different charts and you'll easily be able to view how your theme currently looks like.
 
 ```py
 import matplotlib.pyplot as plt

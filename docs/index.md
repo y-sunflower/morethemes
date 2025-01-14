@@ -46,7 +46,6 @@ pip install git+https://github.com/JosephBARBIERDARNAL/morethemes.git
         title="Tool to find a color palette for a python chart"
         style="width: 120%; height: 1800px;"
         src="https://holtzy.github.io/dataviz-color-finder/"
-        allow="clipboard-write"
     ></iframe>
 </div>
 
