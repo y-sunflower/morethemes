@@ -13,7 +13,10 @@ def test_invalid_theme():
 
 def test_valid_themes():
     """Check that all valid theme names don't raise an error"""
-    for theme in mt.ALL_THEMES:
+    for theme in mt.ALL_THEMES.keys():
+        assert "name" in mt.ALL_THEMES[theme].keys()
+        assert "author" in mt.ALL_THEMES[theme].keys()
+        assert "theme" in mt.ALL_THEMES[theme].keys()
         mt.set_theme(theme)
 
 

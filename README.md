@@ -15,6 +15,6 @@ ax.barh(["Yes", "No"], [10, 20])
 plt.show()
 ```
 
-![](img/quickstart.png)
+![](docs/img/quickstart.png)
 
 <br />

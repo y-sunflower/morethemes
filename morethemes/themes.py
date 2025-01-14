@@ -12,18 +12,13 @@ darker_theme = {
         "ytick.color": "#eeeeee",
         "axes.spines.top": False,
         "axes.spines.right": False,
-        "axes.grid": True,
-        "axes.grid.axis": "both",
-        "grid.color": "#808080",
-        "grid.linestyle": "--",
         "xtick.minor.visible": False,
         "xtick.major.size": 0,
         "ytick.major.size": 0,
         "ytick.minor.visible": False,
         "scatter.marker": "H",
         "text.color": "#fff",
-        "lines.linewidth": 1.5,
-        "grid.alpha": 0.7,
+        "lines.linewidth": 2.5,
         "axes.labelsize": 12,
         "axes.linewidth": 1.5,
         "axes.prop_cycle": cycler(
@@ -32,7 +27,22 @@ darker_theme = {
     },
 }
 
-if __name__ == "__main__":
-    import morethemes as mt
 
-    mt.preview_theme("darker")
+lighter_theme = {
+    "name": "lighter",
+    "author": "Joseph Barbier",
+    "theme": {
+        "axes.facecolor": "#f62b2b",
+        "figure.facecolor": "#ebebeb",
+        "axes.labelcolor": "#373737",
+        "xtick.color": "#373737",
+        "ytick.color": "#373737",
+        "text.color": "#373737",
+    },
+}
+
+
+ALL_THEMES = {
+    "darker": darker_theme,
+    "lighter": lighter_theme,
+}

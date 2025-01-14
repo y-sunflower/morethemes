@@ -3,8 +3,9 @@ import morethemes as mt
 import numpy as np
 
 
-def preview_theme(theme):
-    mt.set_theme(theme)
+def preview_theme(theme=None):
+    if theme is not None:
+        mt.set_theme(theme)
     np.random.seed(0)
 
     fig, axs = plt.subplots(ncols=2, nrows=2, figsize=(8, 5), layout="tight", dpi=200)

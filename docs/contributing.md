@@ -29,7 +29,7 @@ uv sync --all-extras --dev
 
 ### Add a new theme
 
-- In `morethemes/morethemes/themes/`, create a new python file named `sunglasses.py`. It should looks like this:
+- In `morethemes/morethemes/themes.py`, add a new theme that looks like this:
 
 ```python
 sunglasses_theme = {
@@ -40,23 +40,20 @@ sunglasses_theme = {
         "figure.facecolor": "#282828",
     },
 }
-
-if __name__ == "__main__":
-    import morethemes as mt
-
-    mt.preview_theme("sunglasses")
 ```
 
-- In `morethemes/morethemes/__init__.py`, add this at the top of the file:
+!!! note
+
+    If you're looking how to make a (great) theme, check [this](../create-a-theme).
+
+- At the end of `morethemes/morethemes/themes.py`, add your theme to `ALL_THEMES`:
 
 ```python
-from .sunglasses import sunglasses_theme
-```
-
-- Then add this in the `ALL_THEMES` dictionnary:
-
-```python
-"sunglasses": sunglasses_theme
+ALL_THEMES = {
+    "darker": darker_theme,
+    "lighter": lighter_theme,
+    "sunglasses": sunglasses_theme, # add your theme here
+}
 ```
 
 ### Test the theme
