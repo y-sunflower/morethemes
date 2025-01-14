@@ -10,3 +10,8 @@ lighter_theme = {
         "text.color": "#373737",
     },
 }
+
+if __name__ == "__main__":
+    import morethemes as mt
+
+    mt.preview_theme("lighter")
