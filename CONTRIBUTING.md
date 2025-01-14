@@ -16,6 +16,7 @@ Here are the steps to follow to get started:
 
 ```bash
 git clone https://github.com/YOURUSERNAME/morethemes.git
+cd morethemes
 ```
 
 - Create a new branch for your theme:
@@ -43,6 +44,11 @@ sunglasses_theme = {
         "figure.facecolor": "#282828",
     },
 }
+
+if __name__ == "__main__":
+    import morethemes as mt
+
+    mt.preview_theme("sunglasses")
 ```
 
 - In `morethemes/morethemes/__init__.py`, add this at the top of the file:
@@ -71,8 +77,8 @@ git commit -m "add sunglasses theme"
 git push
 ```
 
-- Go to your fork and click on the "Open a PR" popup
+- Go back to your fork and click on the "Open a PR" popup
 
 Congrats! Once your PR is merged, it will be part of `morethemes` and accessible via `mt.set_theme("sunglasses")`.
 
-It'll be available in the published version once a new released is published on PyPI.
+It'll be available once a new released is published on PyPI.
