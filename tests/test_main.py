@@ -17,12 +17,17 @@ def test_valid_themes():
         assert "name" in mt.ALL_THEMES[theme].keys()
         assert "author" in mt.ALL_THEMES[theme].keys()
         assert "theme" in mt.ALL_THEMES[theme].keys()
+        assert "description" in mt.ALL_THEMES[theme].keys()
+        assert len(mt.ALL_THEMES[theme]["description"]) < 200, (
+            f"The description of theme {theme} has too many characters. "
+            f"It must be below 200, not {len(mt.ALL_THEMES[theme]['description'])}"
+        )
         mt.set_theme(theme)
 
 
 def test_set_theme_default():
     """Check that resetting the default style actually works"""
-    plt.rcParams["lines.linewidth"] = 3.14
+    plt.rcParams["lines.linewidth"] = 3.1415
     plt.rcParams["axes.titlesize"] = "medium"
 
     mt.set_theme("default")

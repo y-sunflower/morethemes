@@ -3,6 +3,7 @@ from morethemes.fonts import set_family_from_file
 
 darker_theme = {
     "name": "darker",
+    "description": "My very first theme. I wanted to create something simple and a dark theme.",
     "author": "Joseph Barbier",
     "theme": {
         "font.family": set_family_from_file("Oswald.ttf"),
@@ -32,6 +33,7 @@ darker_theme = {
 
 yellowish_theme = {
     "name": "yellowish",
+    "description": "The background yellow comes from a nice National Geographic visualisation, and I think it looks pretty cool with the black and white visuals.",
     "author": "Joseph Barbier",
     "theme": {
         "font.family": set_family_from_file("Delius.ttf"),
@@ -63,6 +65,7 @@ yellowish_theme = {
 
 urban_theme = {
     "name": "urban",
+    "description": "I wanted to make a theme that used the Urbanist font, with a clean professional look. And here it is.",
     "author": "Joseph Barbier",
     "theme": {
         "font.family": set_family_from_file("Urbanist.ttf"),
@@ -91,6 +94,7 @@ urban_theme = {
 
 wsj_theme = {
     "name": "wsj",
+    "description": "A theme inspired by the Wall Street Journal.",
     "author": "Joseph Barbier",
     "theme": {
         "font.family": set_family_from_file("Crimson.ttf"),
