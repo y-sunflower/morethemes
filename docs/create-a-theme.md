@@ -127,6 +127,23 @@ plt.rcParams["axes.edgecolor"] = "#eeeeee"    # Spine color
 plt.rcParams["axes.linewidth"] = 1.5          # Spine width
 ```
 
+### Fonts
+
+It is highly recommended to use a specific font for a theme, as it plays a major role in the brand image. To do this, you need to follow a few steps before you can add a new font.
+
+- add the desired font file to `morethemes/fonts/font-name.ttf`.
+- use this code to set the font:
+
+```py
+plt.rcParams['font.family'] = mt.fonts.set_family_from_file("font-name.ttf")
+```
+
+- add the font licence to `morethemes/fonts/LICENSE` (only do this once you've found the right font for your theme).
+
+### Others
+
+As there are many other things to customise here, take a look at what other themes are doing in `morethemes/themes.py`.
+
 <br>
 
 ## Add your theme to `morethemes`
