@@ -10,6 +10,7 @@ theme:
 
 nav:
   - Home: index.md
+  - Gallery: gallery.md
   - Create a theme: create-a-theme.md
   - Contributing: contributing.md
 

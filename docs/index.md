@@ -2,9 +2,11 @@
 
 `morethemes` was built to provide more themes to matplotlib. It has been created and is maintained by [Joseph Barbier](https://www.barbierjoseph.com/){:target="\_blank"} and [Yan Holtz](https://www.yan-holtz.com/){:target="\_blank"}.
 
-Like the project? Give it a start on [Github](https://github.com/JosephBARBIERDARNAL/morethemes){:target="\_blank"}.
+Like the project? Give it a star on [Github](https://github.com/JosephBARBIERDARNAL/morethemes){:target="\_blank"}.
 
 ## Quick start
+
+All you need is the `mt.set_theme()` function:
 
 ```py
 import matplotlib.pyplot as plt
