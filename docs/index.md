@@ -1,8 +1,6 @@
 # `morethemes`: more themes for matplotlib
 
-`morethemes` was built to provide more themes to matplotlib. It has been created and is maintained by [Joseph Barbier](https://www.barbierjoseph.com/){:target="\_blank"} and [Yan Holtz](https://www.yan-holtz.com/){:target="\_blank"}.
-
-Like the project? Give it a star on [Github](https://github.com/JosephBARBIERDARNAL/morethemes){:target="\_blank"}.
+`morethemes` provides themes for [matplotlib](https://matplotlib.org/){:target="\_blank"}. One line of code. Great visualisations.
 
 ## Quick start
 
@@ -22,6 +20,8 @@ plt.show()
 ```
 
 <center>![](img/quickstart.png)</center>
+
+[View all themes](./gallery.md)
 
 <br>
 

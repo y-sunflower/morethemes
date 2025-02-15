@@ -1,3 +1,5 @@
+This document explains everything you need to know to create a theme in matplotlib, and optionally how to add it to `morethemes`.
+
 <br>
 
 ## rcParams
