@@ -15,3 +15,5 @@ dev = [
     "setuptools>=75.8.0",
     "mkdocs-material>=9.5.49",
 ]
+[tool.setuptools]
+include-package-data = true

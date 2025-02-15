@@ -13,7 +13,7 @@ def set_theme(theme_name, reset_to_default=True):
     Parameters
     ----------
     theme_name : str
-        Name of the theme to apply.
+        Name of the theme to apply (case insensitive).
     reset_to_default : bool
         Whether to first reset to default matplotlib theme before applying the theme.
         If not, themes can stack on top of each other.
@@ -21,6 +21,7 @@ def set_theme(theme_name, reset_to_default=True):
     if theme_name == "default":
         plt.rcParams.update(mpl.rcParamsDefault)
     else:
+        theme_name = theme_name.lower()
         try:
             theme_dict = ALL_THEMES[theme_name]["theme"]
         except KeyError:

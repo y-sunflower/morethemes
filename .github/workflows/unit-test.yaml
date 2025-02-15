@@ -5,6 +5,7 @@ on:
     # No branch filter means it will run on every push to any branch
   pull_request:
     branches:
+      - main
 
 jobs:
   test:

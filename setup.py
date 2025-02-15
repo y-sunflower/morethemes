@@ -11,4 +11,5 @@ setup(
     author_email="joseph.barbierdarnal@gmail.com",
     url="https://github.com/JosephBARBIERDARNAL/morethemes",
     install_requires=["matplotlib"],
+    include_package_data=True,
 )
