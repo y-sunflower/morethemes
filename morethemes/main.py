@@ -28,7 +28,7 @@ def set_theme(theme_name, reset_to_default=True):
                 theme_name, ALL_THEMES.keys(), n=3, cutoff=0.01
             )
             raise KeyError(
-                f"Theme '{theme_name}' not found. Did you mean: {', '.join(suggestions)}?\n\n"
+                f"Theme '{theme_name}' not found. Did you mean: {', '.join(suggestions)}?"
             )
         if reset_to_default:
             plt.rcParams.update(mpl.rcParamsDefault)
