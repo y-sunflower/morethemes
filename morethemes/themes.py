@@ -144,8 +144,8 @@ economist_theme = {
         "font.family": set_family_from_file("RobotoFlex.ttf"),
         "ytick.minor.visible": False,
         "xtick.minor.visible": True,
-        "xtick.major.size": 4,
-        "xtick.minor.size": 2,
+        "xtick.major.size": 6,
+        "xtick.minor.size": 3,
         "ytick.major.size": 0,
         "axes.spines.top": False,
         "axes.spines.right": False,
@@ -179,6 +179,39 @@ economist_theme = {
     },
 }
 
+minimal_theme = {
+    "name": "minimal",
+    "description": "A minimalist theme.",
+    "author": "Joseph Barbier",
+    "theme": {
+        "font.family": set_family_from_file("Inter.ttf"),
+        "ytick.minor.visible": False,
+        "xtick.minor.visible": False,
+        "xtick.major.size": 0,
+        "ytick.major.size": 0,
+        "axes.spines.top": False,
+        "axes.spines.right": False,
+        "axes.spines.left": False,
+        "axes.spines.bottom": False,
+        "ytick.major.pad": 5,
+        "xtick.major.pad": 5,
+        "axes.grid": True,
+        "grid.linewidth": 0.8,
+        "grid.linestyle": "-",
+        "grid.alpha": 0.1,
+        "axes.linewidth": 1.2,
+        "grid.color": "#383838",
+        "text.color": "#000000",
+        "axes.edgecolor": "#000000",
+        "axes.facecolor": "#ffffff",
+        "figure.facecolor": "#ffffff",
+        "axes.prop_cycle": cycler(
+            "color",
+            ["#678096", "#ACC2CF", "#CD5733", "#979461", "#A12A19"],
+        ),
+    },
+}
+
 
 ALL_THEMES = {
     "darker": darker_theme,
@@ -186,4 +219,5 @@ ALL_THEMES = {
     "urban": urban_theme,
     "wsj": wsj_theme,
     "economist": economist_theme,
+    "minimal": minimal_theme,
 }

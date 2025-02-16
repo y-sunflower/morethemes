@@ -76,3 +76,18 @@ mt.set_theme("economist")
 <center>![](img/economist.png)</center>
 
 <br>
+
+### Minimal
+
+A minimalist theme.
+
+```python
+import matplotlib.pyplot as plt
+import morethemes as mt
+
+mt.set_theme("minimal")
+```
+
+<center>![](img/minimal.png)</center>
+
+<br>
