@@ -3,9 +3,9 @@ name = "morethemes"
 version = "0.1.0"
 description = "More themes for matplotlib"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.9"
 dependencies = [
-    "matplotlib>=3.10.0",
+    "matplotlib>=3.6.0",
 ]
 
 [dependency-groups]

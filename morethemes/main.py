@@ -1,9 +1,8 @@
 import matplotlib as mpl
 import matplotlib.pyplot as plt
+from difflib import get_close_matches
 
 from .themes import ALL_THEMES
-
-ALL_VALID_KEYS = set(plt.rcParams.keys())
 
 
 def set_theme(theme_name, reset_to_default=True):
@@ -25,15 +24,13 @@ def set_theme(theme_name, reset_to_default=True):
         try:
             theme_dict = ALL_THEMES[theme_name]["theme"]
         except KeyError:
+            suggestions = get_close_matches(
+                theme_name, ALL_THEMES.keys(), n=3, cutoff=0.01
+            )
             raise KeyError(
-                f"Invalid theme name: {theme_name}. It must be one of:\n\n{list(ALL_THEMES.keys())}"
+                f"Theme '{theme_name}' not found. Did you mean: {', '.join(suggestions)}?"
             )
         if reset_to_default:
             plt.rcParams.update(mpl.rcParamsDefault)
         for key, value in theme_dict.items():
-            if key in ALL_VALID_KEYS:
-                plt.rcParams[key] = value
-            else:
-                raise ValueError(
-                    f"Invalid key: {key}. It must be one of:\n\n{ALL_VALID_KEYS}."
-                )
+            plt.rcParams[key] = value

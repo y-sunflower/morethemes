@@ -3,7 +3,7 @@ from morethemes.fonts import set_family_from_file
 
 darker_theme = {
     "name": "darker",
-    "description": "My very first theme. I wanted to create something simple and a dark theme.",
+    "description": "A sleek, no-frills dark theme with high contrast and a modern feel",
     "author": "Joseph Barbier",
     "theme": {
         "font.family": set_family_from_file("Oswald.ttf"),
@@ -33,7 +33,7 @@ darker_theme = {
 
 yellowish_theme = {
     "name": "yellowish",
-    "description": "The background yellow comes from a nice National Geographic visualisation, and I think it looks pretty cool with the black and white visuals.",
+    "description": "A bold, National Geographic-inspired theme with a warm yellow backdrop",
     "author": "Joseph Barbier",
     "theme": {
         "font.family": set_family_from_file("Delius.ttf"),
@@ -65,7 +65,7 @@ yellowish_theme = {
 
 urban_theme = {
     "name": "urban",
-    "description": "I wanted to make a theme that used the Urbanist font, with a clean professional look. And here it is.",
+    "description": "A clean, professional theme featuring the Urbanist font and muted tones.",
     "author": "Joseph Barbier",
     "theme": {
         "font.family": set_family_from_file("Urbanist.ttf"),
@@ -94,7 +94,7 @@ urban_theme = {
 
 wsj_theme = {
     "name": "wsj",
-    "description": "A theme inspired by the Wall Street Journal.",
+    "description": "A refined, newspaper-style theme inspired by the Wall Street Journal.",
     "author": "Joseph Barbier",
     "theme": {
         "font.family": set_family_from_file("Crimson.ttf"),
@@ -136,10 +136,88 @@ wsj_theme = {
     },
 }
 
+economist_theme = {
+    "name": "economist",
+    "description": "A crisp, data-focused theme with subtle gridlines and sharp contrasts.",
+    "author": "Joseph Barbier",
+    "theme": {
+        "font.family": set_family_from_file("RobotoFlex.ttf"),
+        "ytick.minor.visible": False,
+        "xtick.minor.visible": True,
+        "xtick.major.size": 6,
+        "xtick.minor.size": 3,
+        "ytick.major.size": 0,
+        "axes.spines.top": False,
+        "axes.spines.right": False,
+        "axes.spines.left": False,
+        "ytick.major.pad": 5,
+        "xtick.major.pad": 5,
+        "axes.grid": True,
+        "grid.linewidth": 0.4,
+        "grid.linestyle": "-",
+        "axes.linewidth": 1.2,
+        "axes.grid.axis": "y",
+        "text.color": "#3d3d3d",
+        "grid.color": "#989797",
+        "axes.edgecolor": "#1f1f1f",
+        "axes.facecolor": "#e8f4f4",
+        "figure.facecolor": "#e8f4f4",
+        "axes.prop_cycle": cycler(
+            "color",
+            [
+                "#DB444B",
+                "#006BA2",
+                "#3EBCD2",
+                "#379A8B",
+                "#EBB434",
+                "#B4BA39",
+                "#9A607F",
+                "#D1B07C",
+                "#758D99",
+            ],
+        ),
+    },
+}
+
+minimal_theme = {
+    "name": "minimal",
+    "description": "A pure, distraction-free theme with a simple monochrome palette.",
+    "author": "Joseph Barbier",
+    "theme": {
+        "font.family": set_family_from_file("Inter.ttf"),
+        "ytick.minor.visible": False,
+        "xtick.minor.visible": False,
+        "xtick.major.size": 0,
+        "ytick.major.size": 0,
+        "axes.spines.top": False,
+        "axes.spines.right": False,
+        "axes.spines.left": False,
+        "axes.spines.bottom": False,
+        "ytick.major.pad": 5,
+        "xtick.major.pad": 5,
+        "axes.grid": True,
+        "grid.linewidth": 0.8,
+        "grid.linestyle": "-",
+        "grid.alpha": 0.1,
+        "axes.linewidth": 1.2,
+        "grid.color": "#383838",
+        "text.color": "#000000",
+        "axes.edgecolor": "#000000",
+        "axes.facecolor": "#ffffff",
+        "figure.facecolor": "#ffffff",
+        "axes.prop_cycle": cycler(
+            "color",
+            ["#678096", "#ACC2CF", "#CD5733", "#979461", "#A12A19"],
+        ),
+    },
+}
+
 
 ALL_THEMES = {
     "darker": darker_theme,
     "yellowish": yellowish_theme,
     "urban": urban_theme,
     "wsj": wsj_theme,
+    "economist": economist_theme,
+    "minimal": minimal_theme,
 }
