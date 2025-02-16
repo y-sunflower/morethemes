@@ -44,13 +44,19 @@ mt.set_theme("{theme}")
     return content
 
 
-def top_of_file():
-    content = """
+def top_of_file(is_README=False):
+    if is_README:
+        link_to_doc = "[Go to the documentation site](https://josephbarbierdarnal.github.io/morethemes/)"
+    else:
+        link_to_doc = ""
+    content = f"""
 <!-- Automatically generated, do not change by hand. Use docs/script/make.py instead. -->
 
 # `morethemes`: more themes for matplotlib
 
 `morethemes` provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots. One line of code.
+
+{link_to_doc}
 
 <br>
 
@@ -121,7 +127,7 @@ if __name__ == "__main__":
     with open("docs/index.md", "w", encoding="utf-8") as f:
         f.write(index_content)
 
-    readme_content = top_of_file()
+    readme_content = top_of_file(is_README=True)
     for theme in mt.ALL_THEMES:
         code_snippet = image_readme(theme)
         readme_content += code_snippet
