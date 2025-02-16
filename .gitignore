@@ -14,3 +14,4 @@ wheels/
 .vscode/
 sandbox*
 *.zip
+uv.lock
