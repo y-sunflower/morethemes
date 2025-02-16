@@ -91,4 +91,6 @@ This project is sponsored by [Matplotlib Journey](https://www.matplotlib-journey
 [**Join the course**](https://www.matplotlib-journey.com/)
 
 </center>
+
+<br>
     
