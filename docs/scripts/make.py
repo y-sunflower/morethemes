@@ -1,57 +1,71 @@
 import matplotlib.pyplot as plt
 import morethemes as mt
 
-plt.rcParams["savefig.dpi"] = 200
-
-## quick start
-
-mt.set_theme("darker")
-
-fig, ax = plt.subplots(figsize=(8, 5))
-ax.plot([1, 2, 3, 4, 5])
-ax.plot([7, 3, 5, 2, 1])
-ax.plot([9, 0, 3, 2, 4])
-plt.savefig("docs/img/quickstart.png", bbox_inches="tight")
-
-## gallery
-
-for theme in mt.ALL_THEMES:
-    mt.preview_theme(theme=theme)
-    plt.savefig(f"docs/img/{theme}.png", bbox_inches="tight")
+plt.rcParams["savefig.dpi"] = 250
 
 
-def code_and_image(theme: str):
+def tab_code_image(theme: str):
+    if theme == "wsj":
+        theme_name = theme.upper()
+    else:
+        theme_name = theme.title()
     content = f"""
-### {theme.title()}
+=== "{theme_name}"
 
-{mt.ALL_THEMES[theme]["description"]}
+    ![](img/{theme}.png)
 
-```python
-import matplotlib.pyplot as plt
-import morethemes as mt
+    ```python
+    import morethemes as mt
+    mt.set_theme("{theme}")
+    ```
 
-mt.set_theme("{theme}")
-```
+    {mt.ALL_THEMES[theme]["description"]} Made by {mt.ALL_THEMES[theme]["author"]}.
 
-<center>![](img/{theme}.png)</center>
+    """
+    return content
+
+
+def top_of_file():
+    content = """
+<!-- Automatically generated, do not change by hand. Use docs/script/make.py instead. -->
+
+# `morethemes`: more themes for matplotlib
+
+`morethemes` provides themes for [matplotlib](https://matplotlib.org/){:target="\_blank"}. More themes, better plots. One line of code.
+
+## Themes
+
+"""
+    return content
+
+
+def end_of_file():
+    content = """
 
 <br>
-"""
+
+## Installation
+
+```bash
+pip install morethemes
+```
+
+<br>
+
+## Learn matplotlib
+
+This project is sponsored by [Matplotlib Journey](https://www.matplotlib-journey.com/){:target="\_blank"}, an online course designed to make you a matplotlib expert. If you're interested in learning matplotlib, have a look!
+
+<center>[Join the course :fontawesome-solid-paper-plane:](https://www.matplotlib-journey.com/){ .md-button .md-button--primary  }</center>
+    """
     return content
 
 
-def top_of_README():
-    content = """
-<!-- Automatically generated, do not change by hand. Use docs/script/gallery.py instead. -->
-
-"""
-    return content
-
-
-readme_content = top_of_README()
+index_content = top_of_file()
 for theme in mt.ALL_THEMES:
-    dataset_content = code_and_image(theme)
-    readme_content += dataset_content
+    code_snippet = tab_code_image(theme)
+    index_content += code_snippet
+index_content += end_of_file()
 
-with open("docs/gallery.md", "w", encoding="utf-8") as f:
-    f.write(readme_content)
+with open("docs/index.md", "w", encoding="utf-8") as f:
+    f.write(index_content)

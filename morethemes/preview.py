@@ -14,7 +14,8 @@ def preview_theme(theme=None):
 
     for i in range(3):
         np.random.seed(i)
-        axs[0, 1].plot(list(range(20)), np.random.normal(size=20))
+        axs[0, 1].plot(list(range(20)), np.random.normal(size=20), label=f"{i} line")
+    axs[0, 1].legend()
 
     axs[1, 1].barh(
         ["France", "Italy", "Germany", "Australia"], [1000, 2000, 3000, 2000]
