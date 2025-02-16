@@ -44,13 +44,15 @@ mt.set_theme("{theme}")
     return content
 
 
-def top_of_file(README=False):
+def top_of_file():
     content = """
 <!-- Automatically generated, do not change by hand. Use docs/script/make.py instead. -->
 
 # `morethemes`: more themes for matplotlib
 
 `morethemes` provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots. One line of code.
+
+<br>
 
 ## Themes
 
