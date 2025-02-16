@@ -3,7 +3,7 @@
 
 # `morethemes`: more themes for matplotlib
 
-`morethemes` provides themes for [matplotlib](https://matplotlib.org/){:target="\_blank"}. More themes, better plots. One line of code.
+`morethemes` provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots. One line of code.
 
 ## Themes
 
@@ -80,7 +80,7 @@
     A pure, distraction-free theme with a simple monochrome palette. Made by Joseph Barbier.
 
     
-
+    
 <br>
 
 ## Installation
@@ -88,6 +88,7 @@
 ```bash
 pip install morethemes
 ```
+    
 
 <br>
 
