@@ -46,7 +46,9 @@ mt.set_theme("{theme}")
 
 def top_of_file(is_README=False):
     if is_README:
-        link_to_doc = "[Go to the documentation site](https://josephbarbierdarnal.github.io/morethemes/)"
+        link_to_doc = (
+            "[Documentation site](https://josephbarbierdarnal.github.io/morethemes/)"
+        )
     else:
         link_to_doc = ""
     content = f"""

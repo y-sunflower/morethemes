@@ -5,7 +5,7 @@
 
 `morethemes` provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots. One line of code.
 
-[Go to the documentation site](https://josephbarbierdarnal.github.io/morethemes/)
+[Documentation site](https://josephbarbierdarnal.github.io/morethemes/)
 
 <br>
 
