@@ -136,10 +136,54 @@ wsj_theme = {
     },
 }
 
+economist_theme = {
+    "name": "economist",
+    "description": "A theme inspired by The Economist.",
+    "author": "Joseph Barbier",
+    "theme": {
+        "font.family": set_family_from_file("RobotoFlex.ttf"),
+        "ytick.minor.visible": False,
+        "xtick.minor.visible": True,
+        "xtick.major.size": 4,
+        "xtick.minor.size": 2,
+        "ytick.major.size": 0,
+        "axes.spines.top": False,
+        "axes.spines.right": False,
+        "axes.spines.left": False,
+        "ytick.major.pad": 5,
+        "xtick.major.pad": 5,
+        "axes.grid": True,
+        "grid.linewidth": 0.4,
+        "grid.linestyle": "-",
+        "axes.linewidth": 1.2,
+        "axes.grid.axis": "y",
+        "text.color": "#3d3d3d",
+        "grid.color": "#989797",
+        "axes.edgecolor": "#1f1f1f",
+        "axes.facecolor": "#e8f4f4",
+        "figure.facecolor": "#e8f4f4",
+        "axes.prop_cycle": cycler(
+            "color",
+            [
+                "#DB444B",
+                "#006BA2",
+                "#3EBCD2",
+                "#379A8B",
+                "#EBB434",
+                "#B4BA39",
+                "#9A607F",
+                "#D1B07C",
+                "#758D99",
+            ],
+        ),
+    },
+}
+
 
 ALL_THEMES = {
     "darker": darker_theme,
     "yellowish": yellowish_theme,
     "urban": urban_theme,
     "wsj": wsj_theme,
+    "economist": economist_theme,
 }

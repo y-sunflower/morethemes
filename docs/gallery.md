@@ -61,3 +61,18 @@ mt.set_theme("wsj")
 <center>![](img/wsj.png)</center>
 
 <br>
+
+### Economist
+
+A theme inspired by The Economist.
+
+```python
+import matplotlib.pyplot as plt
+import morethemes as mt
+
+mt.set_theme("economist")
+```
+
+<center>![](img/economist.png)</center>
+
+<br>
