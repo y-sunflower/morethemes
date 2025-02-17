@@ -3,7 +3,7 @@
 
 # `morethemes`: more themes for matplotlib
 
-`morethemes` provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots. One line of code.
+`morethemes` provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots, one line of code.
 
 [Documentation site](https://josephbarbierdarnal.github.io/morethemes/)
 

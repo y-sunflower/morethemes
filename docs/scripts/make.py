@@ -60,7 +60,7 @@ def top_of_file(is_README=False):
 
 # `morethemes`: more themes for matplotlib
 
-`morethemes` provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots. One line of code.
+`morethemes` provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots, one line of code.
 
 {link_to_doc}
 

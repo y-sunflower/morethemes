@@ -308,7 +308,7 @@ nature_theme = {
 monoblue_theme = {
     "name": "monoblue",
     "description": "A high-contrast theme using shades of blue to emphasize data trends and maintain a clean, professional aesthetic.",
-    "author": "Your Name",
+    "author": "Joseph Barbier",
     "theme": {
         "font.family": set_family_from_file("Roboto-Regular.ttf"),
         "axes.spines.top": False,
