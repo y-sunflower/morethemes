@@ -212,6 +212,39 @@ minimal_theme = {
     },
 }
 
+lex_theme = {
+    "name": "lex",
+    "description": "A sophisticated, no-nonsense theme with a muted palette and strong typographic clarity, echoing the Financial Times' aesthetic.",
+    "author": "Joseph Barbier",
+    "theme": {
+        "font.family": set_family_from_file("NotoSans.ttf"),
+        "ytick.minor.visible": False,
+        "xtick.minor.visible": False,
+        "xtick.major.size": 10,
+        "ytick.major.size": 0,
+        "axes.spines.top": False,
+        "axes.spines.right": False,
+        "axes.spines.left": False,
+        "axes.spines.bottom": True,
+        "ytick.major.pad": 5,
+        "xtick.major.pad": 5,
+        "axes.grid": False,
+        "lines.linewidth": 2.5,
+        "axes.linewidth": 0.8,
+        "text.color": "#ebebeb",
+        "axes.labelcolor": "#a2a2a2",
+        "axes.edgecolor": "#a2a2a2",
+        "xtick.color": "#a2a2a2",
+        "ytick.color": "#a2a2a2",
+        "axes.facecolor": "#302c34",
+        "figure.facecolor": "#302c34",
+        "axes.prop_cycle": cycler(
+            "color",
+            ["#f4245c", "#FF8811", "#9DD9D2", "#046E8F"],
+        ),
+    },
+}
+
 
 ALL_THEMES = {
     "darker": darker_theme,
@@ -220,4 +253,5 @@ ALL_THEMES = {
     "wsj": wsj_theme,
     "economist": economist_theme,
     "minimal": minimal_theme,
+    "lex": lex_theme,
 }
