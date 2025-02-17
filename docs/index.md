@@ -11,6 +11,8 @@
 
 ## Themes
 
+`morethemes` offers 10 themes at the moment:
+
 
 === "Darker"
 
@@ -84,7 +86,55 @@
     A pure, distraction-free theme with a simple monochrome palette. Made by Joseph Barbier.
 
     
+=== "Lex"
+
+    ![](img/lex.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("lex")
+    ```
+
+    A sophisticated, no-nonsense theme with a muted palette and strong typographic clarity, echoing the Financial Times' aesthetic. Made by Joseph Barbier.
+
     
+=== "Retro"
+
+    ![](img/retro.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("retro")
+    ```
+
+    A nostalgic theme inspired by vintage graphics and retro gaming. Made by Joseph Barbier.
+
+    
+=== "Nature"
+
+    ![](img/nature.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("nature")
+    ```
+
+    A calming theme inspired by natural landscapes, with earthy tones and organic shapes. Made by Joseph Barbier.
+
+    
+=== "Monoblue"
+
+    ![](img/monoblue.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("monoblue")
+    ```
+
+    A high-contrast theme using shades of blue to emphasize data trends and maintain a clean, professional aesthetic. Made by Your Name.
+
+    
+
 <br>
 
 ## Installation

@@ -11,6 +11,8 @@
 
 ## Themes
 
+`morethemes` offers 10 themes at the moment:
+
 
 ### Darker
 
@@ -72,7 +74,47 @@ mt.set_theme("minimal")
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/minimal.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
     
+### Lex
+
+```python
+import morethemes as mt
+mt.set_theme("lex")
+```
+
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/lex.png)](https://josephbarbierdarnal.github.io/morethemes/)
+
     
+### Retro
+
+```python
+import morethemes as mt
+mt.set_theme("retro")
+```
+
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/retro.png)](https://josephbarbierdarnal.github.io/morethemes/)
+
+    
+### Nature
+
+```python
+import morethemes as mt
+mt.set_theme("nature")
+```
+
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/nature.png)](https://josephbarbierdarnal.github.io/morethemes/)
+
+    
+### Monoblue
+
+```python
+import morethemes as mt
+mt.set_theme("monoblue")
+```
+
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/monoblue.png)](https://josephbarbierdarnal.github.io/morethemes/)
+
+    
+
 <br>
 
 ## Installation
