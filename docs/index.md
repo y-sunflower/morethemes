@@ -84,7 +84,19 @@
     A pure, distraction-free theme with a simple monochrome palette. Made by Joseph Barbier.
 
     
+=== "Lex"
+
+    ![](img/lex.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("lex")
+    ```
+
+    A sophisticated, no-nonsense theme with a muted palette and strong typographic clarity, echoing the Financial Times' aesthetic. Made by Joseph Barbier.
+
     
+
 <br>
 
 ## Installation

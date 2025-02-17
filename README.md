@@ -72,7 +72,17 @@ mt.set_theme("minimal")
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/minimal.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
     
+### Lex
+
+```python
+import morethemes as mt
+mt.set_theme("lex")
+```
+
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/lex.png)](https://josephbarbierdarnal.github.io/morethemes/)
+
     
+
 <br>
 
 ## Installation

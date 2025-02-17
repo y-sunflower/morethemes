@@ -3,6 +3,10 @@ import morethemes as mt
 
 plt.rcParams["savefig.dpi"] = 250
 
+for theme in mt.ALL_THEMES:
+    mt.preview_theme(theme)
+    plt.savefig(f"docs/img/{theme}.png", bbox_inches="tight")
+
 
 def tab_code_image(theme: str):
     if theme == "wsj":
@@ -26,7 +30,7 @@ def tab_code_image(theme: str):
 
 
 def image_readme(theme: str):
-    if theme == "wsj":
+    if theme in ["wsj"]:
         theme_name = theme.upper()
     else:
         theme_name = theme.title()
@@ -70,7 +74,7 @@ def top_of_file(is_README=False):
 
 def install_snippet():
     content = """
-    
+
 <br>
 
 ## Installation
