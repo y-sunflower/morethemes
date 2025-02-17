@@ -131,7 +131,7 @@
     mt.set_theme("monoblue")
     ```
 
-    A high-contrast theme using shades of blue to emphasize data trends and maintain a clean, professional aesthetic. Made by Your Name.
+    A high-contrast theme using shades of blue to emphasize data trends and maintain a clean, professional aesthetic. Made by Joseph Barbier.
 
     
 
