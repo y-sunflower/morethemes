@@ -11,6 +11,8 @@
 
 ## Themes
 
+`morethemes` offers 10 themes at the moment:
+
 
 === "Darker"
 
@@ -117,7 +119,19 @@
     mt.set_theme("nature")
     ```
 
-    A calming theme inspired by natural landscapes, with earthy tones and organic shapes. Made by Your Name.
+    A calming theme inspired by natural landscapes, with earthy tones and organic shapes. Made by Joseph Barbier.
+
+    
+=== "Monoblue"
+
+    ![](img/monoblue.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("monoblue")
+    ```
+
+    A high-contrast theme using shades of blue to emphasize data trends and maintain a clean, professional aesthetic. Made by Your Name.
 
     
 

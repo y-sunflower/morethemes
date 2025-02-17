@@ -305,6 +305,35 @@ nature_theme = {
     },
 }
 
+monoblue_theme = {
+    "name": "monoblue",
+    "description": "A high-contrast theme using shades of blue to emphasize data trends and maintain a clean, professional aesthetic.",
+    "author": "Your Name",
+    "theme": {
+        "font.family": set_family_from_file("Roboto-Regular.ttf"),
+        "axes.spines.top": False,
+        "axes.spines.right": False,
+        "xtick.minor.visible": False,
+        "xtick.major.size": 5,
+        "ytick.major.size": 5,
+        "ytick.minor.visible": False,
+        "scatter.marker": "o",
+        "lines.linewidth": 2.0,
+        "axes.labelsize": 12,
+        "axes.linewidth": 1.0,
+        "text.color": "#002060",
+        "axes.facecolor": "#EBF5FF",
+        "figure.facecolor": "#EBF5FF",
+        "axes.labelcolor": "#002060",
+        "axes.edgecolor": "#002060",
+        "xtick.color": "#002060",
+        "ytick.color": "#002060",
+        "axes.prop_cycle": cycler(
+            "color", ["#002060", "#4682B4", "#ADD8E6", "#B0C4DE", "#778899"]
+        ),
+    },
+}
+
 
 ALL_THEMES = {
     "darker": darker_theme,
@@ -316,4 +345,5 @@ ALL_THEMES = {
     "lex": lex_theme,
     "retro": retro_theme,
     "nature": nature_theme,
+    "monoblue": monoblue_theme,
 }

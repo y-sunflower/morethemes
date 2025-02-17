@@ -11,6 +11,8 @@
 
 ## Themes
 
+`morethemes` offers 10 themes at the moment:
+
 
 ### Darker
 
@@ -100,6 +102,16 @@ mt.set_theme("nature")
 ```
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/nature.png)](https://josephbarbierdarnal.github.io/morethemes/)
+
+    
+### Monoblue
+
+```python
+import morethemes as mt
+mt.set_theme("monoblue")
+```
+
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/monoblue.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
     
 

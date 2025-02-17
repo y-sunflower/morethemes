@@ -68,6 +68,8 @@ def top_of_file(is_README=False):
 
 ## Themes
 
+`morethemes` offers {len(mt.ALL_THEMES)} themes at the moment:
+
 """
     return content
 
