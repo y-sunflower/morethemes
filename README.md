@@ -7,13 +7,22 @@
 
 [Documentation site](https://josephbarbierdarnal.github.io/morethemes/)
 
+
+
+<br>
+
+## Installation
+
+```bash
+pip install morethemes
+```
+    
 <br>
 
 ## Themes
 
 `morethemes` offers 10 themes at the moment:
-
-
+    
 ### Darker
 
 ```python
@@ -113,15 +122,6 @@ mt.set_theme("monoblue")
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/monoblue.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
-    
-
-<br>
-
-## Installation
-
-```bash
-pip install morethemes
-```
     
 
 <br>

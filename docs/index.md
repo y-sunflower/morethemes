@@ -7,13 +7,13 @@
 
 
 
+
 <br>
 
 ## Themes
 
 `morethemes` offers 10 themes at the moment:
-
-
+    
 === "Darker"
 
     ![](img/darker.png)

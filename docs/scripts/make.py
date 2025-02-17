@@ -64,13 +64,18 @@ def top_of_file(is_README=False):
 
 {link_to_doc}
 
+"""
+    return content
+
+
+def theme_before():
+    content = f"""
 <br>
 
 ## Themes
 
 `morethemes` offers {len(mt.ALL_THEMES)} themes at the moment:
-
-"""
+    """
     return content
 
 
@@ -126,6 +131,7 @@ This project is sponsored by [Matplotlib Journey](https://www.matplotlib-journey
 
 if __name__ == "__main__":
     index_content = top_of_file()
+    index_content += theme_before()
     for theme in mt.ALL_THEMES:
         code_snippet = tab_code_image(theme)
         index_content += code_snippet
@@ -136,10 +142,11 @@ if __name__ == "__main__":
         f.write(index_content)
 
     readme_content = top_of_file(is_README=True)
+    readme_content += install_snippet()
+    readme_content += theme_before()
     for theme in mt.ALL_THEMES:
         code_snippet = image_readme(theme)
         readme_content += code_snippet
-    readme_content += install_snippet()
     readme_content += end_of_readme()
 
     with open("README.md", "w", encoding="utf-8") as f:
