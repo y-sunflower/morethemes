@@ -245,6 +245,66 @@ lex_theme = {
     },
 }
 
+retro_theme = {
+    "name": "retro",
+    "description": "A nostalgic theme inspired by vintage graphics and retro gaming.",
+    "author": "Joseph Barbier",
+    "theme": {
+        "font.family": set_family_from_file("VT323.ttf"),
+        "axes.spines.top": False,
+        "axes.spines.right": False,
+        "xtick.minor.visible": False,
+        "ytick.minor.visible": False,
+        "xtick.major.size": 5,
+        "ytick.major.size": 5,
+        "axes.grid": True,
+        "grid.linewidth": 1.0,
+        "grid.linestyle": ":",
+        "grid.color": "#cccccc",
+        "axes.linewidth": 1.5,
+        "axes.facecolor": "#000033",
+        "figure.facecolor": "#000033",
+        "text.color": "#ffffff",
+        "axes.labelcolor": "#ffffff",
+        "axes.edgecolor": "#ffffff",
+        "xtick.color": "#ffffff",
+        "ytick.color": "#ffffff",
+        "axes.prop_cycle": cycler(
+            "color",
+            ["#FF69B4", "#00FF00", "#00FFFF", "#FFD700", "#FF4500"],  # Neon colors
+        ),
+    },
+}
+
+nature_theme = {
+    "name": "nature",
+    "description": "A calming theme inspired by natural landscapes, with earthy tones and organic shapes.",
+    "author": "Joseph Barbier",
+    "theme": {
+        "font.family": set_family_from_file("Quicksand.ttf"),
+        "axes.spines.top": False,
+        "axes.spines.right": False,
+        "xtick.minor.visible": False,
+        "ytick.minor.visible": False,
+        "xtick.major.size": 4,
+        "ytick.major.size": 4,
+        "axes.grid": True,
+        "grid.linewidth": 0.5,
+        "grid.linestyle": "--",
+        "grid.alpha": 0.2,
+        "grid.color": "#656565",
+        "axes.edgecolor": "#A9A9A9",
+        "axes.facecolor": "#F5F5DC",
+        "figure.facecolor": "#F5F5DC",
+        "axes.prop_cycle": cycler(
+            "color", ["#6B8E23", "#3D9970", "#8B4513", "#87CEEB", "#FFD700", "#FFA500"]
+        ),
+        "text.color": "#3D9970",
+        "axes.labelcolor": "#3D9970",
+        "axes.titlecolor": "#3D9970",
+    },
+}
+
 
 ALL_THEMES = {
     "darker": darker_theme,
@@ -254,4 +314,6 @@ ALL_THEMES = {
     "economist": economist_theme,
     "minimal": minimal_theme,
     "lex": lex_theme,
+    "retro": retro_theme,
+    "nature": nature_theme,
 }

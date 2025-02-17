@@ -82,6 +82,26 @@ mt.set_theme("lex")
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/lex.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
     
+### Retro
+
+```python
+import morethemes as mt
+mt.set_theme("retro")
+```
+
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/retro.png)](https://josephbarbierdarnal.github.io/morethemes/)
+
+    
+### Nature
+
+```python
+import morethemes as mt
+mt.set_theme("nature")
+```
+
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/nature.png)](https://josephbarbierdarnal.github.io/morethemes/)
+
+    
 
 <br>
 

@@ -96,6 +96,30 @@
     A sophisticated, no-nonsense theme with a muted palette and strong typographic clarity, echoing the Financial Times' aesthetic. Made by Joseph Barbier.
 
     
+=== "Retro"
+
+    ![](img/retro.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("retro")
+    ```
+
+    A nostalgic theme inspired by vintage graphics and retro gaming. Made by Joseph Barbier.
+
+    
+=== "Nature"
+
+    ![](img/nature.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("nature")
+    ```
+
+    A calming theme inspired by natural landscapes, with earthy tones and organic shapes. Made by Your Name.
+
+    
 
 <br>
 
