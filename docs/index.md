@@ -142,6 +142,9 @@
 ```bash
 pip install morethemes
 ```
+
+Don't want to add `morethemes` as a dependency? You can use the `mt.get_rcparams(...)` function to retrieve the rcParams for a given theme. Use it once to obtain the rcParams, then apply them using `plt.rcParams.update(mt.get_rcparams("theme_name"))`. You can also browse the [source code](https://github.com/JosephBARBIERDARNAL/morethemes/blob/main/morethemes/themes.py) to access the rcParams directly.
+
     
 
 <br>
