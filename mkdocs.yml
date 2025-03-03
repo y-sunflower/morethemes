@@ -13,7 +13,7 @@ nav:
   - Home: index.md
   - Contributing: contributing.md
   - Guide:
-      - guide/quick-start.md
+      - guide/reference.md
       - guide/custom-a-theme.md
       - guide/create-your-theme.md
 

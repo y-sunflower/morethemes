@@ -1,10 +1,13 @@
+
 <!-- Automatically generated, do not change by hand. Use docs/script/make.py instead. -->
 
-# **`morethemes`**: more themes for matplotlib
+# `morethemes`: more themes for matplotlib
 
 **`morethemes`** provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots, one line of code.
 
 [Documentation site](https://josephbarbierdarnal.github.io/morethemes/)
+
+
 
 <br>
 
@@ -14,14 +17,15 @@
 pip install morethemes
 ```
 
-Don't want to add **`morethemes`** as a dependency? You can use the `mt.get_rcparams(...)` function to retrieve the rcParams for a given theme. Use it once to obtain the rcParams, then apply them using `plt.rcParams.update(mt.get_rcparams("theme_name"))`. You can also browse the [source code](https://github.com/JosephBARBIERDARNAL/morethemes/blob/main/morethemes/themes.py) to access the rcParams directly.
+Don't want to add **`morethemes`** as a dependency? You can either browse the [source code](https://github.com/JosephBARBIERDARNAL/morethemes/blob/main/morethemes/themes.py) to find the rcParams, or use the [`mt.get_rcparams("theme_name")`](./guide/reference/#mtget_rcparams) function.
 
+    
 <br>
 
 ## Themes
 
 **`morethemes`** offers 10 themes at the moment:
-
+    
 ### WSJ
 
 ```python
@@ -31,6 +35,7 @@ mt.set_theme("wsj")
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/wsj.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
+    
 ### Urban
 
 ```python
@@ -40,6 +45,7 @@ mt.set_theme("urban")
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/urban.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
+    
 ### Minimal
 
 ```python
@@ -49,6 +55,7 @@ mt.set_theme("minimal")
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/minimal.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
+    
 ### FT
 
 ```python
@@ -58,6 +65,7 @@ mt.set_theme("ft")
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/ft.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
+    
 ### Nature
 
 ```python
@@ -67,6 +75,7 @@ mt.set_theme("nature")
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/nature.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
+    
 ### Economist
 
 ```python
@@ -76,6 +85,7 @@ mt.set_theme("economist")
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/economist.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
+    
 ### Retro
 
 ```python
@@ -85,6 +95,7 @@ mt.set_theme("retro")
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/retro.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
+    
 ### Yellowish
 
 ```python
@@ -94,6 +105,7 @@ mt.set_theme("yellowish")
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/yellowish.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
+    
 ### Darker
 
 ```python
@@ -103,6 +115,7 @@ mt.set_theme("darker")
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/darker.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
+    
 ### Monoblue
 
 ```python
@@ -111,6 +124,8 @@ mt.set_theme("monoblue")
 ```
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/monoblue.png)](https://josephbarbierdarnal.github.io/morethemes/)
+
+    
 
 <br>
 
@@ -125,3 +140,4 @@ This project is sponsored by [Matplotlib Journey](https://www.matplotlib-journey
 </center>
 
 <br>
+    

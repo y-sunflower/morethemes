@@ -10,16 +10,16 @@ pip install morethemes
 
 <br>
 
-## Usage
+## Functions
 
 ### `mt.set_theme()`
 
-`mt.set_theme()` is the main function you'll need. It basically has 2 arguments:
+`mt.set_theme()` is the **main function** you'll need. It basically has 2 arguments:
 
-- `theme_name`: the name of the theme you want to apply. It must be one of the available themes: "wsj", "urban", "minimal", "ft", "nature", "economist", "retro", "yellowish", "darker", "monoblue".
-- `reset_to_default`: whether to reset to default matplotlib theme before applying the theme. If not, themes can stack on top of each other.
+- `theme_name`: the name of the theme you want to apply. It must be one of the available themes: _"wsj"_, _"urban"_, _"minimal"_, _"ft"_, _"nature"_, _"economist"_, _"retro"_, _"yellowish"_, _"darker"_, _"monoblue"_.
+- `reset_to_default`: whether to reset to default matplotlib theme before applying the theme. If not, themes can stack on top of each other. Default is `True` (and recommended).
 
-Once the function is called, it will apply the theme to the global matplotlib configuration. You can reset to default theme by calling `mt.set_theme("default")`
+Once the function is called, it will apply the theme to the **global matplotlib configuration**. You can reset to default theme by calling `mt.set_theme("default")`
 
 ```python
 import morethemes as mt

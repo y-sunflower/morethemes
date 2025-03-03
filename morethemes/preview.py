@@ -1,9 +1,10 @@
 import matplotlib.pyplot as plt
+import matplotlib as mpl
 import morethemes as mt
 import numpy as np
 
 
-def preview_theme(theme=None):
+def preview_theme(theme=None) -> mpl.figure.Figure:
     if theme is not None:
         mt.set_theme(theme)
     np.random.seed(0)
