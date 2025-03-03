@@ -4,7 +4,7 @@ This document explains everything you need to know to create a theme in matplotl
 
 ## rcParams
 
-In matplotlib, themes are made via something called `rcParams`. It's similar to a global parameter configuration. Once applied, it will be set for all charts.
+In matplotlib, themes are made via something called `rcParams`. It's similar to a global parameter configuration: once applied, it will be set for all charts.
 
 Let's see how this works. First we import pyplot from matplotlib.
 
@@ -12,17 +12,47 @@ Let's see how this works. First we import pyplot from matplotlib.
 import matplotlib.pyplot as plt
 ```
 
-For example, I can change the default line widths from matplotlib lines from 1 to 2.
+For example, I can change the default line widths from matplotlib lines from 1 to 5.
+
+By default it's 1, and it looks like this:
 
 ```python
-plt.rcParams["lines.linewidth"] = 2
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots()
+ax.plot([1, 2, 3])
+plt.show()
 ```
 
-I can also change the default text color from black to white.
+![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/default-line.png)
 
-```python
-plt.rcParams["text.color"] = "white"
+We can then set the default line width to 5.
+
+```python hl_lines="3"
+import matplotlib.pyplot as plt
+
+plt.rcParams["lines.linewidth"] = 5
+
+fig, ax = plt.subplots()
+ax.plot([1, 2, 3])
+plt.show()
 ```
+
+![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/default-line-updated.png)
+
+I can also change the default text color from `"black"` to `"red"`.
+
+```python hl_lines="3"
+import matplotlib.pyplot as plt
+
+plt.rcParams["text.color"] = "red"
+
+fig, ax = plt.subplots()
+ax.text(x=0.3, y=0.5, s="Hello world", size=20)
+plt.show()
+```
+
+![default_line_width](../img/text-color.png)
 
 There are more than **300 other parameters** like this that we can change. Yes it's a lot, but don't worry. We only need just a few of themes to make great themes.
 
@@ -144,12 +174,12 @@ plt.rcParams['font.family'] = mt.fonts.set_family_from_file("font-name.ttf")
 
 ### Others
 
-As there are many other things to customise here, take a look at what other themes are doing in `morethemes/themes.py`.
+As there are many other things to customise here, **take a look at what other themes are doing** in [`morethemes/themes.py`](https://github.com/JosephBARBIERDARNAL/morethemes/blob/main/morethemes/themes.py).
 
 <br>
 
 ## Add your theme to **`morethemes`**
 
-Once your theme is nice, you can follow the [contributing guide](../contributing) to help you implement this new theme.
+Once your theme is nice, you can follow the [contributing guide](../../contributing) to help you implement this new theme.
 
 <br><br>
