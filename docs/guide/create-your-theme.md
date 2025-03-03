@@ -1,4 +1,4 @@
-This document explains everything you need to know to create a theme in matplotlib, and optionally how to add it to `morethemes`.
+This document explains everything you need to know to create a theme in matplotlib, and optionally how to add it to **`morethemes`**.
 
 <br>
 
@@ -28,9 +28,9 @@ There are more than **300 other parameters** like this that we can change. Yes i
 
 <br>
 
-## How `morethemes` work
+## How **`morethemes`** work
 
-Under the hood, themes from `morethemes` are applied by calling `plt.rcParams` many times.
+Under the hood, themes from **`morethemes`** are applied by calling `plt.rcParams` many times.
 
 For example, when I set the theme to `darker`, it will call all parameters of this theme and pass them to `plt.rcParams`:
 
@@ -43,7 +43,7 @@ mt.set_theme("darker")
 
 ## Create a theme
 
-Before adding your theme to `morethemes`, it's important that you first make your theme and ensure you like it.
+Before adding your theme to **`morethemes`**, it's important that you first make your theme and ensure you like it.
 
 For this, you'll need to do some trials and errors until you're satisfied. An example of a theme could be something like:
 
@@ -148,7 +148,7 @@ As there are many other things to customise here, take a look at what other them
 
 <br>
 
-## Add your theme to `morethemes`
+## Add your theme to **`morethemes`**
 
 Once your theme is nice, you can follow the [contributing guide](../contributing) to help you implement this new theme.
 

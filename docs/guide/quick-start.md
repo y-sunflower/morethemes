@@ -1,4 +1,4 @@
-This document explains everything you need to get started using `morethemes`.
+This document explains everything you need to get started using **`morethemes`**.
 
 <br>
 
@@ -49,7 +49,7 @@ wsj_rcparams = mt.get_rcparams("wsj")
 plt.rcParams.update(wsj_rcparams)
 ```
 
-Another usage of this function is to avoid adding `morethemes` in your dependencies. Just copy the output of `mt.get_rcparams()` and paste it in your code.
+Another usage of this function is to avoid adding **`morethemes`** in your dependencies. Just copy the output of `mt.get_rcparams()` and paste it in your code.
 
 <br>
 

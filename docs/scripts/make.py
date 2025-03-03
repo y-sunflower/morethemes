@@ -60,7 +60,7 @@ def top_of_file(is_README=False):
 
 # `morethemes`: more themes for matplotlib
 
-`morethemes` provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots, one line of code.
+**`morethemes`** provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots, one line of code.
 
 {link_to_doc}
 
@@ -74,7 +74,7 @@ def theme_before():
 
 ## Themes
 
-`morethemes` offers {len(mt.ALL_THEMES)} themes at the moment:
+**`morethemes`** offers {len(mt.ALL_THEMES)} themes at the moment:
     """
     return content
 
@@ -90,7 +90,7 @@ def install_snippet():
 pip install morethemes
 ```
 
-Don't want to add `morethemes` as a dependency? You can use the `mt.get_rcparams(...)` function to retrieve the rcParams for a given theme. Use it once to obtain the rcParams, then apply them using `plt.rcParams.update(mt.get_rcparams("theme_name"))`. You can also browse the [source code](https://github.com/JosephBARBIERDARNAL/morethemes/blob/main/morethemes/themes.py) to access the rcParams directly.
+Don't want to add **`morethemes`** as a dependency? You can use the `mt.get_rcparams(...)` function to retrieve the rcParams for a given theme. Use it once to obtain the rcParams, then apply them using `plt.rcParams.update(mt.get_rcparams("theme_name"))`. You can also browse the [source code](https://github.com/JosephBARBIERDARNAL/morethemes/blob/main/morethemes/themes.py) to access the rcParams directly.
 
     """
     return content
