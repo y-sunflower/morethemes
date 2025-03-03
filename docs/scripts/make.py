@@ -161,3 +161,19 @@ if __name__ == "__main__":
     plt.rcParams["axes.facecolor"] = "skyblue"
     fig = mt.preview_theme()
     fig.savefig("docs/img/yellowish-updated.png", dpi=200)
+    mt.set_theme("default")
+
+    # edge cases n°2
+    fig, ax = plt.subplots()
+    ax.plot([1, 2, 3])
+    fig.savefig("docs/img/default-line.png", dpi=150)
+    plt.rcParams["lines.linewidth"] = 5
+    fig, ax = plt.subplots()
+    ax.plot([1, 2, 3])
+    fig.savefig("docs/img/default-line-updated.png", dpi=150)
+
+    # edge cases n°3
+    plt.rcParams["text.color"] = "red"
+    fig, ax = plt.subplots()
+    ax.text(x=0.3, y=0.5, s="Hello world", size=20)
+    fig.savefig("docs/img/text-color.png", dpi=150)
