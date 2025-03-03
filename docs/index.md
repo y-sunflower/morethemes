@@ -1,48 +1,19 @@
+
 <!-- Automatically generated, do not change by hand. Use docs/script/make.py instead. -->
 
 # `morethemes`: more themes for matplotlib
 
 `morethemes` provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots, one line of code.
 
+
+
+
 <br>
 
 ## Themes
 
 `morethemes` offers 10 themes at the moment:
-
-=== "Darker"
-
-    ![](img/darker.png)
-
-    ```python
-    import morethemes as mt
-    mt.set_theme("darker")
-    ```
-
-    A sleek, no-frills dark theme with high contrast and a modern feel Made by Joseph Barbier.
-
-=== "Yellowish"
-
-    ![](img/yellowish.png)
-
-    ```python
-    import morethemes as mt
-    mt.set_theme("yellowish")
-    ```
-
-    A bold, National Geographic-inspired theme with a warm yellow backdrop Made by Joseph Barbier.
-
-=== "Urban"
-
-    ![](img/urban.png)
-
-    ```python
-    import morethemes as mt
-    mt.set_theme("urban")
-    ```
-
-    A clean, professional theme featuring the Urbanist font and muted tones. Made by Joseph Barbier.
-
+    
 === "WSJ"
 
     ![](img/wsj.png)
@@ -54,17 +25,19 @@
 
     A refined, newspaper-style theme inspired by the Wall Street Journal. Made by Joseph Barbier.
 
-=== "Economist"
+    
+=== "Urban"
 
-    ![](img/economist.png)
+    ![](img/urban.png)
 
     ```python
     import morethemes as mt
-    mt.set_theme("economist")
+    mt.set_theme("urban")
     ```
 
-    A crisp, data-focused theme with subtle gridlines and sharp contrasts. Made by Joseph Barbier.
+    A clean, professional theme featuring the Urbanist font and muted tones. Made by Joseph Barbier.
 
+    
 === "Minimal"
 
     ![](img/minimal.png)
@@ -76,7 +49,8 @@
 
     A pure, distraction-free theme with a simple monochrome palette. Made by Joseph Barbier.
 
-=== "ft"
+    
+=== "FT"
 
     ![](img/ft.png)
 
@@ -87,17 +61,7 @@
 
     A sophisticated, no-nonsense theme with a muted palette and strong typographic clarity, echoing the Financial Times' aesthetic. Made by Joseph Barbier.
 
-=== "Retro"
-
-    ![](img/retro.png)
-
-    ```python
-    import morethemes as mt
-    mt.set_theme("retro")
-    ```
-
-    A nostalgic theme inspired by vintage graphics and retro gaming. Made by Joseph Barbier.
-
+    
 === "Nature"
 
     ![](img/nature.png)
@@ -109,6 +73,55 @@
 
     A calming theme inspired by natural landscapes, with earthy tones and organic shapes. Made by Joseph Barbier.
 
+    
+=== "Economist"
+
+    ![](img/economist.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("economist")
+    ```
+
+    A crisp, data-focused theme with subtle gridlines and sharp contrasts. Made by Joseph Barbier.
+
+    
+=== "Retro"
+
+    ![](img/retro.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("retro")
+    ```
+
+    A nostalgic theme inspired by vintage graphics and retro gaming. Made by Joseph Barbier.
+
+    
+=== "Yellowish"
+
+    ![](img/yellowish.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("yellowish")
+    ```
+
+    A bold, National Geographic-inspired theme with a warm yellow backdrop Made by Joseph Barbier.
+
+    
+=== "Darker"
+
+    ![](img/darker.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("darker")
+    ```
+
+    A sleek, no-frills dark theme with high contrast and a modern feel Made by Joseph Barbier.
+
+    
 === "Monoblue"
 
     ![](img/monoblue.png)
@@ -120,6 +133,8 @@
 
     A high-contrast theme using shades of blue to emphasize data trends and maintain a clean, professional aesthetic. Made by Joseph Barbier.
 
+    
+
 <br>
 
 ## Installation
@@ -130,6 +145,8 @@ pip install morethemes
 
 Don't want to add `morethemes` as a dependency? You can use the `mt.get_rcparams(...)` function to retrieve the rcParams for a given theme. Use it once to obtain the rcParams, then apply them using `plt.rcParams.update(mt.get_rcparams("theme_name"))`. You can also browse the [source code](https://github.com/JosephBARBIERDARNAL/morethemes/blob/main/morethemes/themes.py) to access the rcParams directly.
 
+    
+
 <br>
 
 ## Learn matplotlib
@@ -139,3 +156,4 @@ This project is sponsored by [Matplotlib Journey](https://www.matplotlib-journey
 <center>[Join the course :fontawesome-solid-paper-plane:](https://www.matplotlib-journey.com/){ .md-button .md-button--primary  }</center>
 
 <br>
+    

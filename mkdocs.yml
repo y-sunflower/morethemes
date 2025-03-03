@@ -11,9 +11,11 @@ theme:
 
 nav:
   - Home: index.md
-  # - Gallery: gallery.md
-  - Create a theme: create-a-theme.md
   - Contributing: contributing.md
+  - Guide:
+      - guide/quick-start.md
+      - guide/custom-a-theme.md
+      - guide/create-your-theme.md
 
 markdown_extensions:
   - pymdownx.tabbed:

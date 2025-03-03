@@ -9,7 +9,7 @@ for theme in mt.ALL_THEMES:
 
 
 def tab_code_image(theme: str):
-    if theme == "wsj":
+    if theme in ["wsj", "ft"]:
         theme_name = theme.upper()
     else:
         theme_name = theme.title()
@@ -30,7 +30,7 @@ def tab_code_image(theme: str):
 
 
 def image_readme(theme: str):
-    if theme in ["wsj"]:
+    if theme in ["wsj", "ft"]:
         theme_name = theme.upper()
     else:
         theme_name = theme.title()
@@ -154,3 +154,10 @@ if __name__ == "__main__":
 
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(readme_content)
+
+    # edge cases n°1
+    mt.set_theme("yellowish")
+    plt.rcParams["figure.facecolor"] = "skyblue"
+    plt.rcParams["axes.facecolor"] = "skyblue"
+    fig = mt.preview_theme()
+    fig.savefig("docs/img/yellowish-updated.png", dpi=200)

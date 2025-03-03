@@ -10,24 +10,30 @@ def preview_theme(theme=None):
 
     fig, axs = plt.subplots(ncols=2, nrows=2, figsize=(8, 6), dpi=200)
     fig.subplots_adjust(
-        wspace=0.2, hspace=0.35, top=0.84, bottom=0.12, left=0.1, right=0.9
+        wspace=0.25, hspace=0.35, top=0.84, bottom=0.08, left=0.07, right=0.93
     )
 
     axs[0, 0].scatter(np.random.normal(size=100), np.random.normal(size=100), s=70)
-    axs[0, 0].text(x=0, y=1.05, s="A cool scatter", transform=axs[0, 0].transAxes)
+    axs[0, 0].text(
+        x=0, y=1.05, s="A cool scatter", transform=axs[0, 0].transAxes, size=12
+    )
 
     for i in range(3):
         np.random.seed(i)
         axs[0, 1].plot(list(range(20)), np.random.normal(size=20), label=f"{i} line")
     axs[0, 1].legend(loc="upper right", bbox_to_anchor=(1.1, 1.2))
-    axs[0, 1].text(x=0, y=1.05, s="Multiple lines", transform=axs[0, 1].transAxes)
+    axs[0, 1].text(
+        x=0, y=1.05, s="Multiple lines", transform=axs[0, 1].transAxes, size=12
+    )
 
     labels = ["France", "Italy", "Germany", "Australia"]
     values = [900, 1800, 3300, 2400]
     axs[1, 1].barh(labels, values)
     for i in range(4):
         axs[1, 1].text(x=values[i] - 100, y=i, s=values[i], ha="right", va="center")
-    axs[1, 1].text(x=0, y=1.05, s="Horizontal Barplot", transform=axs[1, 1].transAxes)
+    axs[1, 1].text(
+        x=0, y=1.05, s="Horizontal barplot", transform=axs[1, 1].transAxes, size=12
+    )
 
     axs[1, 0].pie(
         [20, 40, 20, 20],
@@ -35,7 +41,9 @@ def preview_theme(theme=None):
         explode=[0.08] * 4,
     )
     axs[1, 0].pie([1], colors=[fig.get_facecolor()], radius=0.5)
-    axs[1, 0].text(x=0, y=1.05, s="(Apple) Pie chart", transform=axs[1, 0].transAxes)
+    axs[1, 0].text(
+        x=0, y=1.05, s="(Apple) Pie chart", transform=axs[1, 0].transAxes, size=12
+    )
 
     fig.text(x=0.5, y=0.93, s=f"Preview of theme: {theme}", size=20, ha="center")
 

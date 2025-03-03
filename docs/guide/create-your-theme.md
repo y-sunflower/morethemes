@@ -8,19 +8,19 @@ In matplotlib, themes are made via something called `rcParams`. It's similar to 
 
 Let's see how this works. First we import pyplot from matplotlib.
 
-```py
+```python
 import matplotlib.pyplot as plt
 ```
 
 For example, I can change the default line widths from matplotlib lines from 1 to 2.
 
-```py
+```python
 plt.rcParams["lines.linewidth"] = 2
 ```
 
 I can also change the default text color from black to white.
 
-```py
+```python
 plt.rcParams["text.color"] = "white"
 ```
 
@@ -34,7 +34,7 @@ Under the hood, themes from `morethemes` are applied by calling `plt.rcParams` m
 
 For example, when I set the theme to `darker`, it will call all parameters of this theme and pass them to `plt.rcParams`:
 
-```py
+```python
 import morethemes as mt
 mt.set_theme("darker")
 ```
@@ -47,7 +47,7 @@ Before adding your theme to `morethemes`, it's important that you first make you
 
 For this, you'll need to do some trials and errors until you're satisfied. An example of a theme could be something like:
 
-```py
+```python
 import matplotlib.pyplot as plt
 
 # Example of a theme. Change it with your own rcParams.
@@ -65,7 +65,7 @@ But how do you visualize what it looks like in practice? You need to preview it 
 
 In my opinion, the easiest way to preview a theme is to use the `mt.preview_theme()` function. It will make many different charts and you'll easily be able to view how your theme currently looks like.
 
-```py
+```python
 import matplotlib.pyplot as plt
 import morethemes as mt
 
@@ -86,7 +86,7 @@ We said before that there was more than 300 parameters to custom. Here are a few
 
 To get all possible parameters and their default values, run:
 
-```py
+```python
 import matplotlib.pyplot as plt
 plt.rcParams.keys()
 ```
@@ -95,7 +95,7 @@ plt.rcParams.keys()
 
 Colors is the main thing that changes in a theme. Here you'll find every param name that you might need:
 
-```py
+```python
 plt.rcParams["axes.facecolor"] = "black"     # Axes color
 plt.rcParams["figure.facecolor"] = "black"   # Figure color
 plt.rcParams["axes.labelcolor"] = "grey"     # Label color
@@ -109,7 +109,7 @@ By default, matplotlib charts will be <span style="color: #1f77b4;">**blue**</sp
 
 This is called a `prop_cycle`. Changing this parameter will also to change default colors in chart elements such as lines or bars. For this we need to import `cycler` (already installed with matplotlib), and use the following syntax:
 
-```py
+```python
 from cycler import cycler
 plt.rcParams["axes.prop_cycle"] = cycler(
    "color", ["#FED789", "#A4BED5", "#72874E", "#023743", "#476F84", "#453947"]
@@ -120,7 +120,7 @@ plt.rcParams["axes.prop_cycle"] = cycler(
 
 You can control the appearance of spines around matplotlib Axes with the following parameters:
 
-```py
+```python
 plt.rcParams["axes.spines.top"] = False       # Remove top spine
 plt.rcParams["axes.spines.bottom"] = False    # Remove bottom spine
 plt.rcParams["axes.spines.right"] = False     # Remove right spine
@@ -136,7 +136,7 @@ It is highly recommended to use a specific font for a theme, as it plays a major
 - add the desired font file to `morethemes/fonts/font-name.ttf`.
 - use this code to set the font:
 
-```py
+```python
 plt.rcParams['font.family'] = mt.fonts.set_family_from_file("font-name.ttf")
 ```
 
