@@ -12,7 +12,9 @@ def set_theme(theme_name: str, reset_to_default: bool = True) -> None:
     Parameters
     ----------
     theme_name : str
-        Name of the theme to apply (case insensitive).
+        Name of the theme to apply (case insensitive). It must be one of the available
+        themes: "wsj", "urban", "minimal", "ft", "nature", "economist", "retro",
+        "yellowish", "darker", "monoblue".
     reset_to_default : bool
         Whether to first reset to default matplotlib theme before applying the theme.
         If not, themes can stack on top of each other.

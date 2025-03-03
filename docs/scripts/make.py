@@ -4,12 +4,12 @@ import morethemes as mt
 plt.rcParams["savefig.dpi"] = 250
 
 for theme in mt.ALL_THEMES:
-    mt.preview_theme(theme)
-    plt.savefig(f"docs/img/{theme}.png", bbox_inches="tight")
+    fig = mt.preview_theme(theme)
+    fig.savefig(f"docs/img/{theme}.png", dpi=200)
 
 
 def tab_code_image(theme: str):
-    if theme == "wsj":
+    if theme in ["wsj", "ft"]:
         theme_name = theme.upper()
     else:
         theme_name = theme.title()
@@ -30,7 +30,7 @@ def tab_code_image(theme: str):
 
 
 def image_readme(theme: str):
-    if theme in ["wsj"]:
+    if theme in ["wsj", "ft"]:
         theme_name = theme.upper()
     else:
         theme_name = theme.title()
@@ -60,7 +60,7 @@ def top_of_file(is_README=False):
 
 # `morethemes`: more themes for matplotlib
 
-`morethemes` provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots, one line of code.
+**`morethemes`** provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots, one line of code.
 
 {link_to_doc}
 
@@ -74,7 +74,7 @@ def theme_before():
 
 ## Themes
 
-`morethemes` offers {len(mt.ALL_THEMES)} themes at the moment:
+**`morethemes`** offers {len(mt.ALL_THEMES)} themes at the moment:
     """
     return content
 
@@ -90,7 +90,7 @@ def install_snippet():
 pip install morethemes
 ```
 
-Don't want to add `morethemes` as a dependency? You can use the `mt.get_rcparams(...)` function to retrieve the rcParams for a given theme. Use it once to obtain the rcParams, then apply them using `plt.rcParams.update(mt.get_rcparams("theme_name"))`. You can also browse the [source code](https://github.com/JosephBARBIERDARNAL/morethemes/blob/main/morethemes/themes.py) to access the rcParams directly.
+Don't want to add **`morethemes`** as a dependency? You can use the `mt.get_rcparams(...)` function to retrieve the rcParams for a given theme. Use it once to obtain the rcParams, then apply them using `plt.rcParams.update(mt.get_rcparams("theme_name"))`. You can also browse the [source code](https://github.com/JosephBARBIERDARNAL/morethemes/blob/main/morethemes/themes.py) to access the rcParams directly.
 
     """
     return content
@@ -154,3 +154,10 @@ if __name__ == "__main__":
 
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(readme_content)
+
+    # edge cases n°1
+    mt.set_theme("yellowish")
+    plt.rcParams["figure.facecolor"] = "skyblue"
+    plt.rcParams["axes.facecolor"] = "skyblue"
+    fig = mt.preview_theme()
+    fig.savefig("docs/img/yellowish-updated.png", dpi=200)

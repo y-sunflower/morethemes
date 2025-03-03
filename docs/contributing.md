@@ -1,4 +1,4 @@
-This document focuses on adding themes to `morethemes`, but other kind of contributions are possible. Feel free to [open an issue](https://github.com/JosephBARBIERDARNAL/morethemes/issues) to discuss it.
+This document focuses on adding themes to **`morethemes`**, but other kind of contributions are possible. Feel free to [open an issue](https://github.com/JosephBARBIERDARNAL/morethemes/issues) to discuss it.
 
 In this tutorial, I'll assume your theme is named `sunglasses`, as for the example. Remember to change it with the actual name of your theme.
 
@@ -25,6 +25,13 @@ git checkout -b sunglasses
 uv init
 uv pip install -e .
 uv sync --all-extras --dev
+uv run pre-commit install
+```
+
+- Check that everything works:
+
+```bash
+uv run pytest
 ```
 
 ### Add a new theme
@@ -45,7 +52,7 @@ sunglasses_theme = {
 
 !!! note
 
-    If you're looking how to make a (great) theme, check [this](../create-a-theme).
+    If you're looking how to make a (great) theme, check [this](../guide/create-your-theme).
 
 - At the end of `morethemes/morethemes/themes.py`, add your theme to `ALL_THEMES`:
 
@@ -77,8 +84,8 @@ git push
 
 - Go back to your fork and click on the "Open a PR" popup
 
-Congrats! Once your PR is merged, it will be part of `morethemes` and accessible via `mt.set_theme("sunglasses")`.
+Congrats! Once your PR is merged, it will be part of **`morethemes`** and accessible via `mt.set_theme("sunglasses")`. It'll be available once a new released is published on PyPI.
 
-It'll be available once a new released is published on PyPI.
+Feel free to ask me if you have any questions!
 
-<br>
+<br><br>
