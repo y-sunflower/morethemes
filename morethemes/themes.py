@@ -47,15 +47,16 @@ yellowish_theme = {
         "xtick.major.pad": 5,
         "axes.grid": True,
         "grid.linewidth": 0.6,
-        "grid.alpha": 0.6,
+        "grid.alpha": 0.2,
+        "grid.color": "#5d5d5d",
         "grid.linestyle": "-",
-        "grid.color": "#bcbcbc",
+        "legend.edgecolor": "#7e7e7e",
         "axes.edgecolor": "#be1414",
         "axes.labelcolor": "#be1414",
         "axes.titlecolor": "#be1414",
         "text.color": "#be1414",
-        "axes.facecolor": "#ffcc04",
-        "figure.facecolor": "#ffcc04",
+        "axes.facecolor": "#f7dd7e",
+        "figure.facecolor": "#f7dd7e",
         "axes.linewidth": 1.2,
         "axes.prop_cycle": cycler(
             "color", ["#000000", "#555555", "#7e7e7e", "#b1b1b1", "#ececec"]
@@ -212,8 +213,8 @@ minimal_theme = {
     },
 }
 
-lex_theme = {
-    "name": "lex",
+ft_theme = {
+    "name": "ft",
     "description": "A sophisticated, no-nonsense theme with a muted palette and strong typographic clarity, echoing the Financial Times' aesthetic.",
     "author": "Joseph Barbier",
     "theme": {
@@ -260,7 +261,8 @@ retro_theme = {
         "axes.grid": True,
         "grid.linewidth": 1.0,
         "grid.linestyle": ":",
-        "grid.color": "#cccccc",
+        "grid.alpha": 0.35,
+        "grid.color": "#ffffff",
         "axes.linewidth": 1.5,
         "axes.facecolor": "#000033",
         "figure.facecolor": "#000033",
@@ -271,7 +273,7 @@ retro_theme = {
         "ytick.color": "#ffffff",
         "axes.prop_cycle": cycler(
             "color",
-            ["#FF69B4", "#00FF00", "#00FFFF", "#FFD700", "#FF4500"],  # Neon colors
+            ["#FF69B4", "#00FF00", "#00FFFF", "#FFD700", "#FF4500"],
         ),
     },
 }
@@ -336,14 +338,14 @@ monoblue_theme = {
 
 
 ALL_THEMES = {
-    "darker": darker_theme,
-    "yellowish": yellowish_theme,
-    "urban": urban_theme,
     "wsj": wsj_theme,
-    "economist": economist_theme,
+    "urban": urban_theme,
     "minimal": minimal_theme,
-    "lex": lex_theme,
-    "retro": retro_theme,
+    "ft": ft_theme,
     "nature": nature_theme,
+    "economist": economist_theme,
+    "retro": retro_theme,
+    "yellowish": yellowish_theme,
+    "darker": darker_theme,
     "monoblue": monoblue_theme,
 }

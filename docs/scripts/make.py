@@ -4,8 +4,8 @@ import morethemes as mt
 plt.rcParams["savefig.dpi"] = 250
 
 for theme in mt.ALL_THEMES:
-    mt.preview_theme(theme)
-    plt.savefig(f"docs/img/{theme}.png", bbox_inches="tight")
+    fig = mt.preview_theme(theme)
+    fig.savefig(f"docs/img/{theme}.png", dpi=200)
 
 
 def tab_code_image(theme: str):
