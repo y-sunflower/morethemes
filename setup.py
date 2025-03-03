@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="morethemes",
-    version="0.2.0",
+    version="0.3.0",
     packages=["morethemes"],
     description="More themes for matplotlib",
     long_description=open("README.md").read(),
