@@ -11,7 +11,7 @@ def preview_theme(theme=None) -> mpl.figure.Figure:
 
     fig, axs = plt.subplots(ncols=2, nrows=2, figsize=(8, 6), dpi=200)
     fig.subplots_adjust(
-        wspace=0.25, hspace=0.35, top=0.84, bottom=0.08, left=0.07, right=0.93
+        wspace=0.25, hspace=0.38, top=0.84, bottom=0.08, left=0.07, right=0.93
     )
 
     axs[0, 0].scatter(np.random.normal(size=100), np.random.normal(size=100), s=70)
@@ -26,6 +26,7 @@ def preview_theme(theme=None) -> mpl.figure.Figure:
     axs[0, 1].text(
         x=0, y=1.05, s="Multiple lines", transform=axs[0, 1].transAxes, size=12
     )
+    axs[0, 1].set(xlabel="Time", ylabel="Temperature")
 
     labels = ["France", "Italy", "Germany", "Australia"]
     values = [900, 1800, 3300, 2400]
