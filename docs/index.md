@@ -143,7 +143,7 @@
 pip install morethemes
 ```
 
-Don't want to add **`morethemes`** as a dependency? You can either browse the [source code](https://github.com/JosephBARBIERDARNAL/morethemes/blob/main/morethemes/themes.py) to find the rcParams, or use the [`mt.get_rcparams("theme_name")`](./guide/reference/#mtget_rcparams) function.
+Don't want to add **`morethemes`** as a dependency? You can either browse the [source code](https://github.com/JosephBARBIERDARNAL/morethemes/blob/main/morethemes/themes.py) to find the rcParams, or use the `mt.get_rcparams("theme_name")` function.
 
     
 
