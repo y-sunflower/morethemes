@@ -35,7 +35,7 @@ uv run pytest
 
 ### Add a new theme
 
-- In `morethemes/morethemes/themes.py`, add a new theme that looks like this:
+- In `morethemes/themes.py`, add a new theme that looks like this:
 
 ```python
 sunglasses_theme = {
