@@ -22,9 +22,8 @@ git checkout -b sunglasses
 - Set up your Python environment (ensure you have [uv installed](https://docs.astral.sh/uv/getting-started/installation/)):
 
 ```bash
-uv init
+uv sync --all-extras
 uv pip install -e .
-uv sync --all-extras --dev
 uv run pre-commit install
 ```
 
