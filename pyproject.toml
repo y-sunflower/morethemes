@@ -4,6 +4,13 @@ version = "0.3.0"
 description = "More themes for matplotlib"
 readme = "README.md"
 requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Framework :: Matplotlib"
+]
+
 dependencies = [
     "matplotlib>=3.6.0",
 ]
