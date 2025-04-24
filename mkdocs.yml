@@ -3,11 +3,18 @@ site_url: https://josephbarbierdarnal.github.io/morethemes/
 repo_url: https://github.com/JosephBARBIERDARNAL/morethemes
 theme:
   name: material
+  custom_dir: overrides
   features:
     - content.code.copy
     - content.tabs.link
   icon:
     repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/style.css
+
+plugins:
+  - mkdocs_matplotlib
 
 nav:
   - Home: index.md
@@ -18,10 +25,6 @@ nav:
       - guide/create-your-theme.md
 
 markdown_extensions:
-  - pymdownx.tabbed:
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -36,6 +39,3 @@ markdown_extensions:
   - pymdownx.blocks.caption
   - admonition
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg

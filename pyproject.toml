@@ -21,6 +21,7 @@ dev = [
     "pre-commit>=4.0.1",
     "setuptools>=75.8.0",
     "mkdocs-material>=9.5.49",
+    "mkdocs-matplotlib>=0.10.1",
 ]
 [tool.setuptools]
 include-package-data = true
