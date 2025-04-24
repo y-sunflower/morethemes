@@ -13,6 +13,11 @@ theme:
 extra_css:
   - stylesheets/style.css
 
+extra:
+  analytics:
+    provider: google
+    property: G-MXWMXGPX59
+
 plugins:
   - mkdocs_matplotlib
 
