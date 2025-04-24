@@ -1,3 +1,12 @@
+```python
+# mkdocs: hidecode
+# mkdocs: hideoutput
+# mkdocs: render
+import morethemes as mt
+
+mt.set_theme("default")
+```
+
 This document explains everything you need to know to create a theme in matplotlib, and optionally how to add it to **`morethemes`**.
 
 <br>
@@ -17,42 +26,36 @@ For example, I can change the default line widths from matplotlib lines from 1 t
 By default it's 1, and it looks like this:
 
 ```python
+# mkdocs: render
 import matplotlib.pyplot as plt
 
 fig, ax = plt.subplots()
 ax.plot([1, 2, 3])
-plt.show()
 ```
-
-![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/default-line.png)
 
 We can then set the default line width to 5.
 
-```python hl_lines="3"
+```python hl_lines="4"
+# mkdocs: render
 import matplotlib.pyplot as plt
 
 plt.rcParams["lines.linewidth"] = 5
 
 fig, ax = plt.subplots()
 ax.plot([1, 2, 3])
-plt.show()
 ```
-
-![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/default-line-updated.png)
 
 I can also change the default text color from `"black"` to `"red"`.
 
-```python hl_lines="3"
+```python hl_lines="4"
+# mkdocs: render
 import matplotlib.pyplot as plt
 
 plt.rcParams["text.color"] = "red"
 
 fig, ax = plt.subplots()
 ax.text(x=0.3, y=0.5, s="Hello world", size=20)
-plt.show()
 ```
-
-![default_line_width](../img/text-color.png)
 
 There are more than **300 other parameters** like this that we can change. Yes it's a lot, but don't worry. We only need just a few of themes to make great themes.
 
@@ -96,10 +99,11 @@ But how do you visualize what it looks like in practice? You need to preview it 
 In my opinion, the easiest way to preview a theme is to use the `mt.preview_theme()` function. It will make many different charts and you'll easily be able to view how your theme currently looks like.
 
 ```python
+# mkdocs: render
 import matplotlib.pyplot as plt
 import morethemes as mt
 
-# Example of a theme. Change it with your own rcParams.
+# Example of a (ugly) theme. Change it with your own rcParams.
 plt.rcParams["figure.facecolor"] = "#282828"
 plt.rcParams["axes.edgecolor"] = "#eeeeee"
 plt.rcParams["xtick.color"] = "#eeeeee"
@@ -117,8 +121,9 @@ We said before that there was more than 300 parameters to custom. Here are a few
 To get all possible parameters and their default values, run:
 
 ```python
+# mkdocs: render
 import matplotlib.pyplot as plt
-plt.rcParams.keys()
+print(plt.rcParams.keys())
 ```
 
 ### Colors

@@ -60,7 +60,11 @@ def top_of_file(is_README=False):
 
 # `morethemes`: more themes for matplotlib
 
+<img src="https://github.com/JosephBARBIERDARNAL/static/blob/main/python-libs/morethemes/image.png?raw=true" alt="morethemes logo" align="right" width="150px"/>
+
 **`morethemes`** provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots, one line of code.
+
+![PyPI - Downloads](https://img.shields.io/pypi/dm/morethemes)
 
 {link_to_doc}
 
@@ -96,42 +100,6 @@ Don't want to add **`morethemes`** as a dependency? You can either browse the [s
     return content
 
 
-def end_of_index():
-    content = """
-
-<br>
-
-## Learn matplotlib
-
-This project is sponsored by [Matplotlib Journey](https://www.matplotlib-journey.com/){:target="\_blank"}, an online course designed to make you a matplotlib expert. If you're interested in learning matplotlib, have a look!
-
-<center>[Join the course :fontawesome-solid-paper-plane:](https://www.matplotlib-journey.com/){ .md-button .md-button--primary  }</center>
-
-<br>
-    """
-    return content
-
-
-def end_of_readme():
-    content = """
-
-<br>
-
-## Learn matplotlib
-
-This project is sponsored by [Matplotlib Journey](https://www.matplotlib-journey.com/), an online course designed to make you a matplotlib expert. If you're interested in learning matplotlib, have a look!
-
-<center>
-
-[**Join the course**](https://www.matplotlib-journey.com/)
-
-</center>
-
-<br>
-    """
-    return content
-
-
 if __name__ == "__main__":
     index_content = top_of_file()
     index_content += theme_before()
@@ -139,7 +107,6 @@ if __name__ == "__main__":
         code_snippet = tab_code_image(theme)
         index_content += code_snippet
     index_content += install_snippet()
-    index_content += end_of_index()
 
     with open("docs/index.md", "w", encoding="utf-8") as f:
         f.write(index_content)
@@ -150,30 +117,6 @@ if __name__ == "__main__":
     for theme in mt.ALL_THEMES:
         code_snippet = image_readme(theme)
         readme_content += code_snippet
-    readme_content += end_of_readme()
 
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(readme_content)
-
-    # edge cases n°1
-    mt.set_theme("yellowish")
-    plt.rcParams["figure.facecolor"] = "skyblue"
-    plt.rcParams["axes.facecolor"] = "skyblue"
-    fig = mt.preview_theme()
-    fig.savefig("docs/img/yellowish-updated.png", dpi=200)
-    mt.set_theme("default")
-
-    # edge cases n°2
-    fig, ax = plt.subplots()
-    ax.plot([1, 2, 3])
-    fig.savefig("docs/img/default-line.png", dpi=150)
-    plt.rcParams["lines.linewidth"] = 5
-    fig, ax = plt.subplots()
-    ax.plot([1, 2, 3])
-    fig.savefig("docs/img/default-line-updated.png", dpi=150)
-
-    # edge cases n°3
-    plt.rcParams["text.color"] = "red"
-    fig, ax = plt.subplots()
-    ax.text(x=0.3, y=0.5, s="Hello world", size=20)
-    fig.savefig("docs/img/text-color.png", dpi=150)

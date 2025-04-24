@@ -3,7 +3,11 @@
 
 # `morethemes`: more themes for matplotlib
 
+<img src="https://github.com/JosephBARBIERDARNAL/static/blob/main/python-libs/morethemes/image.png?raw=true" alt="morethemes logo" align="right" width="150px"/>
+
 **`morethemes`** provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots, one line of code.
+
+![PyPI - Downloads](https://img.shields.io/pypi/dm/morethemes)
 
 [Documentation site](https://josephbarbierdarnal.github.io/morethemes/)
 
@@ -125,19 +129,4 @@ mt.set_theme("monoblue")
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/monoblue.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
-    
-
-<br>
-
-## Learn matplotlib
-
-This project is sponsored by [Matplotlib Journey](https://www.matplotlib-journey.com/), an online course designed to make you a matplotlib expert. If you're interested in learning matplotlib, have a look!
-
-<center>
-
-[**Join the course**](https://www.matplotlib-journey.com/)
-
-</center>
-
-<br>
     
