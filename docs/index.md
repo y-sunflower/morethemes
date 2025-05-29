@@ -1,23 +1,23 @@
 
-<!-- Automatically generated, do not change by hand. Use docs/script/make.py instead. -->
+
+<!-- Automatically generated, do not change by hand. Use docs/index.qmd instead. -->
 
 # `morethemes`: more themes for matplotlib
 
 <img src="https://github.com/JosephBARBIERDARNAL/static/blob/main/python-libs/morethemes/image.png?raw=true" alt="morethemes logo" align="right" width="150px"/>
 
-**`morethemes`** provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots, one line of code.
+**`morethemes`** provides themes for
+[matplotlib](https://matplotlib.org/). More themes, better plots, one
+line of code.
 
-![PyPI - Downloads](https://img.shields.io/pypi/dm/morethemes)
-
-
-
+![PyPI - Downloads](https://img.shields.io/pypi/dm/morethemes.png)
 
 <br>
 
 ## Themes
 
 **`morethemes`** offers 10 themes at the moment:
-    
+
 === "WSJ"
 
     ![](img/wsj.png)
@@ -27,10 +27,9 @@
     mt.set_theme("wsj")
     ```
 
-    A refined, newspaper-style theme inspired by the Wall Street Journal. Made by Joseph Barbier.
+    A refined, newspaper-style theme inspired by the Wall Street Journal.
 
-    
-=== "Urban"
+=== "URBAN"
 
     ![](img/urban.png)
 
@@ -39,10 +38,9 @@
     mt.set_theme("urban")
     ```
 
-    A clean, professional theme featuring the Urbanist font and muted tones. Made by Joseph Barbier.
+    A clean, professional theme featuring the Urbanist font and muted tones.
 
-    
-=== "Minimal"
+=== "MINIMAL"
 
     ![](img/minimal.png)
 
@@ -51,9 +49,8 @@
     mt.set_theme("minimal")
     ```
 
-    A pure, distraction-free theme with a simple monochrome palette. Made by Joseph Barbier.
+    A pure, distraction-free theme with a simple monochrome palette.
 
-    
 === "FT"
 
     ![](img/ft.png)
@@ -63,10 +60,9 @@
     mt.set_theme("ft")
     ```
 
-    A sophisticated, no-nonsense theme with a muted palette and strong typographic clarity, echoing the Financial Times' aesthetic. Made by Joseph Barbier.
+    A sophisticated, no-nonsense theme with a muted palette and strong typographic clarity, echoing the Financial Times' aesthetic.
 
-    
-=== "Nature"
+=== "NATURE"
 
     ![](img/nature.png)
 
@@ -75,10 +71,9 @@
     mt.set_theme("nature")
     ```
 
-    A calming theme inspired by natural landscapes, with earthy tones and organic shapes. Made by Joseph Barbier.
+    A calming theme inspired by natural landscapes, with earthy tones and organic shapes.
 
-    
-=== "Economist"
+=== "ECONOMIST"
 
     ![](img/economist.png)
 
@@ -87,10 +82,9 @@
     mt.set_theme("economist")
     ```
 
-    A crisp, data-focused theme with subtle gridlines and sharp contrasts. Made by Joseph Barbier.
+    A crisp, data-focused theme with subtle gridlines and sharp contrasts.
 
-    
-=== "Retro"
+=== "RETRO"
 
     ![](img/retro.png)
 
@@ -99,10 +93,9 @@
     mt.set_theme("retro")
     ```
 
-    A nostalgic theme inspired by vintage graphics and retro gaming. Made by Joseph Barbier.
+    A nostalgic theme inspired by vintage graphics and retro gaming.
 
-    
-=== "Yellowish"
+=== "YELLOWISH"
 
     ![](img/yellowish.png)
 
@@ -111,10 +104,9 @@
     mt.set_theme("yellowish")
     ```
 
-    A bold, National Geographic-inspired theme with a warm yellow backdrop Made by Joseph Barbier.
+    A bold, National Geographic-inspired theme with a warm yellow backdrop
 
-    
-=== "Darker"
+=== "DARKER"
 
     ![](img/darker.png)
 
@@ -123,10 +115,9 @@
     mt.set_theme("darker")
     ```
 
-    A sleek, no-frills dark theme with high contrast and a modern feel Made by Joseph Barbier.
+    A sleek, no-frills dark theme with high contrast and a modern feel
 
-    
-=== "Monoblue"
+=== "MONOBLUE"
 
     ![](img/monoblue.png)
 
@@ -135,18 +126,18 @@
     mt.set_theme("monoblue")
     ```
 
-    A high-contrast theme using shades of blue to emphasize data trends and maintain a clean, professional aesthetic. Made by Joseph Barbier.
-
-    
+    A high-contrast theme using shades of blue to emphasize data trends and maintain a clean, professional aesthetic.
 
 <br>
 
 ## Installation
 
-```bash
+``` bash
 pip install morethemes
 ```
 
-Don't want to add **`morethemes`** as a dependency? You can either browse the [source code](https://github.com/JosephBARBIERDARNAL/morethemes/blob/main/morethemes/themes.py) to find the rcParams, or use the `mt.get_rcparams("theme_name")` function.
-
-    
+Don’t want to add **`morethemes`** as a dependency? You can either
+browse the [source
+code](https://github.com/JosephBARBIERDARNAL/morethemes/blob/main/morethemes/themes.py)
+to find the rcParams, or use the `mt.get_rcparams("theme_name")`
+function.

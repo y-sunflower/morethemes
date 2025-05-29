@@ -1,7 +1,17 @@
 [project]
 name = "morethemes"
-version = "0.3.1"
+version = "0.3.2"
 description = "More themes for matplotlib"
+license-files = [
+    "LICENSE",
+    "morethemes/fonts/LICENSE",
+    "morethemes/fonts/LICENSES/OFL.txt",
+    "morethemes/fonts/LICENSES/Apache.txt"
+]
+keywords = ["matplotlib", "themes", "style"]
+authors = [
+  { name="Joseph Barbier", email="joseph.barbierdarnal@gmail.com" },
+]
 readme = "README.md"
 requires-python = ">=3.9"
 classifiers = [
@@ -13,7 +23,6 @@ classifiers = [
 
 dependencies = [
     "matplotlib>=3.6.0",
-    "pre-commit>=4.0.1",
 ]
 
 [dependency-groups]
@@ -24,5 +33,28 @@ dev = [
     "mkdocs-material>=9.5.49",
     "mkdocs-matplotlib>=0.10.1",
 ]
+quarto = [
+    "jupyter>=1.1.1",
+    "nbclient>=0.10.2",
+    "nbformat>=5.10.4",
+]
+
+[build-system]
+requires = [
+    "setuptools",
+    "setuptools-scm",
+]
+build-backend = "setuptools.build_meta"
+
 [tool.setuptools]
+packages = ["morethemes"]
 include-package-data = true
+
+[tool.uv.sources]
+morethemes = { workspace = true }
+
+[project.urls]
+Homepage = "https://JosephBARBIERDARNAL.github.io/morethemes/"
+Issues = "https://github.com/JosephBARBIERDARNAL/morethemes/issues"
+Documentation = "https://JosephBARBIERDARNAL.github.io/morethemes/"
+Repository = "https://github.com/JosephBARBIERDARNAL/morethemes"
