@@ -5,6 +5,10 @@ import pytest
 import morethemes as mt
 
 
+def test_version():
+    assert mt.__version__ == "0.3.2"
+
+
 def test_invalid_theme():
     """Check that an invalid theme name raises an error"""
     with pytest.raises(KeyError):

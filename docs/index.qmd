@@ -1,0 +1,63 @@
+---
+format: gfm
+embed-resources: true
+---
+
+<!-- Automatically generated, do not change by hand. Use docs/index.qmd instead. -->
+
+# `morethemes`: more themes for matplotlib
+
+<img src="https://github.com/JosephBARBIERDARNAL/static/blob/main/python-libs/morethemes/image.png?raw=true" alt="morethemes logo" align="right" width="150px"/>
+
+**`morethemes`** provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots, one line of code.
+
+![PyPI - Downloads](https://img.shields.io/pypi/dm/morethemes)
+
+
+
+
+<br>
+
+## Themes
+
+**`morethemes`** offers 10 themes at the moment:
+
+```{python}
+# | output: asis
+# | echo: false
+
+import morethemes as mt
+import matplotlib.pyplot as plt
+
+
+def print_a_theme(theme: str):
+    theme_string = f"""
+=== "{theme.upper()}"
+
+    ![](img/{theme}.png)
+
+    {"`" * 3}python
+    import morethemes as mt
+    mt.set_theme("{theme}")
+    {"`" * 3}
+
+    {mt.ALL_THEMES[theme]["description"]}
+
+   """
+    print(theme_string)
+
+
+for theme in mt.ALL_THEMES:
+    print_a_theme(theme)
+```
+
+
+<br>
+
+## Installation
+
+```bash
+pip install morethemes
+```
+
+Don't want to add **`morethemes`** as a dependency? You can either browse the [source code](https://github.com/JosephBARBIERDARNAL/morethemes/blob/main/morethemes/themes.py) to find the rcParams, or use the `mt.get_rcparams("theme_name")` function.
