@@ -1,3 +1,5 @@
+
+
 <!-- Automatically generated, do not change by hand. Use docs/index.qmd instead. -->
 
 # `morethemes`: more themes for matplotlib
@@ -130,7 +132,7 @@ line of code.
 
 ## Installation
 
-```bash
+``` bash
 pip install morethemes
 ```
 
