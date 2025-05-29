@@ -1,6 +1,7 @@
 ---
 format: gfm
 embed-resources: true
+default-image-extension: ""
 post-render: sed -i '' 's/[“”]/"/g' docs/index.md # run manually after rendering
 ---
 
@@ -11,6 +12,7 @@ post-render: sed -i '' 's/[“”]/"/g' docs/index.md # run manually after rende
 <img src="https://github.com/JosephBARBIERDARNAL/static/blob/main/python-libs/morethemes/image.png?raw=true" alt="morethemes logo" align="right" width="150px"/>
 
 **`morethemes`** provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots, one line of code.
+
 
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/morethemes)
 

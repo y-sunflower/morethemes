@@ -10,7 +10,7 @@
 [matplotlib](https://matplotlib.org/). More themes, better plots, one
 line of code.
 
-![PyPI - Downloads](https://img.shields.io/pypi/dm/morethemes.png)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/morethemes)
 
 <br>
 

@@ -1,6 +1,7 @@
 ---
 format: gfm
 embed-resources: true
+default-image-extension: ""
 ---
 
 <!-- Automatically generated, uses README.qmd to modify README.md -->
