@@ -1,5 +1,3 @@
-
-
 <!-- Automatically generated, uses README.qmd to modify README.md -->
 
 # `morethemes`: more themes for matplotlib
@@ -10,7 +8,7 @@
 [matplotlib](https://matplotlib.org/). More themes, better plots, one
 line of code.
 
-![PyPI - Downloads](https://img.shields.io/pypi/dm/morethemes.png)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/morethemes)
 
 [Documentation site](https://josephbarbierdarnal.github.io/morethemes/)
 
@@ -18,7 +16,7 @@ line of code.
 
 ## Installation
 
-``` bash
+```bash
 pip install morethemes
 ```
 
@@ -36,7 +34,7 @@ function.
 
 ### WSJ
 
-``` python
+```python
 import morethemes as mt
 mt.set_theme("wsj")
 ```
@@ -45,7 +43,7 @@ mt.set_theme("wsj")
 
 ### URBAN
 
-``` python
+```python
 import morethemes as mt
 mt.set_theme("urban")
 ```
@@ -54,7 +52,7 @@ mt.set_theme("urban")
 
 ### MINIMAL
 
-``` python
+```python
 import morethemes as mt
 mt.set_theme("minimal")
 ```
@@ -63,7 +61,7 @@ mt.set_theme("minimal")
 
 ### FT
 
-``` python
+```python
 import morethemes as mt
 mt.set_theme("ft")
 ```
@@ -72,7 +70,7 @@ mt.set_theme("ft")
 
 ### NATURE
 
-``` python
+```python
 import morethemes as mt
 mt.set_theme("nature")
 ```
@@ -81,7 +79,7 @@ mt.set_theme("nature")
 
 ### ECONOMIST
 
-``` python
+```python
 import morethemes as mt
 mt.set_theme("economist")
 ```
@@ -90,7 +88,7 @@ mt.set_theme("economist")
 
 ### RETRO
 
-``` python
+```python
 import morethemes as mt
 mt.set_theme("retro")
 ```
@@ -99,7 +97,7 @@ mt.set_theme("retro")
 
 ### YELLOWISH
 
-``` python
+```python
 import morethemes as mt
 mt.set_theme("yellowish")
 ```
@@ -108,7 +106,7 @@ mt.set_theme("yellowish")
 
 ### DARKER
 
-``` python
+```python
 import morethemes as mt
 mt.set_theme("darker")
 ```
@@ -117,7 +115,7 @@ mt.set_theme("darker")
 
 ### MONOBLUE
 
-``` python
+```python
 import morethemes as mt
 mt.set_theme("monoblue")
 ```
