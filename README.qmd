@@ -33,8 +33,6 @@ Don't want to add **`morethemes`** as a dependency? You can either browse the [s
 
 ## Themes
 
-**`morethemes`** offers 10 themes at the moment:
-
 
 ```{python}
 # | output: asis
@@ -58,6 +56,8 @@ def print_a_theme(theme: str):
     )
     print("\n")
 
+
+print(f"**`morethemes`** offers {len(mt.ALL_THEMES)} themes at the moment:\n")
 
 for theme in mt.ALL_THEMES:
     print_a_theme(theme)

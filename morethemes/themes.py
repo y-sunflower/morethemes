@@ -360,6 +360,50 @@ monoblue_theme = {
     },
 }
 
+vscode_dark_theme = {
+    "name": "vscode-dark",
+    "description": "A dark theme inspired by Visual Studio Code's dark mode.",
+    "author": "knods3k",
+    "theme": {
+        "lines.color": "white",
+        "patch.edgecolor": "white",
+        "text.color": "white",
+        "axes.facecolor": "#1f1f1f",
+        "axes.edgecolor": "white",
+        "axes.labelcolor": "white",
+        "xtick.color": "white",
+        "ytick.color": "white",
+        "grid.color": "white",
+        "figure.facecolor": "#1f1f1f",
+        "figure.edgecolor": "#1f1f1f",
+        "patch.facecolor": "C0",
+        "boxplot.boxprops.color": "white",
+        "boxplot.capprops.color": "white",
+        "boxplot.flierprops.color": "white",
+        "boxplot.flierprops.markeredgecolor": "white",
+        "boxplot.whiskerprops.color": "white",
+        "image.cmap": "cividis",
+        "axes.prop_cycle": cycler(
+            "color",
+            [
+                "#DCDCAA",
+                "#9CDCFE",
+                "#4EC9B0",
+                "#C586C0",
+                "#6a9955",
+                "#CE9178",
+                "#4FC1FF",
+                "#d16969",
+                "#569cd6",
+                "#d7ba7d",
+                "#C8C8C8",
+                "#ce9178",
+                "#b5cea8",
+            ],
+        ),
+    },
+}
+
 
 ALL_THEMES = {
     "wsj": wsj_theme,
@@ -372,4 +416,5 @@ ALL_THEMES = {
     "yellowish": yellowish_theme,
     "darker": darker_theme,
     "monoblue": monoblue_theme,
+    "vscode-dark": vscode_dark_theme,
 }
