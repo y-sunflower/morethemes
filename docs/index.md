@@ -128,6 +128,17 @@ line of code.
 
     A high-contrast theme using shades of blue to emphasize data trends and maintain a clean, professional aesthetic.
 
+=== "VSCODE-DARK"
+
+    ![](img/vscode-dark.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("vscode-dark")
+    ```
+
+    A dark theme inspired by Visual Studio Code's dark mode.
+
 <br>
 
 ## Installation
