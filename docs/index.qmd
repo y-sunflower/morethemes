@@ -2,7 +2,7 @@
 format: gfm
 embed-resources: true
 default-image-extension: ""
-post-render: sed -i '' 's/[“”]/"/g' docs/index.md # run manually after rendering
+from: markdown-smart
 ---
 
 <!-- Automatically generated, do not change by hand. Use docs/index.qmd instead. -->
