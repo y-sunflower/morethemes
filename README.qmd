@@ -41,8 +41,9 @@ Don't want to add **`morethemes`** as a dependency? You can either browse the [s
 import morethemes as mt
 import matplotlib.pyplot as plt
 
+print(f"**`morethemes`** offers {len(mt.ALL_THEMES)} themes at the moment:\n")
 
-def print_a_theme(theme: str):
+for theme in mt.ALL_THEMES:
     print(f"### {theme.upper()}\n\n")
     print("```python")
     print("import morethemes as mt")
@@ -55,10 +56,4 @@ def print_a_theme(theme: str):
         f"[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/{theme}.png)](https://josephbarbierdarnal.github.io/morethemes/)"
     )
     print("\n")
-
-
-print(f"**`morethemes`** offers {len(mt.ALL_THEMES)} themes at the moment:\n")
-
-for theme in mt.ALL_THEMES:
-    print_a_theme(theme)
 ```

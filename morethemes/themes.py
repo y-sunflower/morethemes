@@ -365,6 +365,7 @@ vscode_dark_theme = {
     "description": "A dark theme inspired by Visual Studio Code's dark mode.",
     "author": "knods3k",
     "theme": {
+        "font.family": set_family_from_file("FiraCode-Regular.ttf"),
         "lines.color": "white",
         "patch.edgecolor": "white",
         "text.color": "white",
