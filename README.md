@@ -88,14 +88,14 @@ mt.set_theme("economist")
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/economist.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
-### SPOTIFY
+### GREENWAVE
 
 ``` python
 import morethemes as mt
-mt.set_theme("spotify")
+mt.set_theme("greenwave")
 ```
 
-[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/spotify.png)](https://josephbarbierdarnal.github.io/morethemes/)
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/greenwave.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
 ### VSCODE-DARK
 

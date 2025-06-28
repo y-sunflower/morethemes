@@ -84,16 +84,16 @@ line of code.
 
     A crisp, data-focused theme with subtle gridlines and sharp contrasts.
 
-=== "SPOTIFY"
+=== "GREENWAVE"
 
-    ![](img/spotify.png)
+    ![](img/greenwave.png)
 
     ```python
     import morethemes as mt
-    mt.set_theme("spotify")
+    mt.set_theme("greenwave")
     ```
 
-    A dark theme inspired by Spotify branding.
+    A sleek, dark-themed aesthetic with vibrant green accents, inspired by modern streaming interfaces. Designed for clarity and style, with bold typography and a focus on visual harmony.
 
 === "VSCODE-DARK"
 
