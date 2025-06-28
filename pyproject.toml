@@ -2,12 +2,8 @@
 name = "morethemes"
 version = "0.3.2"
 description = "More themes for matplotlib"
-license-files = [
-    "LICENSE",
-    "morethemes/fonts/LICENSE",
-    "morethemes/fonts/LICENSES/OFL.txt",
-    "morethemes/fonts/LICENSES/Apache.txt"
-]
+license = "MIT"
+license-files = ["LICENSE"]
 keywords = ["matplotlib", "themes", "style"]
 authors = [
   { name="Joseph Barbier", email="joseph.barbierdarnal@gmail.com" },
@@ -16,7 +12,6 @@ readme = "README.md"
 requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Framework :: Matplotlib"
 ]

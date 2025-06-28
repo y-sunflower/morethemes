@@ -9,8 +9,9 @@ In this tutorial, I'll assume your theme is named `sunglasses`, as for the examp
 - Clone your forked repository to your local machine (ensure you have [Git installed](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)):
 
 ```bash
-git clone https://github.com/YOURUSERNAME/morethemes.git
+git clone https://github.com/github_user_name/morethemes.git
 cd morethemes
+git remote add upstream https://github.com/JosephBARBIERDARNAL/morethemes.git
 ```
 
 - Create a new branch for your theme:
@@ -22,7 +23,7 @@ git checkout -b sunglasses
 - Set up your Python environment (ensure you have [uv installed](https://docs.astral.sh/uv/getting-started/installation/)):
 
 ```bash
-uv sync --all-extras
+uv sync --all-groups
 uv pip install -e .
 uv run pre-commit install
 ```
