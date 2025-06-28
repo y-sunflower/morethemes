@@ -1,6 +1,6 @@
 [project]
 name = "morethemes"
-version = "0.3.2"
+version = "0.4.0"
 description = "More themes for matplotlib"
 license = "MIT"
 license-files = ["LICENSE"]
@@ -47,7 +47,6 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
 packages = ["morethemes"]
-include-package-data = true
 
 [tool.uv.sources]
 morethemes = { workspace = true }
