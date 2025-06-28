@@ -16,7 +16,7 @@ line of code.
 
 ## Themes
 
-**`morethemes`** offers 10 themes at the moment:
+**`morethemes`** offers 12 themes at the moment:
 
 === "WSJ"
 

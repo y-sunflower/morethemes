@@ -1,11 +1,23 @@
+import os
 from cycler import cycler
-from morethemes.fonts import set_family_from_file
+from matplotlib import font_manager
+from pyfonts import load_google_font
+
+PACKAGE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+def _set_family(family, **kargs):
+    font = load_google_font(family, **kargs)
+    font_file = font.get_file()
+    font_manager.fontManager.addfont(font_file)
+    return font.get_name()
+
 
 darker_theme = {
     "name": "darker",
     "description": "A sleek, no-frills dark theme with high contrast and a modern feel",
     "theme": {
-        "font.family": set_family_from_file("Oswald.ttf"),
+        "font.family": _set_family("Oswald"),
         "axes.spines.top": False,
         "axes.spines.right": False,
         "xtick.minor.visible": False,
@@ -36,7 +48,7 @@ yellowish_theme = {
     "name": "yellowish",
     "description": "A bold, National Geographic-inspired theme with a warm yellow backdrop",
     "theme": {
-        "font.family": set_family_from_file("Delius.ttf"),
+        "font.family": _set_family("Delius"),
         "ytick.minor.visible": False,
         "xtick.minor.visible": False,
         "xtick.major.size": 0,
@@ -70,7 +82,7 @@ urban_theme = {
     "name": "urban",
     "description": "A clean, professional theme featuring the Urbanist font and muted tones.",
     "theme": {
-        "font.family": set_family_from_file("Urbanist.ttf"),
+        "font.family": _set_family("Urbanist"),
         "ytick.minor.visible": False,
         "xtick.minor.visible": False,
         "xtick.major.size": 0,
@@ -102,7 +114,7 @@ wsj_theme = {
     "name": "wsj",
     "description": "A refined, newspaper-style theme inspired by the Wall Street Journal.",
     "theme": {
-        "font.family": set_family_from_file("Crimson.ttf"),
+        "font.family": _set_family("Crimson Pro"),
         "ytick.minor.visible": False,
         "xtick.minor.visible": False,
         "xtick.major.size": 0,
@@ -147,7 +159,7 @@ economist_theme = {
     "name": "economist",
     "description": "A crisp, data-focused theme with subtle gridlines and sharp contrasts.",
     "theme": {
-        "font.family": set_family_from_file("RobotoFlex.ttf"),
+        "font.family": _set_family("Roboto Flex"),
         "ytick.minor.visible": False,
         "xtick.minor.visible": True,
         "xtick.major.size": 6,
@@ -191,7 +203,7 @@ minimal_theme = {
     "name": "minimal",
     "description": "A pure, distraction-free theme with a simple monochrome palette.",
     "theme": {
-        "font.family": set_family_from_file("Inter.ttf"),
+        "font.family": _set_family("Inter"),
         "ytick.minor.visible": False,
         "xtick.minor.visible": False,
         "xtick.major.size": 0,
@@ -225,7 +237,7 @@ ft_theme = {
     "name": "ft",
     "description": "A sophisticated, no-nonsense theme with a muted palette and strong typographic clarity, echoing the Financial Times' aesthetic.",
     "theme": {
-        "font.family": set_family_from_file("NotoSans.ttf"),
+        "font.family": _set_family("Noto Sans"),
         "ytick.minor.visible": False,
         "xtick.minor.visible": False,
         "xtick.major.size": 10,
@@ -259,7 +271,7 @@ retro_theme = {
     "name": "retro",
     "description": "A nostalgic theme inspired by vintage graphics and retro gaming.",
     "theme": {
-        "font.family": set_family_from_file("VT323.ttf"),
+        "font.family": _set_family("VT323"),
         "axes.spines.top": False,
         "axes.spines.right": False,
         "xtick.minor.visible": False,
@@ -292,7 +304,7 @@ nature_theme = {
     "name": "nature",
     "description": "A calming theme inspired by natural landscapes, with earthy tones and organic shapes.",
     "theme": {
-        "font.family": set_family_from_file("Quicksand.ttf"),
+        "font.family": _set_family("Quicksand"),
         "axes.spines.top": False,
         "axes.spines.right": False,
         "xtick.minor.visible": False,
@@ -324,7 +336,7 @@ monoblue_theme = {
     "name": "monoblue",
     "description": "A high-contrast theme using shades of blue to emphasize data trends and maintain a clean, professional aesthetic.",
     "theme": {
-        "font.family": set_family_from_file("Roboto-Regular.ttf"),
+        "font.family": _set_family("Roboto"),
         "axes.spines.top": False,
         "axes.spines.right": False,
         "xtick.minor.visible": False,
@@ -354,7 +366,9 @@ vscode_dark_theme = {
     "name": "vscode-dark",
     "description": "A dark theme inspired by Visual Studio Code's dark mode.",
     "theme": {
-        "font.family": set_family_from_file("FiraCode-Regular.ttf"),
+        "font.family": _set_family("Fira Code"),
+        "axes.spines.top": False,
+        "axes.spines.right": False,
         "lines.color": "white",
         "patch.edgecolor": "white",
         "text.color": "white",
@@ -398,7 +412,7 @@ spotify_theme = {
     "name": "spotify",
     "description": "A dark theme inspired by Spotify branding.",
     "theme": {
-        "font.family": set_family_from_file("Circular.ttf"),
+        "font.family": _set_family("Plus Jakarta Sans", weight=800),
         "axes.facecolor": "#000000",
         "figure.facecolor": "#000000",
         "axes.labelcolor": "#FFFFFF",

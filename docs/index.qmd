@@ -23,14 +23,14 @@ from: markdown-smart
 
 ## Themes
 
-**`morethemes`** offers 10 themes at the moment:
-
 ```{python}
 # | output: asis
 # | echo: false
 
 import morethemes as mt
 import matplotlib.pyplot as plt
+
+print(f"**`morethemes`** offers {len(mt.ALL_THEMES)} themes at the moment:\n")
 
 
 def print_a_theme(theme: str):
