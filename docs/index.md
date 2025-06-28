@@ -139,6 +139,17 @@ line of code.
 
     A dark theme inspired by Visual Studio Code's dark mode.
 
+=== "SPOTIFY"
+
+    ![](img/spotify.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("spotify")
+    ```
+
+    A dark theme inspired by Spotify branding.
+
 <br>
 
 ## Installation

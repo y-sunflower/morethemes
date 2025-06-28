@@ -4,7 +4,6 @@ from morethemes.fonts import set_family_from_file
 darker_theme = {
     "name": "darker",
     "description": "A sleek, no-frills dark theme with high contrast and a modern feel",
-    "author": "Joseph Barbier",
     "theme": {
         "font.family": set_family_from_file("Oswald.ttf"),
         "axes.spines.top": False,
@@ -36,7 +35,6 @@ darker_theme = {
 yellowish_theme = {
     "name": "yellowish",
     "description": "A bold, National Geographic-inspired theme with a warm yellow backdrop",
-    "author": "Joseph Barbier",
     "theme": {
         "font.family": set_family_from_file("Delius.ttf"),
         "ytick.minor.visible": False,
@@ -71,7 +69,6 @@ yellowish_theme = {
 urban_theme = {
     "name": "urban",
     "description": "A clean, professional theme featuring the Urbanist font and muted tones.",
-    "author": "Joseph Barbier",
     "theme": {
         "font.family": set_family_from_file("Urbanist.ttf"),
         "ytick.minor.visible": False,
@@ -104,7 +101,6 @@ urban_theme = {
 wsj_theme = {
     "name": "wsj",
     "description": "A refined, newspaper-style theme inspired by the Wall Street Journal.",
-    "author": "Joseph Barbier",
     "theme": {
         "font.family": set_family_from_file("Crimson.ttf"),
         "ytick.minor.visible": False,
@@ -150,7 +146,6 @@ wsj_theme = {
 economist_theme = {
     "name": "economist",
     "description": "A crisp, data-focused theme with subtle gridlines and sharp contrasts.",
-    "author": "Joseph Barbier",
     "theme": {
         "font.family": set_family_from_file("RobotoFlex.ttf"),
         "ytick.minor.visible": False,
@@ -195,7 +190,6 @@ economist_theme = {
 minimal_theme = {
     "name": "minimal",
     "description": "A pure, distraction-free theme with a simple monochrome palette.",
-    "author": "Joseph Barbier",
     "theme": {
         "font.family": set_family_from_file("Inter.ttf"),
         "ytick.minor.visible": False,
@@ -230,7 +224,6 @@ minimal_theme = {
 ft_theme = {
     "name": "ft",
     "description": "A sophisticated, no-nonsense theme with a muted palette and strong typographic clarity, echoing the Financial Times' aesthetic.",
-    "author": "Joseph Barbier",
     "theme": {
         "font.family": set_family_from_file("NotoSans.ttf"),
         "ytick.minor.visible": False,
@@ -265,7 +258,6 @@ ft_theme = {
 retro_theme = {
     "name": "retro",
     "description": "A nostalgic theme inspired by vintage graphics and retro gaming.",
-    "author": "Joseph Barbier",
     "theme": {
         "font.family": set_family_from_file("VT323.ttf"),
         "axes.spines.top": False,
@@ -299,7 +291,6 @@ retro_theme = {
 nature_theme = {
     "name": "nature",
     "description": "A calming theme inspired by natural landscapes, with earthy tones and organic shapes.",
-    "author": "Joseph Barbier",
     "theme": {
         "font.family": set_family_from_file("Quicksand.ttf"),
         "axes.spines.top": False,
@@ -332,7 +323,6 @@ nature_theme = {
 monoblue_theme = {
     "name": "monoblue",
     "description": "A high-contrast theme using shades of blue to emphasize data trends and maintain a clean, professional aesthetic.",
-    "author": "Joseph Barbier",
     "theme": {
         "font.family": set_family_from_file("Roboto-Regular.ttf"),
         "axes.spines.top": False,
@@ -363,7 +353,6 @@ monoblue_theme = {
 vscode_dark_theme = {
     "name": "vscode-dark",
     "description": "A dark theme inspired by Visual Studio Code's dark mode.",
-    "author": "knods3k",
     "theme": {
         "font.family": set_family_from_file("FiraCode-Regular.ttf"),
         "lines.color": "white",
@@ -408,7 +397,6 @@ vscode_dark_theme = {
 spotify_theme = {
     "name": "spotify",
     "description": "A dark theme inspired by Spotify branding.",
-    "author": "spotify",
     "theme": {
         "font.family": set_family_from_file("Circular.ttf"),
         "axes.facecolor": "#000000",
