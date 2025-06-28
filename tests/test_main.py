@@ -37,3 +37,9 @@ def test_set_theme_default():
 
     for key, default_value in mpl.rcParamsDefault.items():
         assert plt.rcParams[key] == default_value
+
+
+def test_preview_theme():
+    """Check that preview theme works"""
+    fig = mt.preview_theme("ft")
+    assert isinstance(fig, mpl.figure.Figure)
