@@ -451,7 +451,7 @@ lighter_theme = {
     "name": "lighter",
     "description": "A clean, modern theme inspired by the lighter aesthetic, perfect for technical charts.",
     "theme": {
-        "font.family": _set_family("Inter"),
+        "font.family": _set_family("Outfit"),
         "axes.spines.top": False,
         "axes.spines.right": False,
         "xtick.minor.visible": False,
@@ -477,7 +477,14 @@ lighter_theme = {
         "ytick.color": "#24292f",
         "axes.linewidth": 1.2,
         "axes.prop_cycle": cycler(
-            "color", ["#0969da", "#1a7f37", "#9a6700", "#d12771", "#8250df", "#6e7781"]
+            "color",
+            [
+                "#72b7b2",  # teal
+                "#f58518",  # orange
+                "#e45756",  # coral red
+                "#a05195",  # purple
+                "#54a24b",  # green
+            ],
         ),
     },
 }
