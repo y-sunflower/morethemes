@@ -32,7 +32,7 @@ function.
 
 ## Themes
 
-**`morethemes`** offers 11 themes at the moment:
+**`morethemes`** offers 12 themes at the moment:
 
 ### WSJ
 
@@ -132,3 +132,12 @@ mt.set_theme("vscode-dark")
 ```
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/vscode-dark.png)](https://josephbarbierdarnal.github.io/morethemes/)
+
+### SPOTIFY
+
+``` python
+import morethemes as mt
+mt.set_theme("spotify")
+```
+
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/spotify.png)](https://josephbarbierdarnal.github.io/morethemes/)
