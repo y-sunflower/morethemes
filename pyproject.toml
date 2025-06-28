@@ -23,6 +23,7 @@ classifiers = [
 
 dependencies = [
     "matplotlib>=3.6.0",
+    "pyfonts>=1.0.0",
 ]
 
 [dependency-groups]
@@ -32,6 +33,9 @@ dev = [
     "setuptools>=75.8.0",
     "mkdocs-material>=9.5.49",
     "mkdocs-matplotlib>=0.10.1",
+    "coverage>=7.9.1",
+    "genbadge>=1.1.2",
+    "defusedxml>=0.7.1",
 ]
 quarto = [
     "jupyter>=1.1.1",

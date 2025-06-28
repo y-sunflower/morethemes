@@ -50,8 +50,3 @@ def preview_theme(theme=None) -> mpl.figure.Figure:
     fig.text(x=0.5, y=0.93, s=f"Preview of theme: {theme}", size=20, ha="center")
 
     return fig
-
-
-if __name__ == "__main__":
-    fig = preview_theme("nature")
-    fig.savefig("cache.png", dpi=300)

@@ -16,7 +16,7 @@ line of code.
 
 ## Themes
 
-**`morethemes`** offers 10 themes at the moment:
+**`morethemes`** offers 14 themes at the moment:
 
 === "WSJ"
 
@@ -84,6 +84,39 @@ line of code.
 
     A crisp, data-focused theme with subtle gridlines and sharp contrasts.
 
+=== "SPOTIFY"
+
+    ![](img/spotify.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("spotify")
+    ```
+
+    A dark theme inspired by Spotify branding.
+
+=== "VSCODE-DARK"
+
+    ![](img/vscode-dark.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("vscode-dark")
+    ```
+
+    A dark theme inspired by Visual Studio Code's dark mode.
+
+=== "NORD"
+
+    ![](img/nord.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("nord")
+    ```
+
+    A crisp, Arctic-inspired theme based on the Nord color palette with frosty blues and clean contrasts
+
 === "RETRO"
 
     ![](img/retro.png)
@@ -95,16 +128,16 @@ line of code.
 
     A nostalgic theme inspired by vintage graphics and retro gaming.
 
-=== "YELLOWISH"
+=== "LIGHTER"
 
-    ![](img/yellowish.png)
+    ![](img/lighter.png)
 
     ```python
     import morethemes as mt
-    mt.set_theme("yellowish")
+    mt.set_theme("lighter")
     ```
 
-    A bold, National Geographic-inspired theme with a warm yellow backdrop
+    A clean, modern theme inspired by the lighter aesthetic, perfect for technical charts.
 
 === "DARKER"
 
@@ -116,6 +149,17 @@ line of code.
     ```
 
     A sleek, no-frills dark theme with high contrast and a modern feel
+
+=== "YELLOWISH"
+
+    ![](img/yellowish.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("yellowish")
+    ```
+
+    A bold, National Geographic-inspired theme with a warm yellow backdrop
 
 === "MONOBLUE"
 
@@ -136,7 +180,7 @@ line of code.
 pip install morethemes
 ```
 
-Don’t want to add **`morethemes`** as a dependency? You can either
+Don't want to add **`morethemes`** as a dependency? You can either
 browse the [source
 code](https://github.com/JosephBARBIERDARNAL/morethemes/blob/main/morethemes/themes.py)
 to find the rcParams, or use the `mt.get_rcparams("theme_name")`

@@ -1,12 +1,20 @@
 from cycler import cycler
-from morethemes.fonts import set_family_from_file
+from matplotlib import font_manager
+from pyfonts import load_google_font
+
+
+def _set_family(family, **kargs):
+    font = load_google_font(family, **kargs)
+    font_file = font.get_file()
+    font_manager.fontManager.addfont(font_file)
+    return font.get_name()
+
 
 darker_theme = {
     "name": "darker",
     "description": "A sleek, no-frills dark theme with high contrast and a modern feel",
-    "author": "Joseph Barbier",
     "theme": {
-        "font.family": set_family_from_file("Oswald.ttf"),
+        "font.family": _set_family("Oswald"),
         "axes.spines.top": False,
         "axes.spines.right": False,
         "xtick.minor.visible": False,
@@ -36,9 +44,8 @@ darker_theme = {
 yellowish_theme = {
     "name": "yellowish",
     "description": "A bold, National Geographic-inspired theme with a warm yellow backdrop",
-    "author": "Joseph Barbier",
     "theme": {
-        "font.family": set_family_from_file("Delius.ttf"),
+        "font.family": _set_family("Delius"),
         "ytick.minor.visible": False,
         "xtick.minor.visible": False,
         "xtick.major.size": 0,
@@ -71,9 +78,8 @@ yellowish_theme = {
 urban_theme = {
     "name": "urban",
     "description": "A clean, professional theme featuring the Urbanist font and muted tones.",
-    "author": "Joseph Barbier",
     "theme": {
-        "font.family": set_family_from_file("Urbanist.ttf"),
+        "font.family": _set_family("Urbanist"),
         "ytick.minor.visible": False,
         "xtick.minor.visible": False,
         "xtick.major.size": 0,
@@ -104,9 +110,8 @@ urban_theme = {
 wsj_theme = {
     "name": "wsj",
     "description": "A refined, newspaper-style theme inspired by the Wall Street Journal.",
-    "author": "Joseph Barbier",
     "theme": {
-        "font.family": set_family_from_file("Crimson.ttf"),
+        "font.family": _set_family("Crimson Pro"),
         "ytick.minor.visible": False,
         "xtick.minor.visible": False,
         "xtick.major.size": 0,
@@ -150,9 +155,8 @@ wsj_theme = {
 economist_theme = {
     "name": "economist",
     "description": "A crisp, data-focused theme with subtle gridlines and sharp contrasts.",
-    "author": "Joseph Barbier",
     "theme": {
-        "font.family": set_family_from_file("RobotoFlex.ttf"),
+        "font.family": _set_family("Volkhov"),
         "ytick.minor.visible": False,
         "xtick.minor.visible": True,
         "xtick.major.size": 6,
@@ -195,9 +199,8 @@ economist_theme = {
 minimal_theme = {
     "name": "minimal",
     "description": "A pure, distraction-free theme with a simple monochrome palette.",
-    "author": "Joseph Barbier",
     "theme": {
-        "font.family": set_family_from_file("Inter.ttf"),
+        "font.family": _set_family("Inter"),
         "ytick.minor.visible": False,
         "xtick.minor.visible": False,
         "xtick.major.size": 0,
@@ -230,9 +233,8 @@ minimal_theme = {
 ft_theme = {
     "name": "ft",
     "description": "A sophisticated, no-nonsense theme with a muted palette and strong typographic clarity, echoing the Financial Times' aesthetic.",
-    "author": "Joseph Barbier",
     "theme": {
-        "font.family": set_family_from_file("NotoSans.ttf"),
+        "font.family": _set_family("Noto Sans"),
         "ytick.minor.visible": False,
         "xtick.minor.visible": False,
         "xtick.major.size": 10,
@@ -265,9 +267,8 @@ ft_theme = {
 retro_theme = {
     "name": "retro",
     "description": "A nostalgic theme inspired by vintage graphics and retro gaming.",
-    "author": "Joseph Barbier",
     "theme": {
-        "font.family": set_family_from_file("VT323.ttf"),
+        "font.family": _set_family("VT323"),
         "axes.spines.top": False,
         "axes.spines.right": False,
         "xtick.minor.visible": False,
@@ -299,9 +300,8 @@ retro_theme = {
 nature_theme = {
     "name": "nature",
     "description": "A calming theme inspired by natural landscapes, with earthy tones and organic shapes.",
-    "author": "Joseph Barbier",
     "theme": {
-        "font.family": set_family_from_file("Quicksand.ttf"),
+        "font.family": _set_family("Quicksand"),
         "axes.spines.top": False,
         "axes.spines.right": False,
         "xtick.minor.visible": False,
@@ -332,9 +332,8 @@ nature_theme = {
 monoblue_theme = {
     "name": "monoblue",
     "description": "A high-contrast theme using shades of blue to emphasize data trends and maintain a clean, professional aesthetic.",
-    "author": "Joseph Barbier",
     "theme": {
-        "font.family": set_family_from_file("Roboto-Regular.ttf"),
+        "font.family": _set_family("Roboto"),
         "axes.spines.top": False,
         "axes.spines.right": False,
         "xtick.minor.visible": False,
@@ -360,6 +359,179 @@ monoblue_theme = {
     },
 }
 
+vscode_dark_theme = {
+    "name": "vscode-dark",
+    "description": "A dark theme inspired by Visual Studio Code's dark mode.",
+    "theme": {
+        "font.family": _set_family("Fira Code"),
+        "axes.spines.top": False,
+        "axes.spines.right": False,
+        "lines.color": "white",
+        "patch.edgecolor": "white",
+        "text.color": "white",
+        "axes.facecolor": "#1f1f1f",
+        "axes.edgecolor": "white",
+        "axes.labelcolor": "white",
+        "xtick.color": "white",
+        "ytick.color": "white",
+        "grid.color": "white",
+        "figure.facecolor": "#1f1f1f",
+        "figure.edgecolor": "#1f1f1f",
+        "patch.facecolor": "C0",
+        "boxplot.boxprops.color": "white",
+        "boxplot.capprops.color": "white",
+        "boxplot.flierprops.color": "white",
+        "boxplot.flierprops.markeredgecolor": "white",
+        "boxplot.whiskerprops.color": "white",
+        "image.cmap": "cividis",
+        "axes.prop_cycle": cycler(
+            "color",
+            [
+                "#4EC9B0",
+                "#9CDCFE",
+                "#C586C0",
+                "#DCDCAA",
+                "#6a9955",
+                "#CE9178",
+                "#4FC1FF",
+                "#d16969",
+                "#569cd6",
+                "#d7ba7d",
+                "#C8C8C8",
+                "#ce9178",
+                "#b5cea8",
+            ],
+        ),
+    },
+}
+
+spotify_theme = {
+    "name": "spotify",
+    "description": "A dark theme inspired by Spotify branding.",
+    "theme": {
+        "font.family": _set_family("Plus Jakarta Sans", weight=800),
+        "axes.facecolor": "#000000",
+        "figure.facecolor": "#000000",
+        "axes.labelcolor": "#FFFFFF",
+        "axes.labelsize": 13,
+        "axes.linewidth": 1.5,
+        "axes.grid": True,
+        "grid.color": "#1ED760",
+        "grid.alpha": 0.3,
+        "grid.linewidth": 0.8,
+        "grid.linestyle": "-",
+        "xtick.color": "#FFFFFF",
+        "ytick.color": "#FFFFFF",
+        "xtick.major.size": 0,
+        "ytick.major.size": 0,
+        "xtick.minor.visible": False,
+        "ytick.minor.visible": False,
+        "text.color": "#FFFFFF",
+        "lines.linewidth": 2,
+        "lines.markersize": 6,
+        "legend.facecolor": "#000000",
+        "legend.edgecolor": "#1ED760",
+        "legend.fontsize": 10,
+        "axes.prop_cycle": cycler(
+            "color",
+            [
+                "#1ED760",
+                "#FFFFFF",
+                "#00394D",
+                "#F05F6D",
+                "#3490BB",
+                "#89CDB4",
+                "#FFDE90",
+            ],
+        ),
+    },
+}
+
+lighter_theme = {
+    "name": "lighter",
+    "description": "A clean, modern theme inspired by the lighter aesthetic, perfect for technical charts.",
+    "theme": {
+        "font.family": _set_family("Outfit"),
+        "axes.spines.top": False,
+        "axes.spines.right": False,
+        "xtick.minor.visible": False,
+        "ytick.minor.visible": False,
+        "xtick.major.size": 0,
+        "ytick.major.size": 0,
+        "ytick.major.pad": 8,
+        "xtick.major.pad": 8,
+        "axes.grid": True,
+        "yaxis.labellocation": "top",
+        "xaxis.labellocation": "right",
+        "grid.linewidth": 0.5,
+        "grid.alpha": 0.3,
+        "grid.color": "#888888",
+        "grid.linestyle": "-",
+        "axes.facecolor": "#f6f8fa",
+        "figure.facecolor": "#f6f8fa",
+        "axes.edgecolor": "#d0d7de",
+        "axes.labelcolor": "#24292f",
+        "axes.titlecolor": "#24292f",
+        "text.color": "#24292f",
+        "xtick.color": "#24292f",
+        "ytick.color": "#24292f",
+        "axes.linewidth": 1.2,
+        "axes.prop_cycle": cycler(
+            "color",
+            [
+                "#72b7b2",  # teal
+                "#f58518",  # orange
+                "#e45756",  # coral red
+                "#a05195",  # purple
+                "#54a24b",  # green
+            ],
+        ),
+    },
+}
+
+nord_theme = {
+    "name": "nord",
+    "description": "A crisp, Arctic-inspired theme based on the Nord color palette with frosty blues and clean contrasts",
+    "theme": {
+        "font.family": _set_family("Overpass"),
+        "axes.spines.top": False,
+        "axes.spines.right": False,
+        "xtick.minor.visible": False,
+        "ytick.minor.visible": False,
+        "xtick.major.size": 5,
+        "ytick.major.size": 5,
+        "yaxis.labellocation": "top",
+        "xaxis.labellocation": "right",
+        "axes.grid": True,
+        "grid.linewidth": 0.6,
+        "grid.linestyle": "-",
+        "grid.alpha": 0.15,
+        "grid.color": "#4C566A",
+        "axes.linewidth": 1.2,
+        "text.color": "#2E3440",
+        "axes.facecolor": "#ECEFF4",
+        "figure.facecolor": "#ECEFF4",
+        "axes.labelcolor": "#3B4252",
+        "axes.edgecolor": "#3B4252",
+        "xtick.color": "#3B4252",
+        "ytick.color": "#3B4252",
+        "axes.prop_cycle": cycler(
+            "color",
+            [
+                "#5E81AC",
+                "#BF616A",
+                "#D08770",
+                "#EBCB8B",
+                "#A3BE8C",
+                "#B48EAD",
+                "#8FBCBB",
+                "#88C0D0",
+                "#81A1C1",
+            ],
+        ),
+    },
+}
+
 
 ALL_THEMES = {
     "wsj": wsj_theme,
@@ -368,8 +540,12 @@ ALL_THEMES = {
     "ft": ft_theme,
     "nature": nature_theme,
     "economist": economist_theme,
+    "spotify": spotify_theme,
+    "vscode-dark": vscode_dark_theme,
+    "nord": nord_theme,
     "retro": retro_theme,
-    "yellowish": yellowish_theme,
+    "lighter": lighter_theme,
     "darker": darker_theme,
+    "yellowish": yellowish_theme,
     "monoblue": monoblue_theme,
 }

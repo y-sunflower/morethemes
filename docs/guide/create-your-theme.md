@@ -172,7 +172,7 @@ It is highly recommended to use a specific font for a theme, as it plays a major
 - use this code to set the font:
 
 ```python
-plt.rcParams['font.family'] = mt.fonts.set_family_from_file("font-name.ttf")
+plt.rcParams['font.family'] = mt.fonts._set_family("font-name.ttf")
 ```
 
 - add the font licence to `morethemes/fonts/LICENSE` (only do this once you've found the right font for your theme).

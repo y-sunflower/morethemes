@@ -11,7 +11,7 @@ def test_version():
 
 def test_invalid_theme():
     """Check that an invalid theme name raises an error"""
-    with pytest.raises(KeyError):
+    with pytest.raises(KeyError, match="Theme 'invalid key' not found. "):
         mt.set_theme("invalid key")
 
 
@@ -19,7 +19,6 @@ def test_valid_themes():
     """Check that all valid theme names don't raise an error"""
     for theme in mt.ALL_THEMES.keys():
         assert "name" in mt.ALL_THEMES[theme].keys()
-        assert "author" in mt.ALL_THEMES[theme].keys()
         assert "theme" in mt.ALL_THEMES[theme].keys()
         assert "description" in mt.ALL_THEMES[theme].keys()
         assert len(mt.ALL_THEMES[theme]["description"]) < 200, (
@@ -38,3 +37,9 @@ def test_set_theme_default():
 
     for key, default_value in mpl.rcParamsDefault.items():
         assert plt.rcParams[key] == default_value
+
+
+def test_preview_theme():
+    """Check that preview theme works"""
+    fig = mt.preview_theme("ft")
+    assert isinstance(fig, mpl.figure.Figure)

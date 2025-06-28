@@ -40,7 +40,6 @@ uv run pytest
 ```python
 sunglasses_theme = {
     "name": "sunglasses", # the name of your theme
-    "author": "Your Name", # your name or the name of the author
     "description": "A description of the theme",
     "theme": { # all arguments passed to plt.rcParams
         "axes.facecolor": "#232323",

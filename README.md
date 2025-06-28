@@ -1,3 +1,5 @@
+
+
 <!-- Automatically generated, uses README.qmd to modify README.md -->
 
 # `morethemes`: more themes for matplotlib
@@ -16,7 +18,7 @@ line of code.
 
 ## Installation
 
-```bash
+``` bash
 pip install morethemes
 ```
 
@@ -30,11 +32,11 @@ function.
 
 ## Themes
 
-**`morethemes`** offers 10 themes at the moment:
+**`morethemes`** offers 14 themes at the moment:
 
 ### WSJ
 
-```python
+``` python
 import morethemes as mt
 mt.set_theme("wsj")
 ```
@@ -43,7 +45,7 @@ mt.set_theme("wsj")
 
 ### URBAN
 
-```python
+``` python
 import morethemes as mt
 mt.set_theme("urban")
 ```
@@ -52,7 +54,7 @@ mt.set_theme("urban")
 
 ### MINIMAL
 
-```python
+``` python
 import morethemes as mt
 mt.set_theme("minimal")
 ```
@@ -61,7 +63,7 @@ mt.set_theme("minimal")
 
 ### FT
 
-```python
+``` python
 import morethemes as mt
 mt.set_theme("ft")
 ```
@@ -70,7 +72,7 @@ mt.set_theme("ft")
 
 ### NATURE
 
-```python
+``` python
 import morethemes as mt
 mt.set_theme("nature")
 ```
@@ -79,43 +81,79 @@ mt.set_theme("nature")
 
 ### ECONOMIST
 
-```python
+``` python
 import morethemes as mt
 mt.set_theme("economist")
 ```
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/economist.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
+### SPOTIFY
+
+``` python
+import morethemes as mt
+mt.set_theme("spotify")
+```
+
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/spotify.png)](https://josephbarbierdarnal.github.io/morethemes/)
+
+### VSCODE-DARK
+
+``` python
+import morethemes as mt
+mt.set_theme("vscode-dark")
+```
+
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/vscode-dark.png)](https://josephbarbierdarnal.github.io/morethemes/)
+
+### NORD
+
+``` python
+import morethemes as mt
+mt.set_theme("nord")
+```
+
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/nord.png)](https://josephbarbierdarnal.github.io/morethemes/)
+
 ### RETRO
 
-```python
+``` python
 import morethemes as mt
 mt.set_theme("retro")
 ```
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/retro.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
-### YELLOWISH
+### LIGHTER
 
-```python
+``` python
 import morethemes as mt
-mt.set_theme("yellowish")
+mt.set_theme("lighter")
 ```
 
-[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/yellowish.png)](https://josephbarbierdarnal.github.io/morethemes/)
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/lighter.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
 ### DARKER
 
-```python
+``` python
 import morethemes as mt
 mt.set_theme("darker")
 ```
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/darker.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
+### YELLOWISH
+
+``` python
+import morethemes as mt
+mt.set_theme("yellowish")
+```
+
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/yellowish.png)](https://josephbarbierdarnal.github.io/morethemes/)
+
 ### MONOBLUE
 
-```python
+``` python
 import morethemes as mt
 mt.set_theme("monoblue")
 ```
