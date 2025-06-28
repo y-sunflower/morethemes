@@ -1,9 +1,6 @@
-import os
 from cycler import cycler
 from matplotlib import font_manager
 from pyfonts import load_google_font
-
-PACKAGE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 def _set_family(family, **kargs):
@@ -159,7 +156,7 @@ economist_theme = {
     "name": "economist",
     "description": "A crisp, data-focused theme with subtle gridlines and sharp contrasts.",
     "theme": {
-        "font.family": _set_family("Roboto Flex"),
+        "font.family": _set_family("Volkhov"),
         "ytick.minor.visible": False,
         "xtick.minor.visible": True,
         "xtick.major.size": 6,
@@ -450,6 +447,84 @@ spotify_theme = {
     },
 }
 
+lighter_theme = {
+    "name": "lighter",
+    "description": "A clean, modern theme inspired by the lighter aesthetic, perfect for technical charts.",
+    "theme": {
+        "font.family": _set_family("Inter"),
+        "axes.spines.top": False,
+        "axes.spines.right": False,
+        "xtick.minor.visible": False,
+        "ytick.minor.visible": False,
+        "xtick.major.size": 0,
+        "ytick.major.size": 0,
+        "ytick.major.pad": 8,
+        "xtick.major.pad": 8,
+        "axes.grid": True,
+        "yaxis.labellocation": "top",
+        "xaxis.labellocation": "right",
+        "grid.linewidth": 0.5,
+        "grid.alpha": 0.3,
+        "grid.color": "#888888",
+        "grid.linestyle": "-",
+        "axes.facecolor": "#f6f8fa",
+        "figure.facecolor": "#f6f8fa",
+        "axes.edgecolor": "#d0d7de",
+        "axes.labelcolor": "#24292f",
+        "axes.titlecolor": "#24292f",
+        "text.color": "#24292f",
+        "xtick.color": "#24292f",
+        "ytick.color": "#24292f",
+        "axes.linewidth": 1.2,
+        "axes.prop_cycle": cycler(
+            "color", ["#0969da", "#1a7f37", "#9a6700", "#d12771", "#8250df", "#6e7781"]
+        ),
+    },
+}
+
+nord_theme = {
+    "name": "nord",
+    "description": "A crisp, Arctic-inspired theme based on the Nord color palette with frosty blues and clean contrasts",
+    "theme": {
+        "font.family": _set_family("Overpass"),
+        "axes.spines.top": False,
+        "axes.spines.right": False,
+        "xtick.minor.visible": False,
+        "ytick.minor.visible": False,
+        "xtick.major.size": 5,
+        "ytick.major.size": 5,
+        "yaxis.labellocation": "top",
+        "xaxis.labellocation": "right",
+        "axes.grid": True,
+        "grid.linewidth": 0.6,
+        "grid.linestyle": "-",
+        "grid.alpha": 0.15,
+        "grid.color": "#4C566A",
+        "axes.linewidth": 1.2,
+        "text.color": "#2E3440",
+        "axes.facecolor": "#ECEFF4",
+        "figure.facecolor": "#ECEFF4",
+        "axes.labelcolor": "#3B4252",
+        "axes.edgecolor": "#3B4252",
+        "xtick.color": "#3B4252",
+        "ytick.color": "#3B4252",
+        "axes.prop_cycle": cycler(
+            "color",
+            [
+                "#5E81AC",
+                "#BF616A",
+                "#D08770",
+                "#EBCB8B",
+                "#A3BE8C",
+                "#B48EAD",
+                "#8FBCBB",
+                "#88C0D0",
+                "#81A1C1",
+            ],
+        ),
+    },
+}
+
 
 ALL_THEMES = {
     "wsj": wsj_theme,
@@ -458,10 +533,12 @@ ALL_THEMES = {
     "ft": ft_theme,
     "nature": nature_theme,
     "economist": economist_theme,
-    "retro": retro_theme,
-    "yellowish": yellowish_theme,
-    "darker": darker_theme,
-    "monoblue": monoblue_theme,
-    "vscode-dark": vscode_dark_theme,
     "spotify": spotify_theme,
+    "vscode-dark": vscode_dark_theme,
+    "nord": nord_theme,
+    "retro": retro_theme,
+    "lighter": lighter_theme,
+    "darker": darker_theme,
+    "yellowish": yellowish_theme,
+    "monoblue": monoblue_theme,
 }

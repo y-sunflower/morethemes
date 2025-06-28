@@ -11,7 +11,7 @@ def test_version():
 
 def test_invalid_theme():
     """Check that an invalid theme name raises an error"""
-    with pytest.raises(KeyError):
+    with pytest.raises(KeyError, match="Theme 'invalid key' not found. "):
         mt.set_theme("invalid key")
 
 

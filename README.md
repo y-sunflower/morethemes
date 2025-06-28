@@ -32,7 +32,7 @@ function.
 
 ## Themes
 
-**`morethemes`** offers 12 themes at the moment:
+**`morethemes`** offers 14 themes at the moment:
 
 ### WSJ
 
@@ -88,41 +88,14 @@ mt.set_theme("economist")
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/economist.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
-### RETRO
+### SPOTIFY
 
 ``` python
 import morethemes as mt
-mt.set_theme("retro")
+mt.set_theme("spotify")
 ```
 
-[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/retro.png)](https://josephbarbierdarnal.github.io/morethemes/)
-
-### YELLOWISH
-
-``` python
-import morethemes as mt
-mt.set_theme("yellowish")
-```
-
-[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/yellowish.png)](https://josephbarbierdarnal.github.io/morethemes/)
-
-### DARKER
-
-``` python
-import morethemes as mt
-mt.set_theme("darker")
-```
-
-[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/darker.png)](https://josephbarbierdarnal.github.io/morethemes/)
-
-### MONOBLUE
-
-``` python
-import morethemes as mt
-mt.set_theme("monoblue")
-```
-
-[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/monoblue.png)](https://josephbarbierdarnal.github.io/morethemes/)
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/spotify.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
 ### VSCODE-DARK
 
@@ -133,11 +106,56 @@ mt.set_theme("vscode-dark")
 
 [![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/vscode-dark.png)](https://josephbarbierdarnal.github.io/morethemes/)
 
-### SPOTIFY
+### NORD
 
 ``` python
 import morethemes as mt
-mt.set_theme("spotify")
+mt.set_theme("nord")
 ```
 
-[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/spotify.png)](https://josephbarbierdarnal.github.io/morethemes/)
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/nord.png)](https://josephbarbierdarnal.github.io/morethemes/)
+
+### RETRO
+
+``` python
+import morethemes as mt
+mt.set_theme("retro")
+```
+
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/retro.png)](https://josephbarbierdarnal.github.io/morethemes/)
+
+### LIGHTER
+
+``` python
+import morethemes as mt
+mt.set_theme("lighter")
+```
+
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/lighter.png)](https://josephbarbierdarnal.github.io/morethemes/)
+
+### DARKER
+
+``` python
+import morethemes as mt
+mt.set_theme("darker")
+```
+
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/darker.png)](https://josephbarbierdarnal.github.io/morethemes/)
+
+### YELLOWISH
+
+``` python
+import morethemes as mt
+mt.set_theme("yellowish")
+```
+
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/yellowish.png)](https://josephbarbierdarnal.github.io/morethemes/)
+
+### MONOBLUE
+
+``` python
+import morethemes as mt
+mt.set_theme("monoblue")
+```
+
+[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/monoblue.png)](https://josephbarbierdarnal.github.io/morethemes/)

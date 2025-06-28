@@ -16,7 +16,7 @@ line of code.
 
 ## Themes
 
-**`morethemes`** offers 12 themes at the moment:
+**`morethemes`** offers 14 themes at the moment:
 
 === "WSJ"
 
@@ -84,49 +84,16 @@ line of code.
 
     A crisp, data-focused theme with subtle gridlines and sharp contrasts.
 
-=== "RETRO"
+=== "SPOTIFY"
 
-    ![](img/retro.png)
-
-    ```python
-    import morethemes as mt
-    mt.set_theme("retro")
-    ```
-
-    A nostalgic theme inspired by vintage graphics and retro gaming.
-
-=== "YELLOWISH"
-
-    ![](img/yellowish.png)
+    ![](img/spotify.png)
 
     ```python
     import morethemes as mt
-    mt.set_theme("yellowish")
+    mt.set_theme("spotify")
     ```
 
-    A bold, National Geographic-inspired theme with a warm yellow backdrop
-
-=== "DARKER"
-
-    ![](img/darker.png)
-
-    ```python
-    import morethemes as mt
-    mt.set_theme("darker")
-    ```
-
-    A sleek, no-frills dark theme with high contrast and a modern feel
-
-=== "MONOBLUE"
-
-    ![](img/monoblue.png)
-
-    ```python
-    import morethemes as mt
-    mt.set_theme("monoblue")
-    ```
-
-    A high-contrast theme using shades of blue to emphasize data trends and maintain a clean, professional aesthetic.
+    A dark theme inspired by Spotify branding.
 
 === "VSCODE-DARK"
 
@@ -139,16 +106,71 @@ line of code.
 
     A dark theme inspired by Visual Studio Code's dark mode.
 
-=== "SPOTIFY"
+=== "NORD"
 
-    ![](img/spotify.png)
+    ![](img/nord.png)
 
     ```python
     import morethemes as mt
-    mt.set_theme("spotify")
+    mt.set_theme("nord")
     ```
 
-    A dark theme inspired by Spotify branding.
+    A crisp, Arctic-inspired theme based on the Nord color palette with frosty blues and clean contrasts
+
+=== "RETRO"
+
+    ![](img/retro.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("retro")
+    ```
+
+    A nostalgic theme inspired by vintage graphics and retro gaming.
+
+=== "LIGHTER"
+
+    ![](img/lighter.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("lighter")
+    ```
+
+    A clean, modern theme inspired by the lighter aesthetic, perfect for technical charts.
+
+=== "DARKER"
+
+    ![](img/darker.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("darker")
+    ```
+
+    A sleek, no-frills dark theme with high contrast and a modern feel
+
+=== "YELLOWISH"
+
+    ![](img/yellowish.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("yellowish")
+    ```
+
+    A bold, National Geographic-inspired theme with a warm yellow backdrop
+
+=== "MONOBLUE"
+
+    ![](img/monoblue.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("monoblue")
+    ```
+
+    A high-contrast theme using shades of blue to emphasize data trends and maintain a clean, professional aesthetic.
 
 <br>
 
