@@ -405,9 +405,9 @@ vscode_dark_theme = {
     },
 }
 
-spotify_theme = {
-    "name": "spotify",
-    "description": "A dark theme inspired by Spotify branding.",
+greenwave_theme = {
+    "name": "greenwave",
+    "description": "A sleek, dark-themed aesthetic with vibrant green accents, inspired by modern streaming interfaces. Designed for clarity and style, with bold typography and a focus on visual harmony.",
     "theme": {
         "font.family": _set_family("Plus Jakarta Sans", weight=800),
         "axes.facecolor": "#000000",
@@ -540,7 +540,7 @@ ALL_THEMES = {
     "ft": ft_theme,
     "nature": nature_theme,
     "economist": economist_theme,
-    "spotify": spotify_theme,
+    "greenwave": greenwave_theme,
     "vscode-dark": vscode_dark_theme,
     "nord": nord_theme,
     "retro": retro_theme,
