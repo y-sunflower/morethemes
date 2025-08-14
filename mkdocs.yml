@@ -1,6 +1,6 @@
 site_name: morethemes
-site_url: https://josephbarbierdarnal.github.io/morethemes/
-repo_url: https://github.com/JosephBARBIERDARNAL/morethemes
+site_url: https://y-sunflower.github.io/morethemes/
+repo_url: https://github.com/y-sunflower/morethemes
 theme:
   name: material
   custom_dir: overrides

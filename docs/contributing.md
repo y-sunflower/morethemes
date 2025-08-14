@@ -1,4 +1,4 @@
-This document focuses on adding themes to **`morethemes`**, but other kind of contributions are possible. Feel free to [open an issue](https://github.com/JosephBARBIERDARNAL/morethemes/issues) to discuss it.
+This document focuses on adding themes to **`morethemes`**, but other kind of contributions are possible. Feel free to [open an issue](https://github.com/y-sunflower/morethemes/issues) to discuss it.
 
 In this tutorial, I'll assume your theme is named `sunglasses`, as for the example. Remember to change it with the actual name of your theme.
 
@@ -11,7 +11,7 @@ In this tutorial, I'll assume your theme is named `sunglasses`, as for the examp
 ```bash
 git clone https://github.com/github_user_name/morethemes.git
 cd morethemes
-git remote add upstream https://github.com/JosephBARBIERDARNAL/morethemes.git
+git remote add upstream https://github.com/y-sunflower/morethemes.git
 ```
 
 - Create a new branch for your theme:

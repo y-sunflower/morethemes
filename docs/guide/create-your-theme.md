@@ -174,7 +174,7 @@ plt.rcParams['font.family'] = _set_family("Font Name")
 
 ### Others
 
-As there are many other things to customise here, **take a look at what other themes are doing** in [`morethemes/themes.py`](https://github.com/JosephBARBIERDARNAL/morethemes/blob/main/morethemes/themes.py).
+As there are many other things to customise here, **take a look at what other themes are doing** in [`morethemes/themes.py`](https://github.com/y-sunflower/morethemes/blob/main/morethemes/themes.py).
 
 <br>
 

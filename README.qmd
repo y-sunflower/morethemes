@@ -14,7 +14,7 @@ default-image-extension: ""
 
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/morethemes)
 
-[Documentation site](https://josephbarbierdarnal.github.io/morethemes/)
+[Documentation site](https://y-sunflower.github.io/morethemes/)
 
 
 
@@ -26,7 +26,7 @@ default-image-extension: ""
 pip install morethemes
 ```
 
-Don't want to add **`morethemes`** as a dependency? You can either browse the [source code](https://github.com/JosephBARBIERDARNAL/morethemes/blob/main/morethemes/themes.py) to find the rcParams, or use the `mt.get_rcparams("theme_name")` function.
+Don't want to add **`morethemes`** as a dependency? You can either browse the [source code](https://github.com/y-sunflower/morethemes/blob/main/morethemes/themes.py) to find the rcParams, or use the `mt.get_rcparams("theme_name")` function.
 
 
 <br>
@@ -53,7 +53,7 @@ for theme in mt.ALL_THEMES:
     fig.savefig(f"docs/img/{theme}", dpi=200, bbox_inches="tight")
     plt.close()
     print(
-        f"[![](https://raw.githubusercontent.com/JosephBARBIERDARNAL/morethemes/refs/heads/main/docs/img/{theme}.png)](https://josephbarbierdarnal.github.io/morethemes/)"
+        f"[![](https://raw.githubusercontent.com/y-sunflower/morethemes/refs/heads/main/docs/img/{theme}.png)](https://y-sunflower.github.io/morethemes/)"
     )
     print("\n")
 ```

@@ -52,7 +52,7 @@ packages = ["morethemes"]
 morethemes = { workspace = true }
 
 [project.urls]
-Homepage = "https://JosephBARBIERDARNAL.github.io/morethemes/"
-Issues = "https://github.com/JosephBARBIERDARNAL/morethemes/issues"
-Documentation = "https://JosephBARBIERDARNAL.github.io/morethemes/"
-Repository = "https://github.com/JosephBARBIERDARNAL/morethemes"
+Homepage = "https://y-sunflower.github.io/morethemes/"
+Issues = "https://github.com/y-sunflower/morethemes/issues"
+Documentation = "https://y-sunflower.github.io/morethemes/"
+Repository = "https://github.com/y-sunflower/morethemes"
