@@ -15,3 +15,5 @@ wheels/
 sandbox*
 *.zip
 uv.lock
+
+scripts/release.sh
