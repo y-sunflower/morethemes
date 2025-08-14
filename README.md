@@ -8,7 +8,7 @@
 [matplotlib](https://matplotlib.org/). More themes, better plots, one
 line of code.
 
-![PyPI - Downloads](https://img.shields.io/pypi/dm/morethemes)
+[![PyPI Downloads](https://static.pepy.tech/badge/morethemes/month)](https://pepy.tech/projects/morethemes)
 
 [Documentation site](https://y-sunflower.github.io/morethemes/)
 
