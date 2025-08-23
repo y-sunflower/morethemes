@@ -1,3 +1,5 @@
+
+
 <!-- Automatically generated, do not change by hand. Use docs/index.qmd instead. -->
 
 # `morethemes`: more themes for matplotlib
@@ -8,7 +10,7 @@
 [matplotlib](https://matplotlib.org/). More themes, better plots, one
 line of code.
 
-[![PyPI Downloads](https://static.pepy.tech/badge/morethemes/month)](https://pepy.tech/projects/morethemes)
+[![](https://static.pepy.tech/badge/morethemes)](https://pepy.tech/projects/morethemes)
 
 <br>
 
@@ -174,7 +176,7 @@ line of code.
 
 ## Installation
 
-```bash
+``` bash
 pip install morethemes
 ```
 

@@ -14,7 +14,7 @@ from: markdown-smart
 **`morethemes`** provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots, one line of code.
 
 
-[![PyPI Downloads](https://static.pepy.tech/badge/morethemes/month)](https://pepy.tech/projects/morethemes)
+[![PyPI Downloads](https://static.pepy.tech/badge/morethemes)](https://pepy.tech/projects/morethemes)
 
 
 
