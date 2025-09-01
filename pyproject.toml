@@ -4,7 +4,7 @@ version = "0.5.0"
 description = "More themes for matplotlib"
 license = "MIT"
 license-files = ["LICENSE"]
-keywords = ["matplotlib", "themes", "style"]
+keywords = ["matplotlib", "themes", "style", "colors"]
 authors = [
   { name="Joseph Barbier", email="joseph.barbierdarnal@gmail.com" },
 ]
