@@ -45,6 +45,6 @@ Another usage of this function is to avoid adding **`morethemes`** in your depen
 
 ## `mt.preview_theme()`
 
-A convenient function when creating a theme. It will make many different charts and you'll easily be able to view how your theme currently looks like. Learn more in [create your theme page](../create-your-theme/).
+A convenient function when creating a theme. It will make many different charts and you'll easily be able to view how your theme currently looks like. Learn more in [create your theme page](./create-your-theme.md).
 
 <br><br>

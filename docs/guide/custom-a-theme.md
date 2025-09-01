@@ -44,6 +44,6 @@ plt.rcParams["axes.facecolor"] = "skyblue"
 mt.preview_theme()
 ```
 
-There is no easy way to know what parameters you need to change to fit your exact needs, but you can find more info in the [create your theme page](../create-your-theme/).
+There is no easy way to know what parameters you need to change to fit your exact needs, but you can find more info in the [create your theme page](./create-your-theme.md).
 
 <br><br>

@@ -51,7 +51,7 @@ sunglasses_theme = {
 
 !!! note
 
-    If you're looking how to make a (great) theme, check [this](../guide/create-your-theme).
+    If you're looking how to make a (great) theme, check [this](./guide/create-your-theme.md).
 
 - At the end of `morethemes/morethemes/themes.py`, add your theme to `ALL_THEMES`:
 
