@@ -28,7 +28,6 @@ pip install morethemes
 
 Don't want to add **`morethemes`** as a dependency? You can either browse the [source code](https://github.com/y-sunflower/morethemes/blob/main/morethemes/themes.py) to find the rcParams, or use the `mt.get_rcparams("theme_name")` function.
 
-
 <br>
 
 ## Themes
@@ -50,7 +49,7 @@ for theme in mt.ALL_THEMES:
     print(f'mt.set_theme("{theme}")')
     print("```\n")
     fig = mt.preview_theme(theme)
-    fig.savefig(f"docs/img/{theme}", dpi=200, bbox_inches="tight")
+    fig.savefig(f"img/{theme}", dpi=200, bbox_inches="tight")
     plt.close()
     print(
         f"[![](https://raw.githubusercontent.com/y-sunflower/morethemes/refs/heads/main/docs/img/{theme}.png)](https://y-sunflower.github.io/morethemes/)"

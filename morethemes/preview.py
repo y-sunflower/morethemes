@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
-import matplotlib as mpl
+from matplotlib.figure import Figure
 import morethemes as mt
 import numpy as np
 
 
-def preview_theme(theme=None) -> mpl.figure.Figure:
+def preview_theme(theme=None) -> Figure:
     if theme is not None:
         mt.set_theme(theme)
     np.random.seed(0)
@@ -19,7 +19,7 @@ def preview_theme(theme=None) -> mpl.figure.Figure:
         x=0, y=1.05, s="A cool scatter", transform=axs[0, 0].transAxes, size=12
     )
 
-    for i in range(3):
+    for i in range(4):
         np.random.seed(i)
         axs[0, 1].plot(list(range(20)), np.random.normal(size=20), label=f"{i} line")
     axs[0, 1].legend(loc="upper right", bbox_to_anchor=(1.1, 1.2))

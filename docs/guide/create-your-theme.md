@@ -121,9 +121,9 @@ We said before that there was more than 300 parameters to custom. Here are a few
 To get all possible parameters and their default values, run:
 
 ```python
-# mkdocs: render
 import matplotlib.pyplot as plt
-print(plt.rcParams.keys())
+
+plt.rcParams.keys()
 ```
 
 ### Colors
@@ -180,6 +180,6 @@ As there are many other things to customise here, **take a look at what other th
 
 ## Add your theme to **`morethemes`**
 
-Once your theme is nice, you can follow the [contributing guide](../../contributing) to help you implement this new theme.
+Once your theme is nice, you can follow the [contributing guide](../contributing.md) to help you implement this new theme.
 
 <br><br>

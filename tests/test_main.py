@@ -1,3 +1,4 @@
+from matplotlib.figure import Figure
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import pytest
@@ -42,4 +43,4 @@ def test_set_theme_default():
 def test_preview_theme():
     """Check that preview theme works"""
     fig = mt.preview_theme("ft")
-    assert isinstance(fig, mpl.figure.Figure)
+    assert isinstance(fig, Figure)
