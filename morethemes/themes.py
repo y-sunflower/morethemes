@@ -3,7 +3,7 @@ from matplotlib import font_manager
 from pyfonts import load_google_font
 
 
-def _set_family(family, **kargs):
+def _set_family(family: str, **kargs) -> str:
     font = load_google_font(family, **kargs)
     font_file = font.get_file()
     font_manager.fontManager.addfont(font_file)
@@ -532,6 +532,45 @@ nord_theme = {
     },
 }
 
+lumen_theme = {
+    "name": "lumen",
+    "description": "Color-blind-friendly light theme with clear colors and soft background.",
+    "theme": {
+        "font.family": _set_family("Manrope"),
+        "axes.spines.top": False,
+        "axes.spines.right": False,
+        "xtick.minor.visible": False,
+        "ytick.minor.visible": False,
+        "xtick.major.size": 5,
+        "ytick.major.size": 5,
+        "axes.grid": True,
+        "grid.color": "#DDDDDD",
+        "grid.alpha": 0.3,
+        "grid.linestyle": "-",
+        "axes.linewidth": 1.2,
+        "text.color": "#222222",
+        "axes.edgecolor": "#222222",
+        "axes.labelcolor": "#222222",
+        "xtick.color": "#222222",
+        "ytick.color": "#222222",
+        "axes.facecolor": "#FFFFFF",
+        "figure.facecolor": "#FFFFFF",
+        "lines.linewidth": 2,
+        "axes.prop_cycle": cycler(
+            "color",
+            [
+                "#E69F00",
+                "#56B4E9",
+                "#009E73",
+                "#F0E442",
+                "#0072B2",
+                "#D55E00",
+                "#CC79A7",
+            ],
+        ),
+    },
+}
+
 
 ALL_THEMES = {
     "wsj": wsj_theme,
@@ -548,4 +587,5 @@ ALL_THEMES = {
     "darker": darker_theme,
     "yellowish": yellowish_theme,
     "monoblue": monoblue_theme,
+    "lumen": lumen_theme,
 }
