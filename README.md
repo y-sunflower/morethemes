@@ -97,6 +97,33 @@ mt.set_theme("greenwave")
 
 [![](https://raw.githubusercontent.com/y-sunflower/morethemes/refs/heads/main/docs/img/greenwave.png)](https://y-sunflower.github.io/morethemes/)
 
+### LUMEN
+
+``` python
+import morethemes as mt
+mt.set_theme("lumen")
+```
+
+[![](https://raw.githubusercontent.com/y-sunflower/morethemes/refs/heads/main/docs/img/lumen.png)](https://y-sunflower.github.io/morethemes/)
+
+### EBONIS
+
+``` python
+import morethemes as mt
+mt.set_theme("ebonis")
+```
+
+[![](https://raw.githubusercontent.com/y-sunflower/morethemes/refs/heads/main/docs/img/ebonis.png)](https://y-sunflower.github.io/morethemes/)
+
+### LIGHTER
+
+``` python
+import morethemes as mt
+mt.set_theme("lighter")
+```
+
+[![](https://raw.githubusercontent.com/y-sunflower/morethemes/refs/heads/main/docs/img/lighter.png)](https://y-sunflower.github.io/morethemes/)
+
 ### VSCODE-DARK
 
 ``` python
@@ -124,15 +151,6 @@ mt.set_theme("retro")
 
 [![](https://raw.githubusercontent.com/y-sunflower/morethemes/refs/heads/main/docs/img/retro.png)](https://y-sunflower.github.io/morethemes/)
 
-### LIGHTER
-
-``` python
-import morethemes as mt
-mt.set_theme("lighter")
-```
-
-[![](https://raw.githubusercontent.com/y-sunflower/morethemes/refs/heads/main/docs/img/lighter.png)](https://y-sunflower.github.io/morethemes/)
-
 ### DARKER
 
 ``` python
@@ -159,21 +177,3 @@ mt.set_theme("monoblue")
 ```
 
 [![](https://raw.githubusercontent.com/y-sunflower/morethemes/refs/heads/main/docs/img/monoblue.png)](https://y-sunflower.github.io/morethemes/)
-
-### LUMEN
-
-``` python
-import morethemes as mt
-mt.set_theme("lumen")
-```
-
-[![](https://raw.githubusercontent.com/y-sunflower/morethemes/refs/heads/main/docs/img/lumen.png)](https://y-sunflower.github.io/morethemes/)
-
-### EBONIS
-
-``` python
-import morethemes as mt
-mt.set_theme("ebonis")
-```
-
-[![](https://raw.githubusercontent.com/y-sunflower/morethemes/refs/heads/main/docs/img/ebonis.png)](https://y-sunflower.github.io/morethemes/)

@@ -95,6 +95,39 @@ line of code.
 
     A sleek, dark-themed aesthetic with vibrant green accents, inspired by modern streaming interfaces. Designed for clarity and style, with bold typography and a focus on visual harmony.
 
+=== "LUMEN"
+
+    ![](img/lumen.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("lumen")
+    ```
+
+    Color-blind-friendly light theme with clear colors and soft background.
+
+=== "EBONIS"
+
+    ![](img/ebonis.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("ebonis")
+    ```
+
+    Color-blind-friendly dark theme with high contrast and soft tones for dark backgrounds.
+
+=== "LIGHTER"
+
+    ![](img/lighter.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("lighter")
+    ```
+
+    A clean, modern theme inspired by the lighter aesthetic, perfect for technical charts.
+
 === "VSCODE-DARK"
 
     ![](img/vscode-dark.png)
@@ -128,17 +161,6 @@ line of code.
 
     A nostalgic theme inspired by vintage graphics and retro gaming.
 
-=== "LIGHTER"
-
-    ![](img/lighter.png)
-
-    ```python
-    import morethemes as mt
-    mt.set_theme("lighter")
-    ```
-
-    A clean, modern theme inspired by the lighter aesthetic, perfect for technical charts.
-
 === "DARKER"
 
     ![](img/darker.png)
@@ -171,28 +193,6 @@ line of code.
     ```
 
     A high-contrast theme using shades of blue to emphasize data trends and maintain a clean, professional aesthetic.
-
-=== "LUMEN"
-
-    ![](img/lumen.png)
-
-    ```python
-    import morethemes as mt
-    mt.set_theme("lumen")
-    ```
-
-    Color-blind-friendly light theme with clear colors and soft background.
-
-=== "EBONIS"
-
-    ![](img/ebonis.png)
-
-    ```python
-    import morethemes as mt
-    mt.set_theme("ebonis")
-    ```
-
-    Color-blind-friendly dark theme with high contrast and soft tones for dark backgrounds.
 
 <br>
 
