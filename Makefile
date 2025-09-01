@@ -4,7 +4,7 @@ readme:
 	quarto render docs/README.qmd --output-dir ..
 
 index:
-	quarto render docs.index.qmd
+	quarto render docs/index.qmd
 
 coverage:
 	uv run coverage run --source=morethemes -m pytest

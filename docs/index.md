@@ -16,7 +16,7 @@ line of code.
 
 ## Themes
 
-**`morethemes`** offers 14 themes at the moment:
+**`morethemes`** offers 16 themes at the moment:
 
 === "WSJ"
 
@@ -171,6 +171,28 @@ line of code.
     ```
 
     A high-contrast theme using shades of blue to emphasize data trends and maintain a clean, professional aesthetic.
+
+=== "LUMEN"
+
+    ![](img/lumen.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("lumen")
+    ```
+
+    Color-blind-friendly light theme with clear colors and soft background.
+
+=== "EBONIS"
+
+    ![](img/ebonis.png)
+
+    ```python
+    import morethemes as mt
+    mt.set_theme("ebonis")
+    ```
+
+    Color-blind-friendly dark theme with high contrast and soft tones for dark backgrounds.
 
 <br>
 

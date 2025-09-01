@@ -32,7 +32,7 @@ function.
 
 ## Themes
 
-**`morethemes`** offers 14 themes at the moment:
+**`morethemes`** offers 16 themes at the moment:
 
 ### WSJ
 
@@ -159,3 +159,21 @@ mt.set_theme("monoblue")
 ```
 
 [![](https://raw.githubusercontent.com/y-sunflower/morethemes/refs/heads/main/docs/img/monoblue.png)](https://y-sunflower.github.io/morethemes/)
+
+### LUMEN
+
+``` python
+import morethemes as mt
+mt.set_theme("lumen")
+```
+
+[![](https://raw.githubusercontent.com/y-sunflower/morethemes/refs/heads/main/docs/img/lumen.png)](https://y-sunflower.github.io/morethemes/)
+
+### EBONIS
+
+``` python
+import morethemes as mt
+mt.set_theme("ebonis")
+```
+
+[![](https://raw.githubusercontent.com/y-sunflower/morethemes/refs/heads/main/docs/img/ebonis.png)](https://y-sunflower.github.io/morethemes/)

@@ -571,6 +571,42 @@ lumen_theme = {
     },
 }
 
+ebonis_theme = {
+    "name": "ebonis",
+    "description": "Color-blind-friendly dark theme with high contrast and soft tones for dark backgrounds.",
+    "theme": {
+        "font.family": _set_family("Bricolage Grotesque"),
+        "axes.spines.top": False,
+        "axes.spines.right": False,
+        "xtick.minor.visible": False,
+        "ytick.minor.visible": False,
+        "xtick.major.size": 5,
+        "ytick.major.size": 5,
+        "axes.grid": False,
+        "axes.linewidth": 1.2,
+        "text.color": "#EEEEEE",
+        "axes.edgecolor": "#EEEEEE",
+        "axes.labelcolor": "#EEEEEE",
+        "xtick.color": "#EEEEEE",
+        "ytick.color": "#EEEEEE",
+        "axes.facecolor": "#1C1C1C",
+        "figure.facecolor": "#1C1C1C",
+        "lines.linewidth": 2,
+        "axes.prop_cycle": cycler(
+            "color",
+            [
+                "#E69F00",
+                "#56B4E9",
+                "#0072B2",
+                "#F0E442",
+                "#CC79A7",
+                "#D55E00",
+                "#009E73",
+            ],
+        ),
+    },
+}
+
 
 ALL_THEMES = {
     "wsj": wsj_theme,
@@ -588,4 +624,5 @@ ALL_THEMES = {
     "yellowish": yellowish_theme,
     "monoblue": monoblue_theme,
     "lumen": lumen_theme,
+    "ebonis": ebonis_theme,
 }
