@@ -2,7 +2,7 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 from difflib import get_close_matches
 
-from .themes import ALL_THEMES
+from morethemes.themes import ALL_THEMES
 
 
 def set_theme(theme_name: str, reset_to_default: bool = True) -> None:

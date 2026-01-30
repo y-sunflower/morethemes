@@ -1,5 +1,3 @@
-.PHONY: all
-
 readme:
 	quarto render docs/README.qmd --output-dir ..
 
