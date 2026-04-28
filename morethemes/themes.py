@@ -1,12 +1,10 @@
 from cycler import cycler
-from matplotlib import font_manager
-from pyfonts import load_google_font
+from pyfonts import load_google_font, set_default_font
 
 
 def _set_family(family: str, **kargs) -> str:
     font = load_google_font(family, **kargs)
-    font_file = font.get_file()
-    font_manager.fontManager.addfont(font_file)
+    set_default_font(font)
     return font.get_name()
 
 
