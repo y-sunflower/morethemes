@@ -2,46 +2,53 @@
 name = "morethemes"
 version = "0.5.1"
 description = "More themes for matplotlib"
-license = "MIT"
-license-files = ["LICENSE"]
-keywords = ["matplotlib", "themes", "style", "colors"]
-authors = [
-  { name="Joseph Barbier", email="joseph.barbierdarnal@gmail.com" },
-]
 readme = "README.md"
 requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  { name = "Joseph Barbier", email = "joseph@ysunflower.com" },
+]
+keywords = ["colors", "matplotlib", "style", "themes"]
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "Operating System :: OS Independent",
-    "Framework :: Matplotlib"
+  "Framework :: Matplotlib",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3"
 ]
 
 dependencies = [
-    "matplotlib>=3.6.0",
-    "pyfonts>=1.0.0",
+  "matplotlib>=3.6.0",
+  "pyfonts>=1.3.0",
 ]
+
+[project.urls]
+Documentation = "https://y-sunflower.github.io/morethemes/"
+Homepage = "https://y-sunflower.github.io/morethemes/"
+Issues = "https://github.com/y-sunflower/morethemes/issues"
+Repository = "https://github.com/y-sunflower/morethemes"
 
 [dependency-groups]
 dev = [
-    "pytest>=8.3.4",
-    "pre-commit>=4.0.1",
-    "setuptools>=75.8.0",
-    "mkdocs-material>=9.5.49",
-    "mkdocs-matplotlib>=0.10.1",
-    "coverage>=7.9.1",
-    "genbadge>=1.1.2",
-    "defusedxml>=0.7.1",
+  "coverage>=7.9.1",
+  "defusedxml>=0.7.1",
+  "genbadge>=1.1.2",
+  "mkdocs-material>=9.5.49",
+  "mkdocs-matplotlib>=0.10.1",
+  "pre-commit>=4.0.1",
+  "pytest>=8.3.4",
+  "setuptools>=75.8.0",
+  "ty>=0.0.32",
 ]
 quarto = [
-    "jupyter>=1.1.1",
-    "nbclient>=0.10.2",
-    "nbformat>=5.10.4",
+  "jupyter>=1.1.1",
+  "nbclient>=0.10.2",
+  "nbformat>=5.10.4",
 ]
 
 [build-system]
 requires = [
-    "setuptools",
-    "setuptools-scm",
+  "setuptools",
+  "setuptools-scm",
 ]
 build-backend = "setuptools.build_meta"
 
@@ -50,9 +57,3 @@ packages = ["morethemes"]
 
 [tool.uv.sources]
 morethemes = { workspace = true }
-
-[project.urls]
-Homepage = "https://y-sunflower.github.io/morethemes/"
-Issues = "https://github.com/y-sunflower/morethemes/issues"
-Documentation = "https://y-sunflower.github.io/morethemes/"
-Repository = "https://github.com/y-sunflower/morethemes"
