@@ -1,8 +1,13 @@
+from difflib import get_close_matches
+from typing import Any, cast
+
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-from difflib import get_close_matches
+from pyfonts import load_google_font, set_default_font
 
 from morethemes.themes import ALL_THEMES
+
+RcParams = dict[str, Any]
 
 
 def set_theme(theme_name: str, reset_to_default: bool = True) -> None:
@@ -23,13 +28,25 @@ def set_theme(theme_name: str, reset_to_default: bool = True) -> None:
         plt.rcParams.update(mpl.rcParamsDefault)
     else:
         theme_dict = get_rcparams(theme_name)
+        try:
+            font_family = theme_dict["font.family"]
+        except KeyError:
+            raise KeyError(
+                f"Theme '{theme_name}' is missing the required 'font.family' rcParam."
+            )
+        if not isinstance(font_family, str):
+            raise TypeError(
+                f"Theme '{theme_name}' has invalid 'font.family': "
+                f"expected str, got {type(font_family).__name__}."
+            )
+        set_default_font(load_google_font(font_family))
         if reset_to_default:
             plt.rcParams.update(mpl.rcParamsDefault)
         for key, value in theme_dict.items():
             plt.rcParams[key] = value
 
 
-def get_rcparams(theme_name: str) -> dict:
+def get_rcparams(theme_name: str) -> RcParams:
     """
     Return the theme dictionary passed to rcParams for the given theme name.
 
@@ -56,4 +73,4 @@ def get_rcparams(theme_name: str) -> dict:
         raise KeyError(
             f"Theme '{theme_name}' not found. Did you mean: {', '.join(suggestions)}?"
         )
-    return theme_dict
+    return cast(RcParams, theme_dict)

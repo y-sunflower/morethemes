@@ -1,18 +1,11 @@
 from cycler import cycler
-from pyfonts import load_google_font, set_default_font
-
-
-def _set_family(family: str, **kargs) -> str:
-    font = load_google_font(family, **kargs)
-    set_default_font(font)
-    return font.get_name()
 
 
 darker_theme = {
     "name": "darker",
     "description": "A sleek, no-frills dark theme with high contrast and a modern feel",
     "theme": {
-        "font.family": _set_family("Oswald"),
+        "font.family": "Oswald",
         "axes.spines.top": False,
         "axes.spines.right": False,
         "xtick.minor.visible": False,
@@ -43,7 +36,7 @@ yellowish_theme = {
     "name": "yellowish",
     "description": "A bold, National Geographic-inspired theme with a warm yellow backdrop",
     "theme": {
-        "font.family": _set_family("Delius"),
+        "font.family": "Delius",
         "ytick.minor.visible": False,
         "xtick.minor.visible": False,
         "xtick.major.size": 0,
@@ -77,7 +70,7 @@ urban_theme = {
     "name": "urban",
     "description": "A clean, professional theme featuring the Urbanist font and muted tones.",
     "theme": {
-        "font.family": _set_family("Urbanist"),
+        "font.family": "Urbanist",
         "ytick.minor.visible": False,
         "xtick.minor.visible": False,
         "xtick.major.size": 0,
@@ -109,7 +102,7 @@ wsj_theme = {
     "name": "wsj",
     "description": "A refined, newspaper-style theme inspired by the Wall Street Journal.",
     "theme": {
-        "font.family": _set_family("Crimson Pro"),
+        "font.family": "Crimson Pro",
         "ytick.minor.visible": False,
         "xtick.minor.visible": False,
         "xtick.major.size": 0,
@@ -154,7 +147,7 @@ economist_theme = {
     "name": "economist",
     "description": "A crisp, data-focused theme with subtle gridlines and sharp contrasts.",
     "theme": {
-        "font.family": _set_family("Volkhov"),
+        "font.family": "Volkhov",
         "ytick.minor.visible": False,
         "xtick.minor.visible": True,
         "xtick.major.size": 6,
@@ -198,7 +191,7 @@ minimal_theme = {
     "name": "minimal",
     "description": "A pure, distraction-free theme with a simple monochrome palette.",
     "theme": {
-        "font.family": _set_family("Inter"),
+        "font.family": "Inter",
         "ytick.minor.visible": False,
         "xtick.minor.visible": False,
         "xtick.major.size": 0,
@@ -232,7 +225,7 @@ ft_theme = {
     "name": "ft",
     "description": "A sophisticated, no-nonsense theme with a muted palette and strong typographic clarity, echoing the Financial Times' aesthetic.",
     "theme": {
-        "font.family": _set_family("Noto Sans"),
+        "font.family": "Noto Sans",
         "ytick.minor.visible": False,
         "xtick.minor.visible": False,
         "xtick.major.size": 10,
@@ -266,7 +259,7 @@ retro_theme = {
     "name": "retro",
     "description": "A nostalgic theme inspired by vintage graphics and retro gaming.",
     "theme": {
-        "font.family": _set_family("VT323"),
+        "font.family": "VT323",
         "axes.spines.top": False,
         "axes.spines.right": False,
         "xtick.minor.visible": False,
@@ -299,7 +292,7 @@ nature_theme = {
     "name": "nature",
     "description": "A calming theme inspired by natural landscapes, with earthy tones and organic shapes.",
     "theme": {
-        "font.family": _set_family("Quicksand"),
+        "font.family": "Quicksand",
         "axes.spines.top": False,
         "axes.spines.right": False,
         "xtick.minor.visible": False,
@@ -331,7 +324,7 @@ monoblue_theme = {
     "name": "monoblue",
     "description": "A high-contrast theme using shades of blue to emphasize data trends and maintain a clean, professional aesthetic.",
     "theme": {
-        "font.family": _set_family("Roboto"),
+        "font.family": "Roboto",
         "axes.spines.top": False,
         "axes.spines.right": False,
         "xtick.minor.visible": False,
@@ -361,7 +354,7 @@ vscode_dark_theme = {
     "name": "vscode-dark",
     "description": "A dark theme inspired by Visual Studio Code's dark mode.",
     "theme": {
-        "font.family": _set_family("Fira Code"),
+        "font.family": "Fira Code",
         "axes.spines.top": False,
         "axes.spines.right": False,
         "lines.color": "white",
@@ -407,7 +400,7 @@ greenwave_theme = {
     "name": "greenwave",
     "description": "A sleek, dark-themed aesthetic with vibrant green accents, inspired by modern streaming interfaces. Designed for clarity and style, with bold typography and a focus on visual harmony.",
     "theme": {
-        "font.family": _set_family("Plus Jakarta Sans", weight=800),
+        "font.family": "Plus Jakarta Sans",
         "axes.facecolor": "#000000",
         "figure.facecolor": "#000000",
         "axes.labelcolor": "#FFFFFF",
@@ -449,7 +442,7 @@ lighter_theme = {
     "name": "lighter",
     "description": "A clean, modern theme inspired by the lighter aesthetic, perfect for technical charts.",
     "theme": {
-        "font.family": _set_family("Outfit"),
+        "font.family": "Outfit",
         "axes.spines.top": False,
         "axes.spines.right": False,
         "xtick.minor.visible": False,
@@ -491,7 +484,7 @@ nord_theme = {
     "name": "nord",
     "description": "A crisp, Arctic-inspired theme based on the Nord color palette with frosty blues and clean contrasts",
     "theme": {
-        "font.family": _set_family("Overpass"),
+        "font.family": "Overpass",
         "axes.spines.top": False,
         "axes.spines.right": False,
         "xtick.minor.visible": False,
@@ -534,7 +527,7 @@ lumen_theme = {
     "name": "lumen",
     "description": "Color-blind-friendly light theme with clear colors and soft background.",
     "theme": {
-        "font.family": _set_family("Manrope"),
+        "font.family": "Manrope",
         "axes.spines.top": False,
         "axes.spines.right": False,
         "xtick.minor.visible": False,
@@ -573,7 +566,7 @@ ebonis_theme = {
     "name": "ebonis",
     "description": "Color-blind-friendly dark theme with high contrast and soft tones for dark backgrounds.",
     "theme": {
-        "font.family": _set_family("Bricolage Grotesque"),
+        "font.family": "Bricolage Grotesque",
         "axes.spines.top": False,
         "axes.spines.right": False,
         "xtick.minor.visible": False,
