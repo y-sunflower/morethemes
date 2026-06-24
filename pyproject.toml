@@ -18,7 +18,7 @@ classifiers = [
 
 dependencies = [
   "matplotlib>=3.6.0",
-  "pyfonts>=1.3.0",
+  "pyfonts>=1.4.1",
 ]
 
 [project.urls]

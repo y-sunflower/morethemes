@@ -19,6 +19,7 @@ def test_invalid_theme():
 def test_valid_themes():
     """Check that all valid theme names don't raise an error"""
     for theme in mt.ALL_THEMES.keys():
+        mt.set_theme(theme)
         assert "name" in mt.ALL_THEMES[theme].keys()
         assert "theme" in mt.ALL_THEMES[theme].keys()
         assert "description" in mt.ALL_THEMES[theme].keys()
@@ -26,7 +27,6 @@ def test_valid_themes():
             f"The description of theme {theme} has too many characters. "
             f"It must be below 200, not {len(mt.ALL_THEMES[theme]['description'])}"
         )
-        mt.set_theme(theme)
 
 
 def test_set_theme_default():
