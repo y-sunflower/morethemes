@@ -60,7 +60,7 @@ for theme in static_themes:
 
 print("### BRAND\n\n")
 print(
-    "The `brand` theme reads a Posit `_brand.yml` file and generates Matplotlib rcParams from its colors and typography.\n"
+    "The `brand` theme reads a Posit [`_brand.yml`](https://posit-dev.github.io/brand-yml/) file and generates Matplotlib rcParams from its colors and typography.\n"
 )
 print("```python")
 print("import morethemes as mt")

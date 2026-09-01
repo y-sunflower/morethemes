@@ -182,8 +182,9 @@ mt.set_theme("monoblue")
 
 ### BRAND
 
-The `brand` theme reads a Posit `_brand.yml` file and generates
-Matplotlib rcParams from its colors and typography.
+The `brand` theme reads a Posit
+[`_brand.yml`](https://posit-dev.github.io/brand-yml/) file and
+generates Matplotlib rcParams from its colors and typography.
 
 ``` python
 import morethemes as mt
