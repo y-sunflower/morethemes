@@ -14,7 +14,7 @@ Once the function is called, it will apply the theme to the **global matplotlib 
 ```python
 import morethemes as mt
 
-mt.set_theme("wsj") # Wall Street Journal
+mt.set_theme("wsj")  # Wall Street Journal
 ```
 
 ### The `brand` theme

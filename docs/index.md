@@ -24,6 +24,7 @@ line of code.
 
     ```python
     import morethemes as mt
+
     mt.set_theme("wsj")
     ```
 
@@ -35,6 +36,7 @@ line of code.
 
     ```python
     import morethemes as mt
+
     mt.set_theme("urban")
     ```
 
@@ -46,6 +48,7 @@ line of code.
 
     ```python
     import morethemes as mt
+
     mt.set_theme("minimal")
     ```
 
@@ -57,6 +60,7 @@ line of code.
 
     ```python
     import morethemes as mt
+
     mt.set_theme("ft")
     ```
 
@@ -68,6 +72,7 @@ line of code.
 
     ```python
     import morethemes as mt
+
     mt.set_theme("nature")
     ```
 
@@ -79,6 +84,7 @@ line of code.
 
     ```python
     import morethemes as mt
+
     mt.set_theme("economist")
     ```
 
@@ -90,6 +96,7 @@ line of code.
 
     ```python
     import morethemes as mt
+
     mt.set_theme("greenwave")
     ```
 
@@ -101,6 +108,7 @@ line of code.
 
     ```python
     import morethemes as mt
+
     mt.set_theme("lumen")
     ```
 
@@ -112,6 +120,7 @@ line of code.
 
     ```python
     import morethemes as mt
+
     mt.set_theme("ebonis")
     ```
 
@@ -123,6 +132,7 @@ line of code.
 
     ```python
     import morethemes as mt
+
     mt.set_theme("lighter")
     ```
 
@@ -134,6 +144,7 @@ line of code.
 
     ```python
     import morethemes as mt
+
     mt.set_theme("vscode-dark")
     ```
 
@@ -145,6 +156,7 @@ line of code.
 
     ```python
     import morethemes as mt
+
     mt.set_theme("nord")
     ```
 
@@ -156,6 +168,7 @@ line of code.
 
     ```python
     import morethemes as mt
+
     mt.set_theme("retro")
     ```
 
@@ -167,6 +180,7 @@ line of code.
 
     ```python
     import morethemes as mt
+
     mt.set_theme("darker")
     ```
 
@@ -178,6 +192,7 @@ line of code.
 
     ```python
     import morethemes as mt
+
     mt.set_theme("yellowish")
     ```
 
@@ -189,6 +204,7 @@ line of code.
 
     ```python
     import morethemes as mt
+
     mt.set_theme("monoblue")
     ```
 
@@ -209,6 +225,7 @@ pip install "morethemes[brand]"
 
 ``` python
 import morethemes as mt
+
 mt.set_theme("brand")
 ```
 

@@ -40,6 +40,7 @@ specification](https://posit-dev.github.io/brand-yml/):
 
 ``` python
 import morethemes as mt
+
 mt.set_theme("wsj")
 ```
 
@@ -49,6 +50,7 @@ mt.set_theme("wsj")
 
 ``` python
 import morethemes as mt
+
 mt.set_theme("urban")
 ```
 
@@ -58,6 +60,7 @@ mt.set_theme("urban")
 
 ``` python
 import morethemes as mt
+
 mt.set_theme("minimal")
 ```
 
@@ -67,6 +70,7 @@ mt.set_theme("minimal")
 
 ``` python
 import morethemes as mt
+
 mt.set_theme("ft")
 ```
 
@@ -76,6 +80,7 @@ mt.set_theme("ft")
 
 ``` python
 import morethemes as mt
+
 mt.set_theme("nature")
 ```
 
@@ -85,6 +90,7 @@ mt.set_theme("nature")
 
 ``` python
 import morethemes as mt
+
 mt.set_theme("economist")
 ```
 
@@ -94,6 +100,7 @@ mt.set_theme("economist")
 
 ``` python
 import morethemes as mt
+
 mt.set_theme("greenwave")
 ```
 
@@ -103,6 +110,7 @@ mt.set_theme("greenwave")
 
 ``` python
 import morethemes as mt
+
 mt.set_theme("lumen")
 ```
 
@@ -112,6 +120,7 @@ mt.set_theme("lumen")
 
 ``` python
 import morethemes as mt
+
 mt.set_theme("ebonis")
 ```
 
@@ -121,6 +130,7 @@ mt.set_theme("ebonis")
 
 ``` python
 import morethemes as mt
+
 mt.set_theme("lighter")
 ```
 
@@ -130,6 +140,7 @@ mt.set_theme("lighter")
 
 ``` python
 import morethemes as mt
+
 mt.set_theme("vscode-dark")
 ```
 
@@ -139,6 +150,7 @@ mt.set_theme("vscode-dark")
 
 ``` python
 import morethemes as mt
+
 mt.set_theme("nord")
 ```
 
@@ -148,6 +160,7 @@ mt.set_theme("nord")
 
 ``` python
 import morethemes as mt
+
 mt.set_theme("retro")
 ```
 
@@ -157,6 +170,7 @@ mt.set_theme("retro")
 
 ``` python
 import morethemes as mt
+
 mt.set_theme("darker")
 ```
 
@@ -166,6 +180,7 @@ mt.set_theme("darker")
 
 ``` python
 import morethemes as mt
+
 mt.set_theme("yellowish")
 ```
 
@@ -175,6 +190,7 @@ mt.set_theme("yellowish")
 
 ``` python
 import morethemes as mt
+
 mt.set_theme("monoblue")
 ```
 
@@ -188,5 +204,6 @@ generates Matplotlib rcParams from its colors and typography.
 
 ``` python
 import morethemes as mt
+
 mt.set_theme("brand")
 ```

@@ -1,8 +1,9 @@
-from matplotlib.figure import Figure
+import sys
+
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import pytest
-import sys
+from matplotlib.figure import Figure
 
 import morethemes as mt
 
@@ -19,10 +20,10 @@ def test_invalid_theme():
 
 def test_valid_themes():
     """Check that all valid theme names don't raise an error"""
-    for theme in mt.ALL_THEMES.keys():
-        assert "name" in mt.ALL_THEMES[theme].keys()
-        assert "theme" in mt.ALL_THEMES[theme].keys()
-        assert "description" in mt.ALL_THEMES[theme].keys()
+    for theme in mt.ALL_THEMES:
+        assert "name" in mt.ALL_THEMES[theme]
+        assert "theme" in mt.ALL_THEMES[theme]
+        assert "description" in mt.ALL_THEMES[theme]
         assert len(mt.ALL_THEMES[theme]["description"]) < 200, (
             f"The description of theme {theme} has too many characters. "
             f"It must be below 200, not {len(mt.ALL_THEMES[theme]['description'])}"
