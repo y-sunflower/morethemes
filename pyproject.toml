@@ -3,7 +3,7 @@ name = "morethemes"
 version = "0.7.0"
 description = "More themes for matplotlib"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = "MIT"
 license-files = ["LICENSE"]
 authors = [
@@ -13,7 +13,7 @@ keywords = ["colors", "matplotlib", "style", "themes"]
 classifiers = [
   "Framework :: Matplotlib",
   "Operating System :: OS Independent",
-  "Programming Language :: Python :: 3"
+  "Programming Language :: Python :: 3",
 ]
 
 dependencies = [
@@ -26,6 +26,9 @@ Documentation = "https://y-sunflower.github.io/morethemes/"
 Homepage = "https://y-sunflower.github.io/morethemes/"
 Issues = "https://github.com/y-sunflower/morethemes/issues"
 Repository = "https://github.com/y-sunflower/morethemes"
+
+[project.optional-dependencies]
+brand = ["brand_yml>=0.2.0"]
 
 [dependency-groups]
 dev = [

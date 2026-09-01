@@ -32,7 +32,9 @@ function.
 
 ## Themes
 
-**`morethemes`** offers 16 themes at the moment:
+**`morethemes`** offers 16 built-in themes, as well as a special ‘brand’
+theme, based the [\_brand.yml
+specification](https://posit-dev.github.io/brand-yml/):
 
 ### WSJ
 
@@ -177,3 +179,13 @@ mt.set_theme("monoblue")
 ```
 
 [![](https://raw.githubusercontent.com/y-sunflower/morethemes/refs/heads/main/docs/img/monoblue.png)](https://y-sunflower.github.io/morethemes/)
+
+### BRAND
+
+The `brand` theme reads a Posit `_brand.yml` file and generates
+Matplotlib rcParams from its colors and typography.
+
+``` python
+import morethemes as mt
+mt.set_theme("brand")
+```

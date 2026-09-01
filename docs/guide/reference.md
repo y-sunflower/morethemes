@@ -6,7 +6,7 @@ This document explains everything you need to get started using **`morethemes`**
 
 `mt.set_theme()` is the **main function** you'll need. It basically has 2 arguments:
 
-- `theme_name`: the name of the theme you want to apply. It must be one of the available themes: _"wsj"_, _"urban"_, _"minimal"_, _"ft"_, _"nature"_, _"economist"_, _"retro"_, _"yellowish"_, _"darker"_, _"monoblue"_.
+- `theme_name`: the name of the theme you want to apply. It can be a built-in theme or `"brand"`.
 - `reset_to_default`: whether to reset to default matplotlib theme before applying the theme. If not, themes can stack on top of each other. Default is `True` (and recommended).
 
 Once the function is called, it will apply the theme to the **global matplotlib configuration**. You can reset to default theme by calling `mt.set_theme("default")`
@@ -16,6 +16,24 @@ import morethemes as mt
 
 mt.set_theme("wsj") # Wall Street Journal
 ```
+
+### The `brand` theme
+
+The `brand` theme reads a Posit [`_brand.yml`](https://posit-dev.github.io/brand-yml/) file and generates Matplotlib rcParams from its colors and typography. Install the optional dependency first:
+
+```bash
+pip install "morethemes[brand]"
+```
+
+Then call it from a project containing `_brand.yml` (or configure the path using the `brand_yml` package's supported discovery settings):
+
+```python
+import morethemes as mt
+
+mt.set_theme("brand")
+```
+
+The generated theme uses the brand foreground/background colors, primary and secondary colors, palette colors for the plot color cycle, and base/heading typography settings supported by Matplotlib. System and Google fonts are supported; local-file and Bunny font sources are not.
 
 <br>
 
@@ -28,6 +46,8 @@ import morethemes as mt
 
 wsj_rcparams = mt.get_rcparams("wsj")
 ```
+
+`mt.get_rcparams("brand")` dynamically parses the discovered `_brand.yml` file and returns the generated rcParams.
 
 Then you can apply them to your matplotlib configuration with:
 

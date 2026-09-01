@@ -16,7 +16,7 @@ line of code.
 
 ## Themes
 
-**`morethemes`** offers 16 themes at the moment:
+**`morethemes`** offers 16 built-in themes and a dynamic `brand` theme:
 
 === "WSJ"
 
@@ -193,6 +193,24 @@ line of code.
     ```
 
     A high-contrast theme using shades of blue to emphasize data trends and maintain a clean, professional aesthetic.
+
+<br>
+
+### BRAND
+
+The `brand` theme reads a Posit
+[`_brand.yml`](https://posit-dev.github.io/brand-yml/) file and
+generates Matplotlib rcParams from the brand colors and typography.
+Install it with:
+
+``` bash
+pip install "morethemes[brand]"
+```
+
+``` python
+import morethemes as mt
+mt.set_theme("brand")
+```
 
 <br>
 
