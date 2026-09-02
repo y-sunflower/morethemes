@@ -9,7 +9,7 @@ import morethemes as mt
 
 
 def test_version():
-    assert mt.__version__ == "0.7.0"
+    assert mt.__version__ == "0.8.0"
 
 
 def test_invalid_theme():
