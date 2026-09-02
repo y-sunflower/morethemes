@@ -40,9 +40,9 @@ uv run pytest
 
 ```python
 sunglasses_theme = {
-    "name": "sunglasses", # the name of your theme
+    "name": "sunglasses",  # the name of your theme
     "description": "A description of the theme",
-    "theme": { # all arguments passed to plt.rcParams
+    "theme": {  # all arguments passed to plt.rcParams
         "axes.facecolor": "#232323",
         "figure.facecolor": "#282828",
     },
@@ -59,7 +59,7 @@ sunglasses_theme = {
 ALL_THEMES = {
     "darker": darker_theme,
     "lighter": lighter_theme,
-    "sunglasses": sunglasses_theme, # add your theme here
+    "sunglasses": sunglasses_theme,  # add your theme here
 }
 ```
 

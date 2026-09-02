@@ -69,6 +69,7 @@ For example, when I set the theme to `darker`, it will call all parameters of th
 
 ```python
 import morethemes as mt
+
 mt.set_theme("darker")
 ```
 
@@ -131,13 +132,13 @@ plt.rcParams.keys()
 Colors is the main thing that changes in a theme. Here you'll find every param name that you might need:
 
 ```python
-plt.rcParams["axes.facecolor"] = "black"     # Axes color
-plt.rcParams["figure.facecolor"] = "black"   # Figure color
-plt.rcParams["axes.labelcolor"] = "grey"     # Label color
-plt.rcParams["axes.edgecolor"] = "grey"      # Spines color
-plt.rcParams["xtick.color"] = "grey"         # x tick color
-plt.rcParams["ytick.color"] = "grey"         # y tick color
-plt.rcParams["text.color"] = "white"         # Text color
+plt.rcParams["axes.facecolor"] = "black"  # Axes color
+plt.rcParams["figure.facecolor"] = "black"  # Figure color
+plt.rcParams["axes.labelcolor"] = "grey"  # Label color
+plt.rcParams["axes.edgecolor"] = "grey"  # Spines color
+plt.rcParams["xtick.color"] = "grey"  # x tick color
+plt.rcParams["ytick.color"] = "grey"  # y tick color
+plt.rcParams["text.color"] = "white"  # Text color
 ```
 
 By default, matplotlib charts will be <span style="color: #1f77b4;">**blue**</span>. But if your chart has 2 colors, by default, the colors will be <span style="color: #1f77b4;">**blue**</span> and <span style="color: #ff7f0e;">**orange**</span>. If there are 3, the colors will be <span style="color: #1f77b4;">**blue**</span>, <span style="color: #ff7f0e;">**orange**</span> and <span style="color: #2ca02c;">**green**</span>. This will continue with 7 other colors.
@@ -146,8 +147,9 @@ This is called a `prop_cycle`. Changing this parameter will also to change defau
 
 ```python
 from cycler import cycler
+
 plt.rcParams["axes.prop_cycle"] = cycler(
-   "color", ["#FED789", "#A4BED5", "#72874E", "#023743", "#476F84", "#453947"]
+    "color", ["#FED789", "#A4BED5", "#72874E", "#023743", "#476F84", "#453947"]
 )
 ```
 
@@ -156,12 +158,12 @@ plt.rcParams["axes.prop_cycle"] = cycler(
 You can control the appearance of spines around matplotlib Axes with the following parameters:
 
 ```python
-plt.rcParams["axes.spines.top"] = False       # Remove top spine
-plt.rcParams["axes.spines.bottom"] = False    # Remove bottom spine
-plt.rcParams["axes.spines.right"] = False     # Remove right spine
-plt.rcParams["axes.spines.left"] = False      # Remove left spine
-plt.rcParams["axes.edgecolor"] = "#eeeeee"    # Spine color
-plt.rcParams["axes.linewidth"] = 1.5          # Spine width
+plt.rcParams["axes.spines.top"] = False  # Remove top spine
+plt.rcParams["axes.spines.bottom"] = False  # Remove bottom spine
+plt.rcParams["axes.spines.right"] = False  # Remove right spine
+plt.rcParams["axes.spines.left"] = False  # Remove left spine
+plt.rcParams["axes.edgecolor"] = "#eeeeee"  # Spine color
+plt.rcParams["axes.linewidth"] = 1.5  # Spine width
 ```
 
 ### Fonts
@@ -169,7 +171,7 @@ plt.rcParams["axes.linewidth"] = 1.5          # Spine width
 It is highly recommended to use a specific font for a theme, as it plays a major role in the brand image.
 
 ```python
-plt.rcParams['font.family'] = _set_family("Font Name")
+plt.rcParams["font.family"] = _set_family("Font Name")
 ```
 
 ### Others

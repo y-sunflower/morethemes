@@ -30,7 +30,8 @@ from: markdown-smart
 import morethemes as mt
 import matplotlib.pyplot as plt
 
-print(f"**`morethemes`** offers {len(mt.ALL_THEMES)} themes at the moment:\n")
+static_themes = [theme for theme in mt.ALL_THEMES if theme != "brand"]
+print(f"**`morethemes`** offers {len(static_themes)} built-in themes and a dynamic `brand` theme:\n")
 
 
 def print_a_theme(theme: str):
@@ -50,8 +51,23 @@ def print_a_theme(theme: str):
     print(theme_string)
 
 
-for theme in mt.ALL_THEMES:
+for theme in static_themes:
     print_a_theme(theme)
+```
+
+<br>
+
+### BRAND
+
+The `brand` theme reads a Posit [`_brand.yml`](https://posit-dev.github.io/brand-yml/) file and generates Matplotlib rcParams from the brand colors and typography. Install it with:
+
+```bash
+pip install "morethemes[brand]"
+```
+
+```python
+import morethemes as mt
+mt.set_theme("brand")
 ```
 
 

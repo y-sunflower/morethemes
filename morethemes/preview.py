@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
-from matplotlib.figure import Figure
-import morethemes as mt
 import numpy as np
+from matplotlib.figure import Figure
+
+import morethemes as mt
 
 
 def preview_theme(theme=None) -> Figure:

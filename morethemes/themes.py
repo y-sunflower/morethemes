@@ -1,6 +1,5 @@
 from cycler import cycler
 
-
 darker_theme = {
     "name": "darker",
     "description": "A sleek, no-frills dark theme with high contrast and a modern feel",
@@ -401,6 +400,7 @@ greenwave_theme = {
     "description": "A sleek, dark-themed aesthetic with vibrant green accents, inspired by modern streaming interfaces. Designed for clarity and style, with bold typography and a focus on visual harmony.",
     "theme": {
         "font.family": "Plus Jakarta Sans",
+        "font.weight": 800,
         "axes.facecolor": "#000000",
         "figure.facecolor": "#000000",
         "axes.labelcolor": "#FFFFFF",
@@ -598,8 +598,14 @@ ebonis_theme = {
     },
 }
 
+brand_theme = {
+    "name": "brand",
+    "description": "A dynamic theme generated from a _brand.yml file.",
+    "theme": {},
+}
 
 ALL_THEMES = {
+    "brand": brand_theme,
     "wsj": wsj_theme,
     "urban": urban_theme,
     "minimal": minimal_theme,
