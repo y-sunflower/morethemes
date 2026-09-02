@@ -43,7 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/p/pytest-cov
+      url: https://pypi.org/p/morethemes
     permissions:
       id-token: write # IMPORTANT: mandatory for trusted publishing
 
@@ -73,7 +73,7 @@ jobs:
           name: python-package-distributions
           path: dist/
       - name: Sign the dists with Sigstore
-        uses: sigstore/gh-action-sigstore-python@v3.0.0
+        uses: sigstore/gh-action-sigstore-python@790bc6befb9d733738f18d8f895854b453640ec9 # v3.5.0
         with:
           inputs: >-
             ./dist/*.tar.gz
