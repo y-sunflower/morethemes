@@ -1,5 +1,6 @@
 readme:
-    quarto render docs/README.qmd --output-dir ..
+    uv run --group quarto quarto render docs/README.qmd --output-dir ..
+    uv run ruff format README.md
 
 index:
     quarto render docs/index.qmd
