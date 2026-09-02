@@ -6,7 +6,7 @@ on:
   pull_request:
 
 jobs:
-  check-formatting:
+  check-typing:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,7 +19,9 @@ jobs:
           enable-cache: true
 
       - name: Install the project
-        run: uv sync --all-groups
+        run: |
+          uv sync --all-groups
+          uv pip install brand_yml # for some reason I need to add this manually
 
       - name: Run type check (ty)
         run: uv run ty check
