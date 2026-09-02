@@ -37,6 +37,13 @@ def test_valid_static_themes():
             mt.set_theme(theme)
 
 
+def test_greenwave_font_weight():
+    """Keep greenwave's bold typography when applying the theme."""
+    mt.set_theme("greenwave")
+
+    assert plt.rcParams["font.weight"] == 800
+
+
 def test_brand_rcparams(tmp_path, monkeypatch):
     """Convert a brand.yml file into Matplotlib rcParams."""
     pytest.importorskip("brand_yml")

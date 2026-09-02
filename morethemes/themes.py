@@ -400,6 +400,7 @@ greenwave_theme = {
     "description": "A sleek, dark-themed aesthetic with vibrant green accents, inspired by modern streaming interfaces. Designed for clarity and style, with bold typography and a focus on visual harmony.",
     "theme": {
         "font.family": "Plus Jakarta Sans",
+        "font.weight": 800,
         "axes.facecolor": "#000000",
         "figure.facecolor": "#000000",
         "axes.labelcolor": "#FFFFFF",
