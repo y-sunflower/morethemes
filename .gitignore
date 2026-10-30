@@ -18,3 +18,5 @@ uv.lock
 
 scripts/release.sh
 _brand.yml
+
+site/
