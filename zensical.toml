@@ -12,7 +12,6 @@ extra_css = ["stylesheets/style.css"]
 [project.theme]
 name = "material"
 variant = "classic"
-custom_dir = "overrides"
 features = ["content.code.copy", "content.tabs.link"]
 
 [project.theme.icon]
