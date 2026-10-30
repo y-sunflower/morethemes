@@ -43,6 +43,7 @@ dev = [
   "ruff>=0.16.5",
   "setuptools>=75.8.0",
   "ty",
+  "zensical>=0.0.67",
 ]
 quarto = [
   "jupyter>=1.1.1",

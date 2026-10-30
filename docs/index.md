@@ -1,16 +1,13 @@
-
-
 <!-- Automatically generated, do not change by hand. Use docs/index.qmd instead. -->
 
 # `morethemes`: more themes for matplotlib
 
 <img src="https://github.com/JosephBARBIERDARNAL/static/blob/main/python-libs/morethemes/image.png?raw=true" alt="morethemes logo" align="right" width="150px"/>
 
-**`morethemes`** provides themes for
-[matplotlib](https://matplotlib.org/). More themes, better plots, one
-line of code.
+**`morethemes`** provides themes for [matplotlib](https://matplotlib.org/). More themes, better plots, one line of code.
 
-[![](https://static.pepy.tech/badge/morethemes)](https://pepy.tech/projects/morethemes)
+![PyPI Downloads](https://static.pepy.tech/badge/morethemes)
+![Python Versions](https://img.shields.io/badge/Python-3.10–3.15-blue)
 
 <br>
 
@@ -219,11 +216,11 @@ The `brand` theme reads a Posit
 generates Matplotlib rcParams from the brand colors and typography.
 Install it with:
 
-``` bash
+```bash
 pip install "morethemes[brand]"
 ```
 
-``` python
+```python
 import morethemes as mt
 
 mt.set_theme("brand")
@@ -233,12 +230,8 @@ mt.set_theme("brand")
 
 ## Installation
 
-``` bash
+```bash
 pip install morethemes
 ```
 
-Don't want to add **`morethemes`** as a dependency? You can either
-browse the [source
-code](https://github.com/y-sunflower/morethemes/blob/main/morethemes/themes.py)
-to find the rcParams, or use the `mt.get_rcparams("theme_name")`
-function.
+Don't want to add **`morethemes`** as a dependency? You can either browse the [source code](https://github.com/y-sunflower/morethemes/blob/main/morethemes/themes.py) to find the rcParams, or use the `mt.get_rcparams("theme_name")` function.

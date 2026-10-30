@@ -5,6 +5,9 @@ readme:
 index:
     quarto render docs/index.qmd
 
+doc:
+    uv run zensical serve --clean
+
 coverage:
     uv run coverage run --source=morethemes -m pytest
     uv run coverage report -m
