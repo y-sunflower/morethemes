@@ -39,11 +39,11 @@ dev = [
   "mkdocs-material>=9.5.49",
   "mkdocs-matplotlib>=0.10.1",
   "pre-commit>=4.0.1",
-  "pyrefly",
+  "pyrefly>=1.2.0",
   "pytest>=8.3.4",
   "ruff>=0.16.5",
   "setuptools>=75.8.0",
-  "ty",
+  "ty>=0.0.77",
   "zensical>=0.0.67",
 ]
 
