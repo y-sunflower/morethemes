@@ -1,9 +1,5 @@
-readme:
-    uv run --group quarto quarto render docs/README.qmd --output-dir ..
-    uv run ruff format README.md
-
-index:
-    quarto render docs/index.qmd
+doc:
+    uv run zensical serve
 
 coverage:
     uv run coverage run --source=morethemes -m pytest

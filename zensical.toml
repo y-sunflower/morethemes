@@ -1,0 +1,34 @@
+[project]
+site_name = "morethemes"
+site_url = "https://y-sunflower.github.io/morethemes/"
+repo_url = "https://github.com/y-sunflower/morethemes"
+nav = [
+  { Home = "index.md" },
+  { Contributing = "contributing.md" },
+  { Guide = ["guide/reference.md", "guide/custom-a-theme.md", "guide/create-your-theme.md"] },
+]
+extra_css = ["stylesheets/style.css"]
+
+[project.theme]
+name = "material"
+variant = "classic"
+features = ["content.code.copy", "content.tabs.link"]
+
+[project.theme.icon]
+repo = "fontawesome/brands/github"
+
+[project.plugins.mkdocs_matplotlib]
+
+[project.markdown_extensions]
+pymdownx.highlight.anchor_linenums = true
+pymdownx.highlight.line_spans = "__span"
+pymdownx.highlight.pygments_lang_class = true
+pymdownx.inlinehilite = {}
+pymdownx.snippets = {}
+pymdownx.superfences = {}
+pymdownx.tabbed.alternate_style = true
+pymdownx.blocks.caption = {}
+pymdownx.details = {}
+attr_list = {}
+md_in_html = {}
+admonition = {}

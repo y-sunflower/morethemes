@@ -85,6 +85,6 @@ git push
 
 Congrats! Once your PR is merged, it will be part of **`morethemes`** and accessible via `mt.set_theme("sunglasses")`. It'll be available once a new released is published on PyPI.
 
-Feel free to ask me if you have any questions!
+Feel free to ask if you have any questions!
 
 <br><br>

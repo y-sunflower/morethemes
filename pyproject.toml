@@ -32,22 +32,19 @@ brand = ["brand_yml>=0.2.0"]
 
 [dependency-groups]
 dev = [
+  "brand_yml>=0.2.0",
   "coverage>=7.9.1",
   "defusedxml>=0.7.1",
   "genbadge>=1.1.2",
   "mkdocs-material>=9.5.49",
   "mkdocs-matplotlib>=0.10.1",
   "pre-commit>=4.0.1",
-  "pyrefly",
+  "pyrefly>=1.2.0",
   "pytest>=8.3.4",
   "ruff>=0.16.5",
   "setuptools>=75.8.0",
-  "ty",
-]
-quarto = [
-  "jupyter>=1.1.1",
-  "nbclient>=0.10.2",
-  "nbformat>=5.10.4",
+  "ty>=0.0.77",
+  "zensical>=0.0.67",
 ]
 
 [build-system]

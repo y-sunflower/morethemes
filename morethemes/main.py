@@ -3,7 +3,6 @@ from typing import Any, cast
 
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-from matplotlib.typing import RcKeyType
 from pyfonts import load_google_font, set_default_font
 
 from morethemes.brand import get_brand_font_source, get_brand_rcparams
@@ -37,7 +36,7 @@ def set_theme(theme_name: str, reset_to_default: bool = True) -> None:
             _set_static_theme_font(theme_name, theme_dict)
         if reset_to_default:
             plt.rcParams.update(mpl.rcParamsDefault)
-        plt.rcParams.update(cast(dict[RcKeyType, Any], theme_dict))
+        plt.rcParams.update(cast(Any, theme_dict))
 
 
 def _set_static_theme_font(theme_name: str, theme_dict: RcParams) -> None:

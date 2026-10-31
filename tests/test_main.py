@@ -4,8 +4,18 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import pytest
 from matplotlib.figure import Figure
+from matplotlib.font_manager import FontProperties
 
 import morethemes as mt
+
+
+@pytest.fixture(autouse=True)
+def avoid_google_font_downloads(monkeypatch):
+    """Keep theme tests independent of the Google Fonts network service."""
+    monkeypatch.setattr(
+        "morethemes.main.load_google_font",
+        lambda family: FontProperties(family=family),
+    )
 
 
 def test_version():
