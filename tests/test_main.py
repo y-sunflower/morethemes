@@ -19,7 +19,7 @@ def avoid_google_font_downloads(monkeypatch):
 
 
 def test_version():
-    assert mt.__version__ == "0.8.0"
+    assert mt.__version__ == "0.9.0"
 
 
 def test_invalid_theme():
