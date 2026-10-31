@@ -1,7 +1,4 @@
 ```python
-# mkdocs: hidecode
-# mkdocs: hideoutput
-# mkdocs: render
 import morethemes as mt
 
 mt.set_theme("default")
@@ -18,7 +15,6 @@ Under the hood, **`morethemes`** uses the `matplotlib` `rcParams` to change the 
 For example, the `yellowish` theme has a yellow background.
 
 ```python
-# mkdocs: render
 import morethemes as mt
 
 mt.set_theme("yellowish")
@@ -33,7 +29,6 @@ Let's say we want to change the background color. The background color is set us
 Here, they have the same color, so we have to change both. If we want to set a blue background, we can do the following:
 
 ```python
-# mkdocs: render
 import morethemes as mt
 import matplotlib.pyplot as plt
 
