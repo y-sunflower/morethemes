@@ -36,7 +36,7 @@ def set_theme(theme_name: str, reset_to_default: bool = True) -> None:
             _set_static_theme_font(theme_name, theme_dict)
         if reset_to_default:
             plt.rcParams.update(mpl.rcParamsDefault)
-        plt.rcParams.update(cast(dict[str, Any], theme_dict))
+        plt.rcParams.update(theme_dict)
 
 
 def _set_static_theme_font(theme_name: str, theme_dict: RcParams) -> None:
