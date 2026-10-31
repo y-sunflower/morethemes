@@ -19,17 +19,21 @@ line of code.
 pip install morethemes
 ```
 
-Don’t want to add **`morethemes`** as a dependency? You can either
-browse the [source
-code](https://github.com/y-sunflower/morethemes/blob/main/morethemes/themes.py)
-to find the rcParams, or use the `mt.get_rcparams("theme_name")`
-function.
+Don't want to add **`morethemes`** as a dependency? You can either browse the [source code](https://github.com/y-sunflower/morethemes/blob/main/morethemes/themes.py) to find the rcParams, or use the `mt.get_rcparams("theme_name")` function.
+
+## Skill
+
+Too lazy to read documentation? Install the agent skill with:
+
+```bash
+npx skills add y-sunflower/morethemes
+```
 
 <br>
 
 ## Themes
 
-**`morethemes`** offers 16 built-in themes, as well as a special ‘brand’
+**`morethemes`** offers 16 built-in themes, as well as a special 'brand'
 theme, based the [\_brand.yml
 specification](https://posit-dev.github.io/brand-yml/):
 
