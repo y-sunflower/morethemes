@@ -1,5 +1,3 @@
-<!-- Automatically generated, uses README.qmd to modify README.md -->
-
 # `morethemes`: more themes for matplotlib
 
 <img src="https://github.com/JosephBARBIERDARNAL/static/blob/main/python-libs/morethemes/image.png?raw=true" alt="morethemes logo" align="right" width="150px"/>
