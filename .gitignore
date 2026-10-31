@@ -20,3 +20,4 @@ scripts/release.sh
 _brand.yml
 
 site/
+.python-version

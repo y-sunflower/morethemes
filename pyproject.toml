@@ -32,6 +32,7 @@ brand = ["brand_yml>=0.2.0"]
 
 [dependency-groups]
 dev = [
+  "brand_yml>=0.2.0",
   "coverage>=7.9.1",
   "defusedxml>=0.7.1",
   "genbadge>=1.1.2",
@@ -44,11 +45,6 @@ dev = [
   "setuptools>=75.8.0",
   "ty",
   "zensical>=0.0.67",
-]
-quarto = [
-  "jupyter>=1.1.1",
-  "nbclient>=0.10.2",
-  "nbformat>=5.10.4",
 ]
 
 [build-system]
