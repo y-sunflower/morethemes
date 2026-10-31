@@ -5,7 +5,7 @@ from matplotlib.figure import Figure
 import morethemes as mt
 
 
-def preview_theme(theme=None) -> Figure:
+def preview_theme(theme: None | str = None) -> Figure:
     if theme is not None:
         mt.set_theme(theme)
     np.random.seed(0)
